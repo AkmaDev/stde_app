@@ -23,6 +23,9 @@ import enrich_rnb_apur as E
 # Deux polygones carres de 10x10, tres eloignes (aucun recouvrement possible)
 RING_A = [(700000, 6860000), (700000, 6860010), (700010, 6860010), (700010, 6860000), (700000, 6860000)]
 RING_LOIN = [(750000, 6900000), (750000, 6900010), (750010, 6900010), (750010, 6900000), (750000, 6900000)]
+# RING_A decale de 2m sur x : recouvrement ~0.667 avec RING_A (ni 0% ni 100%,
+# teste le SEUIL RECOUVREMENT_MIN lui-meme, pas juste "zero vs un").
+RING_PARTIEL = [(700002, 6860000), (700002, 6860010), (700012, 6860010), (700012, 6860000), (700002, 6860000)]
 
 
 def rnb_cand(rnb_id):
@@ -116,6 +119,33 @@ def test_apur_objectid_reattribue_mais_polygone_recuperable():
     assert any(p["champ"] == "apur_objectid" and p["nouveau"] == 300 for p in props)
 
 
+def test_recouvrement_partiel_rejete_au_seuil_actuel():
+    """Recouvrement de ~0.667 (ni 0% ni 100%) avec RECOUVREMENT_MIN=0.95 --
+    doit etre rejete. Si RECOUVREMENT_MIN etait abaisse a 0.5 sans que ce
+    test soit revu, ce cas serait accepte a tort : le test echouerait alors
+    (echec deviendrait None), ce qui est le but."""
+    choice = choice_de_base()
+    rnb_data = {"results": [rnb_cand("AAA")]}
+    apur_data = {"features": [apur_feat(100, RING_PARTIEL)]}  # meme id, geometrie decalee
+    rnb_c, apur_c, props, echec = E.resoudre_identite(choice, rnb_data, apur_data)
+    assert echec is not None and echec[0] == "apur"
+    assert apur_c is None
+
+
+def test_verdict_final_revalide_sans_empreinte_geometrique():
+    """Sans apur_rings enregistre (anciennes entrees), resoudre_identite()
+    retrouve RNB et APUR directement par id -- mais DOIT quand meme rappeler
+    verifie_identite_batiment() (repli sur la hauteur) avant de conclure.
+    Sans cet appel final, un h_moy tres different de celui attendu serait
+    accepte en silence des que rnb_id et apur_objectid matchent tout seuls."""
+    choice = {"rnb_index": 0, "rnb_id": "AAA", "apur_objectid": 100, "apur_h_moy": 10.0}  # pas de apur_rings
+    rnb_data = {"results": [rnb_cand("AAA")]}
+    apur_data = {"features": [apur_feat(100, RING_A, h_moy=50.0)]}  # meme id, hauteur tres differente
+    rnb_c, apur_c, props, echec = E.resoudre_identite(choice, rnb_data, apur_data)
+    assert echec is not None and echec[0] == "apur"
+    assert apur_c is None
+
+
 def test_scenario_combine_rnb_et_apur_casses_simultanement():
     """LE scenario qui a echappe aux versions precedentes : RNB reordonne
     ET APUR republie en meme temps. Les DEUX doivent etre verifies et
@@ -158,6 +188,8 @@ if __name__ == "__main__":
         test_apur_republie_meme_polygone,
         test_apur_objectid_reattribue_a_un_autre_batiment,
         test_apur_objectid_reattribue_mais_polygone_recuperable,
+        test_recouvrement_partiel_rejete_au_seuil_actuel,
+        test_verdict_final_revalide_sans_empreinte_geometrique,
         test_scenario_combine_rnb_et_apur_casses_simultanement,
         test_appariement_contre_exemple_cout_prohibitif,
     ]
