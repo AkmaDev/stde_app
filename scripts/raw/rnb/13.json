@@ -1,0 +1,2069 @@
+{
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "rnb_id": "SM4CEYYC2NNE",
+      "distance": 0.0,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.319656851832483,
+          48.88979924956024
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75117_1315_00028",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "28",
+          "street_rep": null,
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_3771_00006",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "6",
+          "street_rep": null,
+          "street": "Rue Fourneyron",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-YET5-LV2S-WRKB",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:59.350557+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000245204822",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T00:54:23.606992+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.319611951988471,
+                48.88978955163301
+              ],
+              [
+                2.31964905398468,
+                48.88976817859202
+              ],
+              [
+                2.319701709682272,
+                48.889808947487474
+              ],
+              [
+                2.319694832415736,
+                48.889813405050944
+              ],
+              [
+                2.319715076494808,
+                48.88982970795482
+              ],
+              [
+                2.319690365321765,
+                48.88984215814206
+              ],
+              [
+                2.319671461450465,
+                48.88982766150321
+              ],
+              [
+                2.319665959633283,
+                48.889831227552584
+              ],
+              [
+                2.319611951988471,
+                48.88978955163301
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "D4VGPPYXRDT7",
+      "distance": 5.01801636,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.320039153982736,
+          48.88984911797566
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75117_6401_00043",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "43",
+          "street_rep": null,
+          "street": "Rue des Moines",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_3771_00004",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "4",
+          "street_rep": null,
+          "street": "Rue Fourneyron",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_3771_00002",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "2",
+          "street_rep": null,
+          "street": "Rue Fourneyron",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_1315_00028",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "28",
+          "street_rep": null,
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_3771_00008",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "8",
+          "street_rep": null,
+          "street": "Rue Fourneyron",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-45AL-XY37-9G5K",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:53.203294+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000245204813",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:05:49.054992+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.31981593393632,
+                48.89004342143665
+              ],
+              [
+                2.319719734043919,
+                48.890099532544575
+              ],
+              [
+                2.319459064718626,
+                48.88990469601905
+              ],
+              [
+                2.31946078102752,
+                48.88987772595805
+              ],
+              [
+                2.319583090942156,
+                48.88980647485457
+              ],
+              [
+                2.319764053293379,
+                48.889943301417325
+              ],
+              [
+                2.319972922353956,
+                48.88982307862672
+              ],
+              [
+                2.319976966489128,
+                48.88982669890254
+              ],
+              [
+                2.32004142464378,
+                48.889799185806105
+              ],
+              [
+                2.319882680633392,
+                48.88963190871624
+              ],
+              [
+                2.31997063857624,
+                48.88958024728919
+              ],
+              [
+                2.320011502541304,
+                48.889584076665265
+              ],
+              [
+                2.320224090508847,
+                48.889805618908326
+              ],
+              [
+                2.320112761572622,
+                48.88987153704877
+              ],
+              [
+                2.320064667842543,
+                48.88989914310615
+              ],
+              [
+                2.319964353871798,
+                48.889957029707865
+              ],
+              [
+                2.319898390821931,
+                48.889995326137495
+              ],
+              [
+                2.31981593393632,
+                48.89004342143665
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "6QKNXE3AFS19",
+      "distance": 12.97567308,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.319402220135433,
+          48.88947763563513
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75117_6401_00029",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "29",
+          "street_rep": null,
+          "street": "Rue des Moines",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_6401_00027",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "27",
+          "street_rep": null,
+          "street": "Rue des Moines",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_5503_00096_t",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "96",
+          "street_rep": "t",
+          "street": "Rue Lemercier",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_1315_00022_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "22",
+          "street_rep": "b",
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_5503_00096_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "96",
+          "street_rep": "b",
+          "street": "Rue Lemercier",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_6401_00033",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "33",
+          "street_rep": null,
+          "street": "Rue des Moines",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_5503_00096",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "96",
+          "street_rep": null,
+          "street": "Rue Lemercier",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_1315_00024",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "24",
+          "street_rep": null,
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_6401_00031",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "31",
+          "street_rep": null,
+          "street": "Rue des Moines",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_5503_00094_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "94",
+          "street_rep": "b",
+          "street": "Rue Lemercier",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_3771_00007",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "7",
+          "street_rep": null,
+          "street": "Rue Fourneyron",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_3771_00005",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "5",
+          "street_rep": null,
+          "street": "Rue Fourneyron",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_3771_00003",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "3",
+          "street_rep": null,
+          "street": "Rue Fourneyron",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_3771_00001",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "1",
+          "street_rep": null,
+          "street": "Rue Fourneyron",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_1315_00026",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "26",
+          "street_rep": null,
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_1315_00024_t",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "24",
+          "street_rep": "t",
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_1315_00024_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "24",
+          "street_rep": "b",
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_1315_00024_q",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "24",
+          "street_rep": "q",
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-DJ6Q-YZ2Z-EE3K",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:55.241595+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000245204496",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:28:16.482095+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.319497516125912,
+                48.88915397610622
+              ],
+              [
+                2.319606481810996,
+                48.88916448793293
+              ],
+              [
+                2.31986210545044,
+                48.889432141158395
+              ],
+              [
+                2.31985023267776,
+                48.889505818573475
+              ],
+              [
+                2.319389844653148,
+                48.88977479947179
+              ],
+              [
+                2.319279443492794,
+                48.88976967526404
+              ],
+              [
+                2.318945855286084,
+                48.889519564003486
+              ],
+              [
+                2.318952227515834,
+                48.88944945269679
+              ],
+              [
+                2.319497516125912,
+                48.88915397610622
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "C78K2KCB3DE9",
+      "distance": 30.0566406,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.319938699428315,
+          48.890075468310556
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75117_1315_00030",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "30",
+          "street_rep": null,
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-NDBL-CRTC-SVQG",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:57.143579+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000245204814",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T00:57:29.116681+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.31990862044967,
+                48.89015186713464
+              ],
+              [
+                2.319841281651117,
+                48.89019105504081
+              ],
+              [
+                2.319719734043919,
+                48.890099532544575
+              ],
+              [
+                2.31981593393632,
+                48.89004342143665
+              ],
+              [
+                2.319869977246884,
+                48.89008239947379
+              ],
+              [
+                2.319952434144301,
+                48.89003430413913
+              ],
+              [
+                2.319898390821931,
+                48.889995326137495
+              ],
+              [
+                2.319964353871798,
+                48.889957029707865
+              ],
+              [
+                2.319980577432909,
+                48.889967913768196
+              ],
+              [
+                2.319961321091698,
+                48.88998039498793
+              ],
+              [
+                2.320036948928142,
+                48.89003748207286
+              ],
+              [
+                2.320057568982005,
+                48.89002500858531
+              ],
+              [
+                2.320060272915164,
+                48.89002682259331
+              ],
+              [
+                2.320087300514485,
+                48.8900458619301
+              ],
+              [
+                2.320025440319851,
+                48.89008328239631
+              ],
+              [
+                2.320006524523696,
+                48.890069685073826
+              ],
+              [
+                2.319984552473168,
+                48.89008125154728
+              ],
+              [
+                2.320003468267787,
+                48.8900948488731
+              ],
+              [
+                2.319982848173307,
+                48.89010732235054
+              ],
+              [
+                2.31990862044967,
+                48.89015186713464
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "B565C532G9ED",
+      "distance": 30.4380207,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.320237339779712,
+          48.889924999283366
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75117_6401_00045",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "45",
+          "street_rep": null,
+          "street": "Rue des Moines",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-ME8L-DHGH-KCYA",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:56.939524+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000245204804",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T00:57:29.114851+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.320060272915164,
+                48.89002682259331
+              ],
+              [
+                2.320082268411318,
+                48.8900134575847
+              ],
+              [
+                2.320002584668704,
+                48.88995364951312
+              ],
+              [
+                2.319980577432909,
+                48.889967913768196
+              ],
+              [
+                2.319964353871798,
+                48.889957029707865
+              ],
+              [
+                2.320064667842543,
+                48.88989914310615
+              ],
+              [
+                2.320172719394069,
+                48.88997979672151
+              ],
+              [
+                2.320189201304636,
+                48.88997089702501
+              ],
+              [
+                2.320179737533848,
+                48.889964548006596
+              ],
+              [
+                2.320181218651819,
+                48.88995556314491
+              ],
+              [
+                2.320203214086828,
+                48.88994219811321
+              ],
+              [
+                2.320112761572622,
+                48.88987153704877
+              ],
+              [
+                2.320224090508847,
+                48.889805618908326
+              ],
+              [
+                2.320322314445942,
+                48.88990780045352
+              ],
+              [
+                2.320166994511642,
+                48.890000448740444
+              ],
+              [
+                2.320087300514485,
+                48.8900458619301
+              ],
+              [
+                2.320060272915164,
+                48.89002682259331
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "YQJE4PDRCP8C",
+      "distance": 39.68020301,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.319158022099988,
+          48.89003805763693
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75117_1315_00037",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "37",
+          "street_rep": null,
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-3ZYA-746S-3WLV",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:53.173329+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000245205750",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:22:17.008067+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.318906833426867,
+                48.89000048218016
+              ],
+              [
+                2.318885225826035,
+                48.889984171385166
+              ],
+              [
+                2.318964932539156,
+                48.88993785973269
+              ],
+              [
+                2.319055631081548,
+                48.88988531524404
+              ],
+              [
+                2.319312266447322,
+                48.890075633093694
+              ],
+              [
+                2.319195457412984,
+                48.890143317876614
+              ],
+              [
+                2.319141426303101,
+                48.89010344027704
+              ],
+              [
+                2.318961805215337,
+                48.88996841907002
+              ],
+              [
+                2.318906833426867,
+                48.89000048218016
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "AFH3A7TCQSRG",
+      "distance": 40.54016383,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.319341835007228,
+          48.89019199421482
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75117_1315_00039",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "39",
+          "street_rep": null,
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-V4HQ-2GM1-MJGD",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:58.629523+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000245204836",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:31:17.541371+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.319056652237762,
+                48.890224367363246
+              ],
+              [
+                2.319195457412984,
+                48.890143317876614
+              ],
+              [
+                2.319312266447322,
+                48.890075633093694
+              ],
+              [
+                2.319373045689002,
+                48.8901209449359
+              ],
+              [
+                2.319436517201334,
+                48.890168970027396
+              ],
+              [
+                2.319437869160809,
+                48.890169877038296
+              ],
+              [
+                2.319322412037566,
+                48.890238468950066
+              ],
+              [
+                2.319292692457831,
+                48.89021671615892
+              ],
+              [
+                2.319305071694598,
+                48.890208692588885
+              ],
+              [
+                2.319263208040789,
+                48.89017697815753
+              ],
+              [
+                2.319267334451835,
+                48.89017430363526
+              ],
+              [
+                2.319247055107484,
+                48.89016069844125
+              ],
+              [
+                2.319167348304172,
+                48.890207010272114
+              ],
+              [
+                2.319259187348292,
+                48.89027588126178
+              ],
+              [
+                2.319184958765284,
+                48.89032042559048
+              ],
+              [
+                2.319095811892305,
+                48.890254267836106
+              ],
+              [
+                2.31908500800794,
+                48.89024611245809
+              ],
+              [
+                2.319071500217191,
+                48.890236143049066
+              ],
+              [
+                2.319056652237762,
+                48.890224367363246
+              ]
+            ],
+            [
+              [
+                2.319152711662815,
+                48.89028336983847
+              ],
+              [
+                2.31916757143936,
+                48.89029424625172
+              ],
+              [
+                2.319178563480712,
+                48.89028801346157
+              ],
+              [
+                2.319163703703649,
+                48.89027713704962
+              ],
+              [
+                2.319152711662815,
+                48.89028336983847
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "Q6ZWHMB4YK8Y",
+      "distance": 41.19208055,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.31941140975512,
+          48.89014049993425
+        ]
+      },
+      "addresses": [],
+      "ext_ids": [
+        {
+          "id": "BATIMENT0000000245204844",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:21:29.747275+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.319450271871381,
+              48.890160054932586
+            ],
+            [
+              2.31938678860249,
+              48.8901129291082
+            ],
+            [
+              2.319373045689002,
+              48.8901209449359
+            ],
+            [
+              2.319436517201334,
+              48.890168970027396
+            ],
+            [
+              2.319450271871381,
+              48.890160054932586
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "KZ5RBVXGG2XN",
+      "distance": 44.42505643,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.318917688441949,
+          48.88990524225078
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75117_1315_00035",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "35",
+          "street_rep": null,
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-33XU-7GBR-D6LG",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:52.972173+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000245204834",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T00:57:28.836960+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.318837131341119,
+                48.89001177694669
+              ],
+              [
+                2.318800028838067,
+                48.89003314973136
+              ],
+              [
+                2.318708190829388,
+                48.88996427837429
+              ],
+              [
+                2.318745281555282,
+                48.889943804877014
+              ],
+              [
+                2.318856565321801,
+                48.88988148505362
+              ],
+              [
+                2.318818758025448,
+                48.88985249151051
+              ],
+              [
+                2.318930029746317,
+                48.889791070874054
+              ],
+              [
+                2.319055631081548,
+                48.88988531524404
+              ],
+              [
+                2.318964932539156,
+                48.88993785973269
+              ],
+              [
+                2.318947369017347,
+                48.889925169257516
+              ],
+              [
+                2.318918507679868,
+                48.88994209231682
+              ],
+              [
+                2.318926607585292,
+                48.88994843367848
+              ],
+              [
+                2.3189101137031,
+                48.88995823246165
+              ],
+              [
+                2.318902013798161,
+                48.889951891098924
+              ],
+              [
+                2.318819567825526,
+                48.88999908645363
+              ],
+              [
+                2.318837131341119,
+                48.89001177694669
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "HDTDDK33VJS7",
+      "distance": 45.30231972,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.320367223212573,
+          48.89003871702833
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75117_6401_00047",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "47",
+          "street_rep": null,
+          "street": "Rue des Moines",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-LN9R-KFRW-ZW65",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:56.771904+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000245204812",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T00:45:42.333327+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.320166994511642,
+                48.890000448740444
+              ],
+              [
+                2.320322314445942,
+                48.88990780045352
+              ],
+              [
+                2.320514719281648,
+                48.890108543017085
+              ],
+              [
+                2.320403589597963,
+                48.89015917398531
+              ],
+              [
+                2.320301309112358,
+                48.89005427152652
+              ],
+              [
+                2.320275750794719,
+                48.89002714663625
+              ],
+              [
+                2.320233170549768,
+                48.89005028742042
+              ],
+              [
+                2.320166994511642,
+                48.890000448740444
+              ]
+            ],
+            [
+              [
+                2.320225704442146,
+                48.88999538608867
+              ],
+              [
+                2.320232417325752,
+                48.89000351814067
+              ],
+              [
+                2.320246148336078,
+                48.889996401473844
+              ],
+              [
+                2.320238060002502,
+                48.889989160941326
+              ],
+              [
+                2.320225704442146,
+                48.88999538608867
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "WC2XYQHYG6JB",
+      "distance": 45.38130743,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.320388571011382,
+          48.89027396761223
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75117_1315_00034",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "34",
+          "street_rep": null,
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_2112_00127",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "127",
+          "street_rep": null,
+          "street": "Avenue de Clichy",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_6401_00049",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "49",
+          "street_rep": null,
+          "street": "Rue des Moines",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        },
+        {
+          "id": "75117_1315_00032",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "32",
+          "street_rep": null,
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-LDG1-9V9D-Q9MN",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:56.709205+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000245204868",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:22:16.659267+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.320403589597963,
+                48.89015917398531
+              ],
+              [
+                2.320514719281648,
+                48.890108543017085
+              ],
+              [
+                2.3205968027286,
+                48.890193545501724
+              ],
+              [
+                2.320589632138245,
+                48.890220484620855
+              ],
+              [
+                2.320211722397992,
+                48.89043957417145
+              ],
+              [
+                2.320169470543773,
+                48.890437535644296
+              ],
+              [
+                2.319841281651117,
+                48.89019105504081
+              ],
+              [
+                2.31990862044967,
+                48.89015186713464
+              ],
+              [
+                2.319982908251849,
+                48.89020714797906
+              ],
+              [
+                2.319991161004362,
+                48.89020179888492
+              ],
+              [
+                2.319984412899561,
+                48.89019636460144
+              ],
+              [
+                2.320002282113034,
+                48.890185674156534
+              ],
+              [
+                2.320003645826902,
+                48.89018568190084
+              ],
+              [
+                2.320009100682377,
+                48.890185712877894
+              ],
+              [
+                2.320014543793943,
+                48.89018664311491
+              ],
+              [
+                2.320018623191785,
+                48.890187565607555
+              ],
+              [
+                2.320024042816213,
+                48.890190294364515
+              ],
+              [
+                2.320026723269374,
+                48.89019390689338
+              ],
+              [
+                2.320028051752409,
+                48.890196612417974
+              ],
+              [
+                2.32002802826504,
+                48.89019841093835
+              ],
+              [
+                2.320027993033982,
+                48.89020110871891
+              ],
+              [
+                2.320034811605366,
+                48.89020114743881
+              ],
+              [
+                2.320040242975531,
+                48.89020297693483
+              ],
+              [
+                2.320044298888298,
+                48.890205697946946
+              ],
+              [
+                2.320046944113574,
+                48.89021200825584
+              ],
+              [
+                2.320046897140124,
+                48.89021560529655
+              ],
+              [
+                2.320046873653397,
+                48.8902174038169
+              ],
+              [
+                2.320044110993752,
+                48.89022008610977
+              ],
+              [
+                2.320013886134044,
+                48.89023700168468
+              ],
+              [
+                2.320019294019524,
+                48.8902406297019
+              ],
+              [
+                2.320023408653004,
+                48.89023885441388
+              ],
+              [
+                2.32012739317739,
+                48.89031768629271
+              ],
+              [
+                2.320131507813274,
+                48.8903159110011
+              ],
+              [
+                2.320142300134287,
+                48.89032496554431
+              ],
+              [
+                2.320149165688462,
+                48.8903214072173
+              ],
+              [
+                2.320147825454305,
+                48.89031960095447
+              ],
+              [
+                2.320168433852045,
+                48.890308026711146
+              ],
+              [
+                2.320181941871465,
+                48.890317995995744
+              ],
+              [
+                2.320199811086124,
+                48.89030730552257
+              ],
+              [
+                2.320209251440493,
+                48.89031545305763
+              ],
+              [
+                2.320403037949574,
+                48.890201439216504
+              ],
+              [
+                2.320388201416374,
+                48.890188764435194
+              ],
+              [
+                2.320419789840046,
+                48.890171856504615
+              ],
+              [
+                2.320403589597963,
+                48.89015917398531
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "FN4683VS6TE6",
+      "distance": 45.55811851,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.319470453187195,
+          48.89029473467444
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75117_1315_00041",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "41",
+          "street_rep": null,
+          "street": "Rue Brochant",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-7CN8-87G8-PE6R",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:53.899783+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000245204838",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:20:11.346724+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.319259187348292,
+                48.89027588126178
+              ],
+              [
+                2.319351026635357,
+                48.8903447521767
+              ],
+              [
+                2.319432097202889,
+                48.8902984479802
+              ],
+              [
+                2.319411853030176,
+                48.890282145035464
+              ],
+              [
+                2.319409113843171,
+                48.89028302879341
+              ],
+              [
+                2.319407761881259,
+                48.890282121782285
+              ],
+              [
+                2.319391279738615,
+                48.89029102136869
+              ],
+              [
+                2.319369671865464,
+                48.89027471066544
+              ],
+              [
+                2.319386154006636,
+                48.89026581108187
+              ],
+              [
+                2.319368602026633,
+                48.89025222141219
+              ],
+              [
+                2.319352108131387,
+                48.89026202025352
+              ],
+              [
+                2.319322412037566,
+                48.890238468950066
+              ],
+              [
+                2.319437869160809,
+                48.890169877038296
+              ],
+              [
+                2.319564836044826,
+                48.89026412859234
+              ],
+              [
+                2.319311925558604,
+                48.89041467739977
+              ],
+              [
+                2.319271413697141,
+                48.890383869989364
+              ],
+              [
+                2.319184958765284,
+                48.89032042559048
+              ],
+              [
+                2.319259187348292,
+                48.89027588126178
+              ]
+            ],
+            [
+              [
+                2.319221591009619,
+                48.890335023092554
+              ],
+              [
+                2.319235087097344,
+                48.890345891743706
+              ],
+              [
+                2.319244715423729,
+                48.89033965119473
+              ],
+              [
+                2.31923257129566,
+                48.89032968955767
+              ],
+              [
+                2.319221591009619,
+                48.890335023092554
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "BXDJ72EJK3QN",
+      "distance": 47.4333003,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.320265936663251,
+          48.88953101647927
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75117_6401_00046",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "46",
+          "street_rep": null,
+          "street": "Rue des Moines",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-GX4R-XLJ2-FVA2",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:55.963287+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000245204852",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T00:45:07.134720+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.320337205442153,
+                48.88970733501909
+              ],
+              [
+                2.320162295998491,
+                48.889524677965824
+              ],
+              [
+                2.320318579107341,
+                48.8894626122538
+              ],
+              [
+                2.32035017885105,
+                48.889444805069566
+              ],
+              [
+                2.320366378857867,
+                48.889457487604375
+              ],
+              [
+                2.320351296048987,
+                48.889463697287326
+              ],
+              [
+                2.320394441327506,
+                48.88950171392432
+              ],
+              [
+                2.320387388101009,
+                48.889519660440584
+              ],
+              [
+                2.32036270071137,
+                48.88953031224857
+              ],
+              [
+                2.320403153869088,
+                48.88956561561746
+              ],
+              [
+                2.320401778434312,
+                48.88956650713842
+              ],
+              [
+                2.320397734289811,
+                48.88956288687608
+              ],
+              [
+                2.320390857115359,
+                48.88956734448054
+              ],
+              [
+                2.320389528629527,
+                48.88956463895842
+              ],
+              [
+                2.320371694921514,
+                48.88957263168495
+              ],
+              [
+                2.320414793357696,
+                48.88961424535365
+              ],
+              [
+                2.320428535977079,
+                48.88960622940269
+              ],
+              [
+                2.320428571186981,
+                48.88960353162053
+              ],
+              [
+                2.32042591420969,
+                48.8895981205773
+              ],
+              [
+                2.320424562247847,
+                48.889597213577076
+              ],
+              [
+                2.320421870061055,
+                48.88959450031586
+              ],
+              [
+                2.32041916613775,
+                48.88959268631532
+              ],
+              [
+                2.320478168978309,
+                48.88956514201952
+              ],
+              [
+                2.320453868879961,
+                48.889546118241014
+              ],
+              [
+                2.320622835629683,
+                48.88945264765605
+              ],
+              [
+                2.320552604101133,
+                48.88940008816754
+              ],
+              [
+                2.320558117546389,
+                48.88939562281514
+              ],
+              [
+                2.320532465539974,
+                48.88937569205072
+              ],
+              [
+                2.320533887906524,
+                48.88937120348443
+              ],
+              [
+                2.320568203171272,
+                48.8893543109786
+              ],
+              [
+                2.320687046605306,
+                48.889444018681004
+              ],
+              [
+                2.320745134108003,
+                48.88948661659728
+              ],
+              [
+                2.320727277018397,
+                48.88949640789902
+              ],
+              [
+                2.320632501481563,
+                48.88954803120028
+              ],
+              [
+                2.320610893527931,
+                48.88953172070997
+              ],
+              [
+                2.320590297269618,
+                48.88954239577684
+              ],
+              [
+                2.320611905221228,
+                48.889558706270726
+              ],
+              [
+                2.320337205442153,
+                48.88970733501909
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "P2HNGY2CNWA3",
+      "distance": 47.60832501,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.320121857924819,
+          48.88938522156975
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75117_6401_00044",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "44",
+          "street_rep": null,
+          "street": "Rue des Moines",
+          "city_name": "Paris 17e Arrondissement",
+          "city_zipcode": "75017",
+          "city_insee_code": "75117"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-VGQP-VZLC-FS1B",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:58.708494+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000245204618",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:31:17.723782+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.320162295998491,
+                48.889524677965824
+              ],
+              [
+                2.319995440747982,
+                48.88935195896302
+              ],
+              [
+                2.320064024607751,
+                48.88932177129293
+              ],
+              [
+                2.320095565641458,
+                48.88930846047821
+              ],
+              [
+                2.320161386782108,
+                48.88928095504746
+              ],
+              [
+                2.320227360473607,
+                48.88924175918702
+              ],
+              [
+                2.32025032013675,
+                48.88925897675336
+              ],
+              [
+                2.320266825284586,
+                48.88924827851834
+              ],
+              [
+                2.320268188973943,
+                48.88924828625965
+              ],
+              [
+                2.3202695644026,
+                48.88924739473993
+              ],
+              [
+                2.320270939831209,
+                48.889246503220214
+              ],
+              [
+                2.320275042638348,
+                48.88924562718293
+              ],
+              [
+                2.320277770016927,
+                48.88924564266532
+              ],
+              [
+                2.320280485656396,
+                48.88924655740865
+              ],
+              [
+                2.320281837606623,
+                48.88924746441078
+              ],
+              [
+                2.320283189556896,
+                48.889248371412904
+              ],
+              [
+                2.320273737645195,
+                48.88924112313674
+              ],
+              [
+                2.320283365642815,
+                48.88923488249796
+              ],
+              [
+                2.320292817554724,
+                48.88924213077341
+              ],
+              [
+                2.320309310949879,
+                48.88923233179337
+              ],
+              [
+                2.320402501739068,
+                48.88930210896909
+              ],
+              [
+                2.32031456817162,
+                48.889351972204665
+              ],
+              [
+                2.320279123916846,
+                48.8893508716787
+              ],
+              [
+                2.320219720216589,
+                48.88930466874552
+              ],
+              [
+                2.320149761036616,
+                48.889335748023534
+              ],
+              [
+                2.320184712165395,
+                48.88937461754527
+              ],
+              [
+                2.320199794968338,
+                48.88936840788281
+              ],
+              [
+                2.320265735446518,
+                48.889436231790214
+              ],
+              [
+                2.320291809983302,
+                48.889423789220636
+              ],
+              [
+                2.320397565595431,
+                48.88936683253678
+              ],
+              [
+                2.320435373418253,
+                48.889395825594235
+              ],
+              [
+                2.32035017885105,
+                48.889444805069566
+              ],
+              [
+                2.320318579107341,
+                48.8894626122538
+              ],
+              [
+                2.320162295998491,
+                48.889524677965824
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    }
+  ]
+}

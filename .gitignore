@@ -4,7 +4,17 @@ __pycache__/
 .venv/
 backend/stde.db
 
+# Caches lourds et regenerables (scripts/)
+scripts/raw/pvgis/
+scripts/raw/pvgis_masques/
+scripts/raw/review/
+scripts/out/
+scripts/out_irradiance/
+scripts/out_masques/
+
 # Node / Next.js
 node_modules/
 .next/
 frontend/.env.local
+
+.vercel

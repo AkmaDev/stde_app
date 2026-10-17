@@ -1,0 +1,1375 @@
+{
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "rnb_id": "QTT3X9WPXS35",
+      "distance": 0.89363699,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.399891473629029,
+          48.8721157543006
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_9188_00012_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "12",
+          "street_rep": "b",
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9188_00012",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "12",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9188_00014_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "14",
+          "street_rep": "b",
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9188_00014",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "14",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-TFEQ-YVC3-VGU6",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:58.261272+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240763798",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:19:36.375771+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.399743347304611,
+                48.87216047020886
+              ],
+              [
+                2.399834979897255,
+                48.87201703619476
+              ],
+              [
+                2.400159823027952,
+                48.87210320192166
+              ],
+              [
+                2.400144537279458,
+                48.87212830667954
+              ],
+              [
+                2.400022176045701,
+                48.872098914726486
+              ],
+              [
+                2.399944476814883,
+                48.87221633802901
+              ],
+              [
+                2.399743347304611,
+                48.87216047020886
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "8VTJMAE3P1HN",
+      "distance": 15.06551974,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.400217516680511,
+          48.87154599028871
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_8603_00017_t",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "17",
+          "street_rep": "t",
+          "street": "Rue Saint-Fargeau",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9188_00010",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "10",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9188_00008",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "8",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9188_00006",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "6",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9188_00004",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "4",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9188_00002",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "2",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_8603_00015",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "15",
+          "street_rep": null,
+          "street": "Rue Saint-Fargeau",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_8603_00017_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "17",
+          "street_rep": "b",
+          "street": "Rue Saint-Fargeau",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_8603_00017",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "17",
+          "street_rep": null,
+          "street": "Rue Saint-Fargeau",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_8603_00015_t",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "15",
+          "street_rep": "t",
+          "street": "Rue Saint-Fargeau",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_8603_00015_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "15",
+          "street_rep": "b",
+          "street": "Rue Saint-Fargeau",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-XZH4-T9UU-MVZB",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:59.256691+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240763181",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:20:21.215507+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.400689804387115,
+                48.87130454952537
+              ],
+              [
+                2.400660669518762,
+                48.87134847105499
+              ],
+              [
+                2.400635665691913,
+                48.871388815922316
+              ],
+              [
+                2.400431884631755,
+                48.87132664058367
+              ],
+              [
+                2.400193059553976,
+                48.871703164655095
+              ],
+              [
+                2.400205287303569,
+                48.87170682326581
+              ],
+              [
+                2.400196931813104,
+                48.87172207008494
+              ],
+              [
+                2.40018334081892,
+                48.87171840464215
+              ],
+              [
+                2.400043063891672,
+                48.87194253524732
+              ],
+              [
+                2.399913959440919,
+                48.871906814036514
+              ],
+              [
+                2.400326370483554,
+                48.87125506455666
+              ],
+              [
+                2.400424222816111,
+                48.87128163546077
+              ],
+              [
+                2.400452036021218,
+                48.87123411002544
+              ],
+              [
+                2.400453419952038,
+                48.871232318287454
+              ],
+              [
+                2.40068708827236,
+                48.87130363659124
+              ],
+              [
+                2.400689804387115,
+                48.87130454952537
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "SNYJQGXFHZZH",
+      "distance": 17.12073434,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.400270316130116,
+          48.87223505683224
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_9188_00014",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "14",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-68FE-6N1A-GKFR",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:53.652677+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240763799",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:07:44.497743+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.399944476814883,
+                48.87221633802901
+              ],
+              [
+                2.400022176045701,
+                48.872098914726486
+              ],
+              [
+                2.400144537279458,
+                48.87212830667954
+              ],
+              [
+                2.400595719304512,
+                48.87225377563547
+              ],
+              [
+                2.400517979735477,
+                48.87237479642254
+              ],
+              [
+                2.399944476814883,
+                48.87221633802901
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "TFBGFJSP3ZTB",
+      "distance": 18.60096895,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.399795238340023,
+          48.87232171500372
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_9188_00016",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "16",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9188_00018",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "18",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-V89M-4CDM-9H1B",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:58.655080+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240763088",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:19:36.065100+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.399724013032138,
+                48.87218195727373
+              ],
+              [
+                2.39983817404251,
+                48.87221310708287
+              ],
+              [
+                2.399832627767931,
+                48.872221173282085
+              ],
+              [
+                2.39987339071459,
+                48.87223306900248
+              ],
+              [
+                2.399878936984122,
+                48.87222500280147
+              ],
+              [
+                2.399991724566732,
+                48.87225704491041
+              ],
+              [
+                2.399865347374166,
+                48.8724578621985
+              ],
+              [
+                2.399834085630133,
+                48.8724496114532
+              ],
+              [
+                2.399752538707931,
+                48.872427618540435
+              ],
+              [
+                2.399756721756999,
+                48.87241954551031
+              ],
+              [
+                2.399717301222886,
+                48.87240945515294
+              ],
+              [
+                2.399713128532463,
+                48.87241662889969
+              ],
+              [
+                2.399600320043908,
+                48.87238638509704
+              ],
+              [
+                2.399724013032138,
+                48.87218195727373
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "E2W5QAVS6PXW",
+      "distance": 21.93400531,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.39950792877151,
+          48.871834928383606
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_9188_00009",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "9",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9188_00011",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "11",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-GESA-3QZA-4LFY",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:55.852073+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240763797",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:31:34.458655+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.399393375585539,
+                48.871888914379504
+              ],
+              [
+                2.399374352360311,
+                48.871883422919204
+              ],
+              [
+                2.399414664163421,
+                48.87181617509915
+              ],
+              [
+                2.399478544960412,
+                48.87171487079297
+              ],
+              [
+                2.399534271988355,
+                48.87172953971362
+              ],
+              [
+                2.399618523479419,
+                48.871753345029646
+              ],
+              [
+                2.399732683487331,
+                48.87178449495149
+              ],
+              [
+                2.399695171158361,
+                48.87184546157657
+              ],
+              [
+                2.399619067852278,
+                48.87182439519065
+              ],
+              [
+                2.399549630539793,
+                48.87193466503244
+              ],
+              [
+                2.399512936906565,
+                48.871924588280315
+              ],
+              [
+                2.399393375585539,
+                48.871888914379504
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "3FF8FJ4AA31K",
+      "distance": 24.80370671,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.399326507627092,
+          48.87210617456388
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_9188_00015",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "15",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9188_00013",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "13",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9188_00017",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "17",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-X3J5-1XZ8-DW64",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:59.059237+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240762943",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:20:21.113977+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.399227554642109,
+                48.87231796404997
+              ],
+              [
+                2.399139212646878,
+                48.87229413794148
+              ],
+              [
+                2.399130887872077,
+                48.87230668683177
+              ],
+              [
+                2.399114580661113,
+                48.87230210830089
+              ],
+              [
+                2.399122926187329,
+                48.87228776084745
+              ],
+              [
+                2.399139243768365,
+                48.872291440095104
+              ],
+              [
+                2.399393375585539,
+                48.871888914379504
+              ],
+              [
+                2.399512936906565,
+                48.871924588280315
+              ],
+              [
+                2.399256089696289,
+                48.872326201271
+              ],
+              [
+                2.399227554642109,
+                48.87231796404997
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "HZM2W4XZSSQG",
+      "distance": 26.64334882,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.399880535969804,
+          48.87149051489304
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_9188_00005",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "5",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9188_00003",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "3",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9188_00007",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "7",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-FP39-D9LL-FLLB",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:55.699472+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240762931",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:30:42.116180+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.399753069957622,
+                48.871789993191506
+              ],
+              [
+                2.399732683487331,
+                48.87178449495149
+              ],
+              [
+                2.399618523479419,
+                48.871753345029646
+              ],
+              [
+                2.399633881927635,
+                48.87172194535203
+              ],
+              [
+                2.399673301925285,
+                48.871732035743136
+              ],
+              [
+                2.399705278325516,
+                48.87167823603325
+              ],
+              [
+                2.399589786424987,
+                48.87164438139617
+              ],
+              [
+                2.399630056304118,
+                48.87158073062001
+              ],
+              [
+                2.39974283197532,
+                48.871613672264864
+              ],
+              [
+                2.399876168812906,
+                48.871400299166076
+              ],
+              [
+                2.399766068169942,
+                48.871371867727206
+              ],
+              [
+                2.399804932943613,
+                48.87131180717235
+              ],
+              [
+                2.399921818558788,
+                48.87134297059743
+              ],
+              [
+                2.39997592728362,
+                48.871261402368944
+              ],
+              [
+                2.400069710473494,
+                48.871286154495685
+              ],
+              [
+                2.399753069957622,
+                48.871789993191506
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "MD9BK6BCKME5",
+      "distance": 35.98209905,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.399258548357807,
+          48.871809999437914
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_9188_00009",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "9",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-NUF3-WVXF-VX48",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:57.246528+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240763863",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:30:00.239010+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.399059127229987,
+                48.87179100797494
+              ],
+              [
+                2.399100729989471,
+                48.871730062077106
+              ],
+              [
+                2.399414664163421,
+                48.87181617509915
+              ],
+              [
+                2.399374352360311,
+                48.871883422919204
+              ],
+              [
+                2.399103969020026,
+                48.87180382377669
+              ],
+              [
+                2.399059127229987,
+                48.87179100797494
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "Q4NTQW1F7T5R",
+      "distance": 42.49600607,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.400588500823131,
+          48.871883669619535
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_8604_00010",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "10",
+          "street_rep": null,
+          "street": "Villa Saint-Fargeau",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_8604_00012",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "12",
+          "street_rep": null,
+          "street": "Villa Saint-Fargeau",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-8B71-2WQB-T99W",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:54.101693+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240765823",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:32:02.334702+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.400491060815705,
+                48.871752322292934
+              ],
+              [
+                2.400798160507955,
+                48.87184019611095
+              ],
+              [
+                2.400752314718686,
+                48.871914611356935
+              ],
+              [
+                2.400741439782512,
+                48.871911858910295
+              ],
+              [
+                2.400723407182891,
+                48.87193874866166
+              ],
+              [
+                2.400734282123727,
+                48.87194150110987
+              ],
+              [
+                2.400698175490534,
+                48.87199887773563
+              ],
+              [
+                2.400688446501062,
+                48.87201501704209
+              ],
+              [
+                2.400377256221945,
+                48.871927122469344
+              ],
+              [
+                2.400425829048335,
+                48.87185272102493
+              ],
+              [
+                2.400438067200703,
+                48.871855480328776
+              ],
+              [
+                2.400453363078714,
+                48.871829476244606
+              ],
+              [
+                2.400442488176111,
+                48.871826723770596
+              ],
+              [
+                2.400491060815705,
+                48.871752322292934
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "RYYXZ1JQDGNK",
+      "distance": 45.15634284,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.399415655774148,
+          48.871499292561644
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_7228_00138",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "138",
+          "street_rep": null,
+          "street": "Rue Pelleport",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-BFXT-GPCT-4ACL",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:54.787434+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240762942",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:31:34.095705+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.399630056304118,
+                48.87158073062001
+              ],
+              [
+                2.399589786424987,
+                48.87164438139617
+              ],
+              [
+                2.399587008115972,
+                48.87164886413348
+              ],
+              [
+                2.399262251738718,
+                48.871555502554834
+              ],
+              [
+                2.399369035705403,
+                48.87139865483464
+              ],
+              [
+                2.399560619230363,
+                48.871454475454
+              ],
+              [
+                2.399500963400779,
+                48.87154410966929
+              ],
+              [
+                2.399630056304118,
+                48.87158073062001
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "WY2C48TYA5AR",
+      "distance": 47.12207789,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.399842073501089,
+          48.87246628918005
+        ]
+      },
+      "addresses": [],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-MEDM-PKB8-G7QF",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:56.940413+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240763087",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:43:55.022161+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.399850061379667,
+                48.87248296691072
+              ],
+              [
+                2.399818799622988,
+                48.872474716161605
+              ],
+              [
+                2.399834085630133,
+                48.8724496114532
+              ],
+              [
+                2.399865347374166,
+                48.8724578621985
+              ],
+              [
+                2.399850061379667,
+                48.87248296691072
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "3C9KEY6HZT34",
+      "distance": 48.234351,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.399798230167037,
+          48.87248270715542
+        ]
+      },
+      "addresses": [],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-YYF3-696C-H1FR",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:59.465391+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240763086",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:29:25.823689+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.399760365922053,
+                48.87245823514707
+              ],
+              [
+                2.399818799622988,
+                48.872474716161605
+              ],
+              [
+                2.399850061379667,
+                48.87248296691072
+              ],
+              [
+                2.399834785732296,
+                48.8725071723384
+              ],
+              [
+                2.399802171063956,
+                48.872498015467855
+              ],
+              [
+                2.39974645350179,
+                48.872482447400124
+              ],
+              [
+                2.399760365922053,
+                48.87245823514707
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "WMSYEYX69314",
+      "distance": 48.76816506,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.39931814167092,
+          48.87237519846069
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_9188_00019",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "19",
+          "street_rep": null,
+          "street": "Rue du Télégraphe",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-2SCD-Q6G8-DVDY",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:52.902931+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240762944",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:45:04.644529+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.39926332541649,
+                48.8724080769903
+              ],
+              [
+                2.399244312387405,
+                48.87240168622989
+              ],
+              [
+                2.399259598650003,
+                48.87237658159317
+              ],
+              [
+                2.399245997179001,
+                48.872373815328196
+              ],
+              [
+                2.39925155393258,
+                48.87236484987521
+              ],
+              [
+                2.399266518660005,
+                48.8723676229813
+              ],
+              [
+                2.39927208578094,
+                48.87235775824523
+              ],
+              [
+                2.399213662756752,
+                48.87234037767999
+              ],
+              [
+                2.399227554642109,
+                48.87231796404997
+              ],
+              [
+                2.399256089696289,
+                48.872326201271
+              ],
+              [
+                2.399390627029705,
+                48.872363749103336
+              ],
+              [
+                2.399347567510988,
+                48.872432781764445
+              ],
+              [
+                2.39926332541649,
+                48.8724080769903
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    }
+  ]
+}

@@ -1,0 +1,2754 @@
+{
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "rnb_id": "P2EKA6D35CCQ",
+      "distance": 9.53037025,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.403455555469724,
+          48.86010691462762
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_9085_00001_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "1",
+          "street_rep": "b",
+          "street": "Rue Stendhal",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_0626_00117",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "117",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_0626_00117_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "117",
+          "street_rep": "b",
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9085_00001",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "1",
+          "street_rep": null,
+          "street": "Rue Stendhal",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-Z1ZW-LK43-9T9T",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:59.481582+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000000161234",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:07:08.663026+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.403278406895789,
+                48.8600271777393
+              ],
+              [
+                2.403243300174957,
+                48.859998223676705
+              ],
+              [
+                2.403238136851317,
+                48.85997301630121
+              ],
+              [
+                2.4033276442242,
+                48.85989342101042
+              ],
+              [
+                2.403627267078487,
+                48.8600334134966
+              ],
+              [
+                2.403600413910881,
+                48.860116918639704
+              ],
+              [
+                2.403528023736852,
+                48.86013004800442
+              ],
+              [
+                2.403446010575689,
+                48.860150324105135
+              ],
+              [
+                2.403372102901379,
+                48.86017693596611
+              ],
+              [
+                2.403110050479389,
+                48.86032671892837
+              ],
+              [
+                2.403096493162296,
+                48.86032035590203
+              ],
+              [
+                2.403002954977936,
+                48.86027582147287
+              ],
+              [
+                2.40302492692889,
+                48.86026154158314
+              ],
+              [
+                2.403003305339102,
+                48.86024524553695
+              ],
+              [
+                2.403028095898586,
+                48.860222885614334
+              ],
+              [
+                2.403036366283123,
+                48.86021483277737
+              ],
+              [
+                2.403090708767624,
+                48.860230392688095
+              ],
+              [
+                2.403229426834928,
+                48.86013845212324
+              ],
+              [
+                2.403291078382448,
+                48.86011087989404
+              ],
+              [
+                2.403323881594021,
+                48.860102949361206
+              ],
+              [
+                2.403325460814158,
+                48.86008407101648
+              ],
+              [
+                2.40335824340647,
+                48.860077939058854
+              ],
+              [
+                2.403382745385897,
+                48.86008075924714
+              ],
+              [
+                2.403471356918146,
+                48.86007940229926
+              ],
+              [
+                2.403482589903774,
+                48.86005067929219
+              ],
+              [
+                2.403353141811265,
+                48.86004733593552
+              ],
+              [
+                2.403278406895789,
+                48.8600271777393
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "HK9QSXCHES94",
+      "distance": 11.16762425,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.402972376570804,
+          48.85997572380759
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_0626_00115",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "115",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_0626_00109",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "109",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_0626_00113",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "113",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-GXBP-JLJQ-YETT",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:55.964573+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000228001188",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:22:19.172641+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.402827470914177,
+                48.86000784082141
+              ],
+              [
+                2.40295074574063,
+                48.86007410801598
+              ],
+              [
+                2.40311171361804,
+                48.85994360679376
+              ],
+              [
+                2.403102255504561,
+                48.85993636486734
+              ],
+              [
+                2.403127035572076,
+                48.85991490421051
+              ],
+              [
+                2.40307417997982,
+                48.85988855959986
+              ],
+              [
+                2.403052187592013,
+                48.85990463808851
+              ],
+              [
+                2.403003369321214,
+                48.85988281030506
+              ],
+              [
+                2.402827470914177,
+                48.86000784082141
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "NB725ZHZVPQ5",
+      "distance": 11.16762425,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.402833525596817,
+          48.86003908819599
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_0626_00115_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "115",
+          "street_rep": "b",
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_9085_00003",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "3",
+          "street_rep": null,
+          "street": "Rue Stendhal",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-NT91-26XW-UYM9",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:57.239184+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000228001419",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:44:58.744194+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.403189225725343,
+                48.85995928222743
+              ],
+              [
+                2.402950034652866,
+                48.860136159188436
+              ],
+              [
+                2.403056995866194,
+                48.860198747497506
+              ],
+              [
+                2.403036366283123,
+                48.86021483277737
+              ],
+              [
+                2.403028095898586,
+                48.860222885614334
+              ],
+              [
+                2.40290069057748,
+                48.86016019527642
+              ],
+              [
+                2.402915878730596,
+                48.860143183526006
+              ],
+              [
+                2.402822330710873,
+                48.86009954824091
+              ],
+              [
+                2.402808618867066,
+                48.860106674565884
+              ],
+              [
+                2.402735432582608,
+                48.86007033557056
+              ],
+              [
+                2.402827470914177,
+                48.86000784082141
+              ],
+              [
+                2.40295074574063,
+                48.86007410801598
+              ],
+              [
+                2.40311171361804,
+                48.85994360679376
+              ],
+              [
+                2.403102255504561,
+                48.85993636486734
+              ],
+              [
+                2.403127035572076,
+                48.85991490421051
+              ],
+              [
+                2.403189225725343,
+                48.85995928222743
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "71FAE78TJYE7",
+      "distance": 16.08888357,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.403478016455561,
+          48.85965664857106
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_0626_00108",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "108",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-ELMH-PC53-726F",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:55.470482+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240765098",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:31:58.090246+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.403337891896601,
+                48.85971270396423
+              ],
+              [
+                2.403469968563387,
+                48.85960544112292
+              ],
+              [
+                2.403507210265049,
+                48.85956695496195
+              ],
+              [
+                2.403602141415874,
+                48.859608797939416
+              ],
+              [
+                2.403496094494033,
+                48.85970449920271
+              ],
+              [
+                2.403434114025585,
+                48.85976084891361
+              ],
+              [
+                2.403337891896601,
+                48.85971270396423
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "X8MHGD4AW9W1",
+      "distance": 16.21821347,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.403269508502225,
+          48.85964536004272
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_0626_00106",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "106",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_3690_00030",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "30",
+          "street_rep": null,
+          "street": "Rue Florian",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-M9NU-Z7H6-LJKW",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:56.908479+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240764711",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:20:21.822330+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.403337891896601,
+                48.85971270396423
+              ],
+              [
+                2.403190208379273,
+                48.85963552328828
+              ],
+              [
+                2.403184973006953,
+                48.8596166109517
+              ],
+              [
+                2.403218043746929,
+                48.859585298831874
+              ],
+              [
+                2.403272231129602,
+                48.859614348060724
+              ],
+              [
+                2.403297972217442,
+                48.859627966576994
+              ],
+              [
+                2.403348091507123,
+                48.85965519679715
+              ],
+              [
+                2.40342795472319,
+                48.85958454676906
+              ],
+              [
+                2.403469968563387,
+                48.85960544112292
+              ],
+              [
+                2.403337891896601,
+                48.85971270396423
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "SRACRH8QSNJG",
+      "distance": 17.46671942,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.403526986537866,
+          48.85974640671184
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_0626_00110",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "110",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-UGZ5-A7TE-QEMJ",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:58.489473+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240764988",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:32:01.907102+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.403524925793293,
+                48.85980536943988
+              ],
+              [
+                2.403522220524023,
+                48.85980355726795
+              ],
+              [
+                2.403434114025585,
+                48.85976084891361
+              ],
+              [
+                2.403496094494033,
+                48.85970449920271
+              ],
+              [
+                2.403539440500386,
+                48.85972809820168
+              ],
+              [
+                2.403558737692655,
+                48.85970930815694
+              ],
+              [
+                2.403614308911016,
+                48.859736565435135
+              ],
+              [
+                2.403593638505218,
+                48.85975624798855
+              ],
+              [
+                2.403524925793293,
+                48.85980536943988
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "RR65T6VB3H5A",
+      "distance": 21.19154635,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.402490050338773,
+          48.86004234931251
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_x528_00001",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "1",
+          "street_rep": null,
+          "street": "Voie Fk/20",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_x528_00003",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "3",
+          "street_rep": null,
+          "street": "Voie Fk/20",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_0626_00109",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "109",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_0626_00111",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "111",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-X2US-R4VJ-U5AH",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:59.054037+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000228001422",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:31:27.791115+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.402834031215765,
+                48.859673317591955
+              ],
+              [
+                2.402552063443086,
+                48.85989584687841
+              ],
+              [
+                2.402414305482221,
+                48.860022865887345
+              ],
+              [
+                2.402389886104665,
+                48.86001285116159
+              ],
+              [
+                2.4023100311411,
+                48.860082601177325
+              ],
+              [
+                2.402326272909896,
+                48.8600925750773
+              ],
+              [
+                2.402260129674327,
+                48.86015519878537
+              ],
+              [
+                2.402238415506644,
+                48.86014699622982
+              ],
+              [
+                2.401996174470981,
+                48.8603517356937
+              ],
+              [
+                2.402184880789192,
+                48.86041743126072
+              ],
+              [
+                2.402253719384103,
+                48.8603575191009
+              ],
+              [
+                2.402398231436764,
+                48.86023593009922
+              ],
+              [
+                2.402386088748429,
+                48.860225077336956
+              ],
+              [
+                2.402483837372634,
+                48.86014012777906
+              ],
+              [
+                2.402508246514642,
+                48.86015104177676
+              ],
+              [
+                2.402637527950695,
+                48.86005006133332
+              ],
+              [
+                2.402610444513641,
+                48.8600346372917
+              ],
+              [
+                2.402764660310141,
+                48.85989870675795
+              ],
+              [
+                2.402797164529813,
+                48.85991685585052
+              ],
+              [
+                2.40294296488215,
+                48.85980156799245
+              ],
+              [
+                2.402911813307063,
+                48.85978432503048
+              ],
+              [
+                2.402925576581836,
+                48.85977270222852
+              ],
+              [
+                2.402875508934151,
+                48.8597409753711
+              ],
+              [
+                2.40290855932652,
+                48.85971146192567
+              ],
+              [
+                2.402834031215765,
+                48.859673317591955
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "TR7ANE2FNG3E",
+      "distance": 21.75107079,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.403597582959285,
+          48.85977512496747
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_0626_00112",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "112",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-UH1D-U6B1-TR13",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:58.489784+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240764982",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:30:42.469002+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.4036034301555,
+                48.85985342593487
+              ],
+              [
+                2.403520795819456,
+                48.859808946230494
+              ],
+              [
+                2.403524925793293,
+                48.85980536943988
+              ],
+              [
+                2.403593638505218,
+                48.85975624798855
+              ],
+              [
+                2.403614308911016,
+                48.859736565435135
+              ],
+              [
+                2.403657002309931,
+                48.859698106401105
+              ],
+              [
+                2.403677322707126,
+                48.85970899978924
+              ],
+              [
+                2.403611233053168,
+                48.85976712780227
+              ],
+              [
+                2.403649189204915,
+                48.85978530383474
+              ],
+              [
+                2.403658822353604,
+                48.85977725774346
+              ],
+              [
+                2.403653555916697,
+                48.859761043307856
+              ],
+              [
+                2.403700338091249,
+                48.859722604634655
+              ],
+              [
+                2.40373150018246,
+                48.8597389480996
+              ],
+              [
+                2.403742331568249,
+                48.859745297475726
+              ],
+              [
+                2.403705213423118,
+                48.85977299219148
+              ],
+              [
+                2.4036034301555,
+                48.85985342593487
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "RFMX54SWVKWY",
+      "distance": 27.58465297,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.403705879640522,
+          48.85981320906318
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_0626_00114",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "114",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00018",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "18",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_0626_00114_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "114",
+          "street_rep": "b",
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00016",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "16",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-L1J6-7HML-ZXXW",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:56.633977+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240764980",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:45:04.976340+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.403822759241525,
+                48.85986351223755
+              ],
+              [
+                2.403738920543768,
+                48.859924249920596
+              ],
+              [
+                2.4036034301555,
+                48.85985342593487
+              ],
+              [
+                2.403705213423118,
+                48.85977299219148
+              ],
+              [
+                2.403822759241525,
+                48.85986351223755
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "W5Y96EG7A7Q9",
+      "distance": 29.22285672,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.403666539018573,
+          48.8597349725856
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_0626_00112",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "112",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-AS5T-L9SX-TD95",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:54.632375+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240764986",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:18:43.161399+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.403760214307587,
+                48.859730997071594
+              ],
+              [
+                2.403670785981896,
+                48.85968468492703
+              ],
+              [
+                2.403657002309931,
+                48.859698106401105
+              ],
+              [
+                2.403677322707126,
+                48.85970899978924
+              ],
+              [
+                2.403611233053168,
+                48.85976712780227
+              ],
+              [
+                2.403649189204915,
+                48.85978530383474
+              ],
+              [
+                2.403658822353604,
+                48.85977725774346
+              ],
+              [
+                2.403653555916697,
+                48.859761043307856
+              ],
+              [
+                2.403700338091249,
+                48.859722604634655
+              ],
+              [
+                2.40373150018246,
+                48.8597389480996
+              ],
+              [
+                2.403742331568249,
+                48.859745297475726
+              ],
+              [
+                2.403760214307587,
+                48.859730997071594
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "NKPFHKJS7ZCZ",
+      "distance": 30.16161426,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.403130007103119,
+          48.85950083867412
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_3690_00023",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "23",
+          "street_rep": null,
+          "street": "Rue Florian",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_0626_00104",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "104",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-R5FD-8ZFV-BS7Q",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:57.754059+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240764703",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:42:35.072896+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.403058249020466,
+                48.859494567419404
+              ],
+              [
+                2.403093053589548,
+                48.859430887585
+              ],
+              [
+                2.403101323838328,
+                48.8594228347378
+              ],
+              [
+                2.40313384848304,
+                48.8594391851609
+              ],
+              [
+                2.403174499166824,
+                48.859460072823474
+              ],
+              [
+                2.403223286210861,
+                48.859484598424075
+              ],
+              [
+                2.403162637726785,
+                48.85954365268079
+              ],
+              [
+                2.403154491092154,
+                48.85954091401746
+              ],
+              [
+                2.403107708678037,
+                48.859579352483564
+              ],
+              [
+                2.40301419242323,
+                48.85953301944779
+              ],
+              [
+                2.403051331372229,
+                48.85950352635467
+              ],
+              [
+                2.403055481961458,
+                48.85949815099357
+              ],
+              [
+                2.403058249020466,
+                48.859494567419404
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "KMJ86P64PNT7",
+      "distance": 38.63092069,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.403826158497365,
+          48.859893881079074
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_0626_00116",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "116",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-QLB5-JKY4-5P9Q",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:57.634236+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240764979",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:32:01.905322+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.403920200986442,
+                48.8599242536756
+              ],
+              [
+                2.403825623471848,
+                48.85997054842452
+              ],
+              [
+                2.403738920543768,
+                48.859924249920596
+              ],
+              [
+                2.403822759241525,
+                48.85986351223755
+              ],
+              [
+                2.403920200986442,
+                48.8599242536756
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "KQF4HRGN2VE5",
+      "distance": 38.90518536,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.403284824888263,
+          48.85939256022492
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_3690_00019_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "19",
+          "street_rep": "b",
+          "street": "Rue Florian",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_3690_00021",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "21",
+          "street_rep": null,
+          "street": "Rue Florian",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-9MW2-KTTB-VHJD",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:54.388592+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240764704",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:07:44.814751+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.403234138083041,
+                48.85948914926189
+              ],
+              [
+                2.403223286210861,
+                48.859484598424075
+              ],
+              [
+                2.403174499166824,
+                48.859460072823474
+              ],
+              [
+                2.403204792467394,
+                48.859433243572894
+              ],
+              [
+                2.403179030897037,
+                48.85942142362003
+              ],
+              [
+                2.403218947016336,
+                48.85938744760163
+              ],
+              [
+                2.403246040597485,
+                48.85940197222158
+              ],
+              [
+                2.403313462216304,
+                48.85934654906583
+              ],
+              [
+                2.40328365310907,
+                48.85933111157532
+              ],
+              [
+                2.403315329793966,
+                48.859302490503616
+              ],
+              [
+                2.403380420280051,
+                48.85933159405592
+              ],
+              [
+                2.403388556595924,
+                48.85933523199739
+              ],
+              [
+                2.403359605768857,
+                48.859363866678045
+              ],
+              [
+                2.403335196817294,
+                48.85935295284625
+              ],
+              [
+                2.403307639768197,
+                48.8593788964304
+              ],
+              [
+                2.40331983394679,
+                48.85938525264259
+              ],
+              [
+                2.403299163569125,
+                48.859404935151375
+              ],
+              [
+                2.403285616768488,
+                48.85939767284821
+              ],
+              [
+                2.403270583452768,
+                48.85940119526276
+              ],
+              [
+                2.40329905027503,
+                48.8594148273738
+              ],
+              [
+                2.403281116018745,
+                48.85943362417773
+              ],
+              [
+                2.403286536801971,
+                48.85943634924073
+              ],
+              [
+                2.403285163581621,
+                48.859437241737616
+              ],
+              [
+                2.403234138083041,
+                48.85948914926189
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "65TPC1NK73Q3",
+      "distance": 40.23967467,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.402975936212309,
+          48.85937635021326
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_0626_00102_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "102",
+          "street_rep": "b",
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-1SD5-9MJD-2ZDQ",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:52.682249+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240764702",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:18:06.323926+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.402910914439009,
+                48.85926809694998
+              ],
+              [
+                2.402902623572802,
+                48.8592779483712
+              ],
+              [
+                2.402880518016476,
+                48.85930391906019
+              ],
+              [
+                2.402862882549659,
+                48.8592966363065
+              ],
+              [
+                2.402849067850603,
+                48.8593127555712
+              ],
+              [
+                2.402771713624773,
+                48.859402303985306
+              ],
+              [
+                2.402842183462231,
+                48.85943773008533
+              ],
+              [
+                2.402879373974214,
+                48.85940374057848
+              ],
+              [
+                2.40288073689395,
+                48.85940374737914
+              ],
+              [
+                2.403006715592763,
+                48.85947182673912
+              ],
+              [
+                2.40301220849661,
+                48.859468256764316
+              ],
+              [
+                2.403058249020466,
+                48.859494567419404
+              ],
+              [
+                2.403093053589548,
+                48.859430887585
+              ],
+              [
+                2.403101323838328,
+                48.8594228347378
+              ],
+              [
+                2.40313023363061,
+                48.85939779729294
+              ],
+              [
+                2.403138493566161,
+                48.85939064373586
+              ],
+              [
+                2.403176984960407,
+                48.859362056690664
+              ],
+              [
+                2.403088972219214,
+                48.85931125442809
+              ],
+              [
+                2.403029323283544,
+                48.859283077205696
+              ],
+              [
+                2.403003489695476,
+                48.85927755226468
+              ],
+              [
+                2.402962849527892,
+                48.859255765247546
+              ],
+              [
+                2.402937098405853,
+                48.859243045947665
+              ],
+              [
+                2.402910914439009,
+                48.85926809694998
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "2NRZ7ESPTZRR",
+      "distance": 40.75633244,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.402801274376226,
+          48.86018725783471
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_9085_00003",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "3",
+          "street_rep": null,
+          "street": "Rue Stendhal",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_x528_00002",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "2",
+          "street_rep": null,
+          "street": "Voie Fk/20",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-M3T6-KFDE-94X9",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:56.868527+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000228001425",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:21:47.148181+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.402655907936245,
+                48.86011130845924
+              ],
+              [
+                2.402684374985668,
+                48.86012494070775
+              ],
+              [
+                2.402617023870086,
+                48.86017406842433
+              ],
+              [
+                2.402676694223574,
+                48.8602004472451
+              ],
+              [
+                2.402658841957728,
+                48.86021204960453
+              ],
+              [
+                2.402755074690452,
+                48.86025929578601
+              ],
+              [
+                2.402767423639835,
+                48.86025216266624
+              ],
+              [
+                2.402869128931894,
+                48.86029763737751
+              ],
+              [
+                2.402912526679313,
+                48.86031674013006
+              ],
+              [
+                2.402977172426372,
+                48.86026580007
+              ],
+              [
+                2.403002954977936,
+                48.86027582147287
+              ],
+              [
+                2.40302492692889,
+                48.86026154158314
+              ],
+              [
+                2.403003305339102,
+                48.86024524553695
+              ],
+              [
+                2.403028095898586,
+                48.860222885614334
+              ],
+              [
+                2.40290069057748,
+                48.86016019527642
+              ],
+              [
+                2.402915878730596,
+                48.860143183526006
+              ],
+              [
+                2.402822330710873,
+                48.86009954824091
+              ],
+              [
+                2.402808618867066,
+                48.860106674565884
+              ],
+              [
+                2.402735432582608,
+                48.86007033557056
+              ],
+              [
+                2.402717817495902,
+                48.860061254215786
+              ],
+              [
+                2.402655907936245,
+                48.86011130845924
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "JAGJHH5K1VAA",
+      "distance": 42.30952448,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.403169378053683,
+          48.859436214366895
+        ]
+      },
+      "addresses": [],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-VYTG-UZ9R-2PE8",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:58.807840+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240764706",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:18:43.413522+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.403174499166824,
+                48.859460072823474
+              ],
+              [
+                2.40313384848304,
+                48.8594391851609
+              ],
+              [
+                2.403164131490604,
+                48.859413255213035
+              ],
+              [
+                2.403179030897037,
+                48.85942142362003
+              ],
+              [
+                2.403204792467394,
+                48.859433243572894
+              ],
+              [
+                2.403174499166824,
+                48.859460072823474
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "189NWRAVHAWP",
+      "distance": 43.80395317,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.404481993831347,
+          48.85959978640815
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_8503_00012",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "12",
+          "street_rep": null,
+          "street": "Rue Saint-Blaise",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_8503_00018",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "18",
+          "street_rep": null,
+          "street": "Rue Saint-Blaise",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_8503_00016",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "16",
+          "street_rep": null,
+          "street": "Rue Saint-Blaise",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_8503_00014",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "14",
+          "street_rep": null,
+          "street": "Rue Saint-Blaise",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00004",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "4",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00006",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "6",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00008",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "8",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00010",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "10",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00012",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "12",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00014",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "14",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_8503_00010",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "10",
+          "street_rep": null,
+          "street": "Rue Saint-Blaise",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-D2LR-16TP-EL9F",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:55.131470+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240764984",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:21:53.447631+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.404194196614878,
+                48.85980240803095
+              ],
+              [
+                2.404259339631304,
+                48.85982701462864
+              ],
+              [
+                2.404280081791959,
+                48.85980103691251
+              ],
+              [
+                2.404313969973424,
+                48.859817393794
+              ],
+              [
+                2.404396568266765,
+                48.85974585740569
+              ],
+              [
+                2.404391147393278,
+                48.859743132393746
+              ],
+              [
+                2.404539864867682,
+                48.859610769574324
+              ],
+              [
+                2.40455476454628,
+                48.85961893780859
+              ],
+              [
+                2.404752498206157,
+                48.85972964148171
+              ],
+              [
+                2.404802046491067,
+                48.85968761876396
+              ],
+              [
+                2.404877767647242,
+                48.859621443898604
+              ],
+              [
+                2.404931455858624,
+                48.85957494499204
+              ],
+              [
+                2.404832547935009,
+                48.85952319050981
+              ],
+              [
+                2.404759614359608,
+                48.859583983153335
+              ],
+              [
+                2.404748772608908,
+                48.859578533161304
+              ],
+              [
+                2.404718500568935,
+                48.859603564213394
+              ],
+              [
+                2.404702227668795,
+                48.85959628851243
+              ],
+              [
+                2.40467472255051,
+                48.859617735941214
+              ],
+              [
+                2.404613730035171,
+                48.85958775415026
+              ],
+              [
+                2.404602980791876,
+                48.85957421050873
+              ],
+              [
+                2.404715870850089,
+                48.859475844273184
+              ],
+              [
+                2.404618285142462,
+                48.85942769356119
+              ],
+              [
+                2.404632047942346,
+                48.85941607055924
+              ],
+              [
+                2.404575154723559,
+                48.85938520979213
+              ],
+              [
+                2.404535249768506,
+                48.85941828696992
+              ],
+              [
+                2.404428236981826,
+                48.859360196403486
+              ],
+              [
+                2.404356604395938,
+                48.85942639135156
+              ],
+              [
+                2.404387776796522,
+                48.85944183535697
+              ],
+              [
+                2.404368490283321,
+                48.85945972624691
+              ],
+              [
+                2.40439289950135,
+                48.859470639866906
+              ],
+              [
+                2.404433550714427,
+                48.859491527101184
+              ],
+              [
+                2.404429420827845,
+                48.85949510392416
+              ],
+              [
+                2.404434471601711,
+                48.8595302034816
+              ],
+              [
+                2.404411086020402,
+                48.85954897332101
+              ],
+              [
+                2.404393470817899,
+                48.859539892208616
+              ],
+              [
+                2.404298462567093,
+                48.859623957648424
+              ],
+              [
+                2.404316088063412,
+                48.85963213948123
+              ],
+              [
+                2.404267902366302,
+                48.85967416878473
+              ],
+              [
+                2.40424078779222,
+                48.85966144298533
+              ],
+              [
+                2.404120145583235,
+                48.859603284303866
+              ],
+              [
+                2.404099506278477,
+                48.85962026906847
+              ],
+              [
+                2.404047715107494,
+                48.85962001116042
+              ],
+              [
+                2.403994416986447,
+                48.85963233654169
+              ],
+              [
+                2.4039628022024,
+                48.85965556202781
+              ],
+              [
+                2.403945197330353,
+                48.859645581557494
+              ],
+              [
+                2.403813059796224,
+                48.8597582406757
+              ],
+              [
+                2.403894341660319,
+                48.85980181409854
+              ],
+              [
+                2.403908001830243,
+                48.85979918411065
+              ],
+              [
+                2.403911967153344,
+                48.85980999598958
+              ],
+              [
+                2.403972938949183,
+                48.85984177671747
+              ],
+              [
+                2.404077529770863,
+                48.859754161891125
+              ],
+              [
+                2.404092521990528,
+                48.85975423654728
+              ],
+              [
+                2.404134495093606,
+                48.85977872783552
+              ],
+              [
+                2.404179523195884,
+                48.85977445531329
+              ],
+              [
+                2.404186060169797,
+                48.85979877014576
+              ],
+              [
+                2.404179276371647,
+                48.859796038338565
+              ],
+              [
+                2.404169602161798,
+                48.85980768164242
+              ],
+              [
+                2.404194196614878,
+                48.85980240803095
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "5ATSTRH2BK1R",
+      "distance": 45.67285451,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.403583141427289,
+          48.85942583763226
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_7414_00009",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "9",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00017",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "17",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00015_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "15",
+          "street_rep": "b",
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00015",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "15",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00013",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "13",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_3690_00028",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "28",
+          "street_rep": null,
+          "street": "Rue Florian",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00003",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "3",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00005",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "5",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00007",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "7",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_7414_00011",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "11",
+          "street_rep": null,
+          "street": "Rue Pierre Bonnard",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-K3D1-713B-YGJW",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:56.427712+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240765025",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:42:26.133239+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.404401698235489,
+                48.85929711022242
+              ],
+              [
+                2.404278371989397,
+                48.85923534094196
+              ],
+              [
+                2.404242576276135,
+                48.85926663979443
+              ],
+              [
+                2.4041788791579,
+                48.85923484561575
+              ],
+              [
+                2.404162349335092,
+                48.85925005216803
+              ],
+              [
+                2.404080888132978,
+                48.85934137966137
+              ],
+              [
+                2.403998063724643,
+                48.85943270030385
+              ],
+              [
+                2.403927690528589,
+                48.85950789470808
+              ],
+              [
+                2.403724271065298,
+                48.85941784622472
+              ],
+              [
+                2.403655122400996,
+                48.85938602460733
+              ],
+              [
+                2.403508658115486,
+                48.85932144119625
+              ],
+              [
+                2.403409405612468,
+                48.859418974960676
+              ],
+              [
+                2.403532772444792,
+                48.85947714795477
+              ],
+              [
+                2.403536892096133,
+                48.859474470455595
+              ],
+              [
+                2.403593825974982,
+                48.85950173454225
+              ],
+              [
+                2.403591058952429,
+                48.85950531812876
+              ],
+              [
+                2.403771370552393,
+                48.85958985563822
+              ],
+              [
+                2.403779630430361,
+                48.85958270203813
+              ],
+              [
+                2.403797255831247,
+                48.85959088394769
+              ],
+              [
+                2.403797266122148,
+                48.85958998465485
+              ],
+              [
+                2.403848779431735,
+                48.859614523577946
+              ],
+              [
+                2.403943068204851,
+                48.85959340899608
+              ],
+              [
+                2.403956728317674,
+                48.85959077900213
+              ],
+              [
+                2.403966381958862,
+                48.859580934298954
+              ],
+              [
+                2.403936551947089,
+                48.85956729556009
+              ],
+              [
+                2.403973752125461,
+                48.85953240642422
+              ],
+              [
+                2.404024715207826,
+                48.859485894344324
+              ],
+              [
+                2.404118350443389,
+                48.8594027216179
+              ],
+              [
+                2.404162416400108,
+                48.85936336988546
+              ],
+              [
+                2.404151585042523,
+                48.85935702054517
+              ],
+              [
+                2.404170861307785,
+                48.8593400289816
+              ],
+              [
+                2.40426301532533,
+                48.859386354336685
+              ],
+              [
+                2.404265772012574,
+                48.8593836700273
+              ],
+              [
+                2.4042901708911,
+                48.859395482962036
+              ],
+              [
+                2.40438515817726,
+                48.85931321609775
+              ],
+              [
+                2.404404413789416,
+                48.85929802308217
+              ],
+              [
+                2.404401698235489,
+                48.85929711022242
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "K1E3MF9WSMZR",
+      "distance": 46.170957,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.404123830270509,
+          48.859929545992884
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_0626_00118",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "118",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        },
+        {
+          "id": "75120_0626_00120",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "120",
+          "street_rep": null,
+          "street": "Rue de Bagnolet",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-RFGG-Z1CD-1ZSF",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:57.819242+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240764981",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:19:36.836502+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.404122475822468,
+                48.85999540985503
+              ],
+              [
+                2.404108640756612,
+                48.86001332784002
+              ],
+              [
+                2.404101702648653,
+                48.86002408541686
+              ],
+              [
+                2.404076727493514,
+                48.860062632830754
+              ],
+              [
+                2.403950272704387,
+                48.86003592208908
+              ],
+              [
+                2.403825623471848,
+                48.85997054842452
+              ],
+              [
+                2.403920200986442,
+                48.8599242536756
+              ],
+              [
+                2.403956784138261,
+                48.85994332211168
+              ],
+              [
+                2.403978704248388,
+                48.85993353850546
+              ],
+              [
+                2.403990929501543,
+                48.859937196768364
+              ],
+              [
+                2.40400060377537,
+                48.85992555348031
+              ],
+              [
+                2.404010164884686,
+                48.859923802409924
+              ],
+              [
+                2.404061750629441,
+                48.85994204618595
+              ],
+              [
+                2.404115686750615,
+                48.85987396463573
+              ],
+              [
+                2.404169602161798,
+                48.85980768164242
+              ],
+              [
+                2.404194196614878,
+                48.85980240803095
+              ],
+              [
+                2.404259339631304,
+                48.85982701462864
+              ],
+              [
+                2.404122475822468,
+                48.85999540985503
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "Z2KZ2CVNSKHT",
+      "distance": 48.61529802,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.403265510217356,
+          48.859366998333726
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75120_3690_00021",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "21",
+          "street_rep": null,
+          "street": "Rue Florian",
+          "city_name": "Paris 20e Arrondissement",
+          "city_zipcode": "75020",
+          "city_insee_code": "75120"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-KPY4-FTN8-Y2QB",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:56.560158+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240764705",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:20:21.818630+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.403246040597485,
+                48.85940197222158
+              ],
+              [
+                2.403218947016336,
+                48.85938744760163
+              ],
+              [
+                2.40328365310907,
+                48.85933111157532
+              ],
+              [
+                2.403313462216304,
+                48.85934654906583
+              ],
+              [
+                2.403246040597485,
+                48.85940197222158
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    }
+  ]
+}

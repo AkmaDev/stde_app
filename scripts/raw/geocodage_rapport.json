@@ -1,0 +1,200 @@
+[
+ {
+  "id": 2,
+  "nom": "Buffon",
+  "adresse": "15B Rue Buffon, 75005 Paris",
+  "stocke": [
+   48.842547,
+   2.361868
+  ],
+  "ban": [
+   48.842547,
+   2.361868
+  ],
+  "ban_label": "15B Rue Buffon 75005 Paris",
+  "ban_score": 0.972,
+  "ban_type": "housenumber",
+  "fiable": true,
+  "ecart_m": 0.0
+ },
+ {
+  "id": 7,
+  "nom": "Oscar Wilde",
+  "adresse": "12 Rue du Télégraphe, 75020 Paris",
+  "stocke": [
+   48.872026,
+   2.399816
+  ],
+  "ban": [
+   48.872026,
+   2.399816
+  ],
+  "ban_label": "12 Rue du Télégraphe 75020 Paris",
+  "ban_score": 0.977,
+  "ban_type": "housenumber",
+  "fiable": true,
+  "ecart_m": 0.0
+ },
+ {
+  "id": 9,
+  "nom": "Hélène Berr",
+  "adresse": "70 Rue de Picpus, 75012 Paris",
+  "stocke": [
+   48.842541,
+   2.397477
+  ],
+  "ban": [
+   48.842541,
+   2.397477
+  ],
+  "ban_label": "70 Rue de Picpus 75012 Paris",
+  "ban_score": 0.982,
+  "ban_type": "housenumber",
+  "fiable": true,
+  "ecart_m": 0.0
+ },
+ {
+  "id": 11,
+  "nom": "François Villon",
+  "adresse": "81 boulevard de la Villette, 75010 Paris",
+  "stocke": [
+   48.877205,
+   2.370797
+  ],
+  "ban": [
+   48.877205,
+   2.370797
+  ],
+  "ban_label": "81 Boulevard de la Villette 75010 Paris",
+  "ban_score": 0.975,
+  "ban_type": "housenumber",
+  "fiable": true,
+  "ecart_m": 0.0
+ },
+ {
+  "id": 12,
+  "nom": "Gutenberg",
+  "adresse": "8 rue de la Montagne d'Aulas, 75015 Paris",
+  "stocke": [
+   48.840208,
+   2.278706
+  ],
+  "ban": [
+   48.840208,
+   2.278706
+  ],
+  "ban_label": "8 Rue de la Montagne d'Aulas 75015 Paris",
+  "ban_score": 0.974,
+  "ban_type": "housenumber",
+  "fiable": true,
+  "ecart_m": 0.0
+ },
+ {
+  "id": 13,
+  "nom": "Colette Vivier",
+  "adresse": "6 rue Fourneyron, 75017 Paris",
+  "stocke": [
+   48.889783,
+   2.319643
+  ],
+  "ban": [
+   48.889783,
+   2.319643
+  ],
+  "ban_label": "6 Rue Fourneyron 75017 Paris",
+  "ban_score": 0.969,
+  "ban_type": "housenumber",
+  "fiable": true,
+  "ecart_m": 0.0
+ },
+ {
+  "id": 14,
+  "nom": "Toni Morrison",
+  "adresse": "20 bis avenue Parmentier, 75011 Paris",
+  "stocke": [
+   48.864171,
+   2.375455
+  ],
+  "ban": [
+   48.864171,
+   2.375455
+  ],
+  "ban_label": "Avenue Parmentier 75011 Paris",
+  "ban_score": 0.726,
+  "ban_type": "street",
+  "fiable": false,
+  "ecart_m": 0.0
+ },
+ {
+  "id": 15,
+  "nom": "Claude Lévi-Strauss",
+  "adresse": "41 avenue de Flandre, 75019 Paris",
+  "stocke": [
+   48.886554,
+   2.371213
+  ],
+  "ban": [
+   48.886554,
+   2.371213
+  ],
+  "ban_label": "41 Avenue de Flandre 75019 Paris",
+  "ban_score": 0.983,
+  "ban_type": "housenumber",
+  "fiable": true,
+  "ecart_m": 0.0
+ },
+ {
+  "id": 16,
+  "nom": "Jean-Pierre Melville",
+  "adresse": "79 rue Nationale, 75013 Paris",
+  "stocke": [
+   48.826787,
+   2.36644
+  ],
+  "ban": [
+   48.826787,
+   2.36644
+  ],
+  "ban_label": "79 Rue Nationale 75013 Paris",
+  "ban_score": 0.983,
+  "ban_type": "housenumber",
+  "fiable": true,
+  "ecart_m": 0.0
+ },
+ {
+  "id": 17,
+  "nom": "Marguerite Duras",
+  "adresse": "115 rue de Bagnolet, 75020 Paris",
+  "stocke": [
+   48.859839,
+   2.403227
+  ],
+  "ban": [
+   48.859839,
+   2.403227
+  ],
+  "ban_label": "115 Rue de Bagnolet 75020 Paris",
+  "ban_score": 0.983,
+  "ban_type": "housenumber",
+  "fiable": true,
+  "ecart_m": 0.0
+ },
+ {
+  "id": 18,
+  "nom": "Mohammed Arkoun",
+  "adresse": "74 rue Mouffetard, 75005 Paris",
+  "stocke": [
+   48.842494,
+   2.349674
+  ],
+  "ban": [
+   48.842494,
+   2.349674
+  ],
+  "ban_label": "74 Rue Mouffetard 75005 Paris",
+  "ban_score": 0.976,
+  "ban_type": "housenumber",
+  "fiable": true,
+  "ecart_m": 0.0
+ }
+]

@@ -1,0 +1,2227 @@
+{
+  "displayFieldName": "B_IGH",
+  "fieldAliases": {
+    "OBJECTID": "objectid",
+    "n_sq_eb": "Identifiant séquentiel de l’emprise bâtie",
+    "b_igh": "Indicateur d’immeuble IGH",
+    "b_er": "Indicateur d’établissement répertorié",
+    "b_ee": "Indicateur d'emprise d'équipement",
+    "an_const": "Année de construction",
+    "an_rehab": "Année de réhabilitation",
+    "c_perconst": "Période de construction",
+    "b_dalle": "Indicateur de dalle, cours couvertes ou rez-de-chaussée",
+    "b_horspu": "Indicateur d’emprise hors parcelle urbaine",
+    "h_moy": "Hauteur moyenne de l'emprise bâtie (m)",
+    "h_med": "Hauteur médiane de l'emprise bâtie (m)",
+    "h_min": "Hauteur minimale de l'emprise bâtie (m)",
+    "h_max": "Hauteur maximale de l'emprise bâtie (m)",
+    "m2_tuile": "Occupation de toiture en tuiles (m²)",
+    "n_sq_ar": "Identifiant de l'arrondissement",
+    "n_sq_pc": "Identifiant de la parcelle cadastrale",
+    "n_sq_pu": "Identifiant de la parcelle urbaine",
+    "m2_e_70_80": "Surface d'ensoleillement comprise entre 700 et 800 KWh/m²/an",
+    "m2_e_80_90": "Surface d'ensoleillement comprise entre 800 et 900 KWh/m²/an",
+    "m2_e_tot": "Surface totale d'ensoleillement (m²)",
+    "c_source": "C_SOURCE",
+    "created_user": "created_user",
+    "created_date": "created_date",
+    "last_edited_user": "last_edited_user",
+    "last_edited_date": "last_edited_date",
+    "c_morpho": "c_morpho",
+    "al_med_mne": "Altidude médiane MNE de l'emprise\nAltitude médiane MNE de l'emprise \n \n[‎16/‎07/‎2019 09:49]  BOUDEAU Marcelin:  \nAltitude médiane MNE de l'emprise \n \n",
+    "al_med_mnt": "Altidude médiane MNT de l'emprise",
+    "Shape_Area": "st_area(shape)",
+    "Shape_Length": "st_length(shape)",
+    "c_tissu": "c_tissu",
+    "an_surelevation": "Année de surélévation",
+    "b_terrasse": "Présence de terrasse (oui/non)",
+    "b_terrasse_veg_100m2": "Présence de terrasse végétale >100m²",
+    "m2_mineral": "Occupation de toiture en minéral (m²)",
+    "m2_vegetal": "Occupation de toiture en végétal (m²)",
+    "c_toiture_mat": "c_toiture_mat",
+    "m2_penteinf10": "Surface de toiture avec pente inférieure à 10% (toitures plates)",
+    "nb_penteinf10_100m2": "Nombre de toitures plates >100m²",
+    "m2_penteinf10_100m2": "Surface des toitures plates de >100m²",
+    "nb_penteinf10_200m2": "Nombre de toitures plates de >200m²",
+    "m2_penteinf10_200m2": "Surface des toitures plates >200m²",
+    "b_psolaire": "Présence de panneaux solaires",
+    "c_forme_toit": "Catégorie de forme de toiture",
+    "m2_autre_dont_zinc": "Occupation de toiture en matériau autre donc zinc (m²)",
+    "c_ens_moy": "Ensolleillement annuel moyen (KWh/m²/an)",
+    "m2_e_in700": "Surface d'ensoleillement inférieure à 700 KWh/m²/an",
+    "m2_e_90_10": "Surface d'ensoleillement comprise entre 900 et 1000 KWh/m²/an",
+    "m2_e_s1000": "Surface d'ensoleillement supérieure à 1000 KWh/m²/an"
+  },
+  "geometryType": "esriGeometryPolygon",
+  "spatialReference": {
+    "wkid": 102110,
+    "latestWkid": 2154
+  },
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "objectid"
+    },
+    {
+      "name": "n_sq_eb",
+      "type": "esriFieldTypeInteger",
+      "alias": "Identifiant séquentiel de l’emprise bâtie"
+    },
+    {
+      "name": "b_igh",
+      "type": "esriFieldTypeString",
+      "alias": "Indicateur d’immeuble IGH",
+      "length": 1
+    },
+    {
+      "name": "b_er",
+      "type": "esriFieldTypeString",
+      "alias": "Indicateur d’établissement répertorié",
+      "length": 1
+    },
+    {
+      "name": "b_ee",
+      "type": "esriFieldTypeString",
+      "alias": "Indicateur d'emprise d'équipement",
+      "length": 1
+    },
+    {
+      "name": "an_const",
+      "type": "esriFieldTypeInteger",
+      "alias": "Année de construction"
+    },
+    {
+      "name": "an_rehab",
+      "type": "esriFieldTypeInteger",
+      "alias": "Année de réhabilitation"
+    },
+    {
+      "name": "c_perconst",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "Période de construction"
+    },
+    {
+      "name": "b_dalle",
+      "type": "esriFieldTypeString",
+      "alias": "Indicateur de dalle, cours couvertes ou rez-de-chaussée",
+      "length": 1
+    },
+    {
+      "name": "b_horspu",
+      "type": "esriFieldTypeString",
+      "alias": "Indicateur d’emprise hors parcelle urbaine",
+      "length": 1
+    },
+    {
+      "name": "h_moy",
+      "type": "esriFieldTypeDouble",
+      "alias": "Hauteur moyenne de l'emprise bâtie (m)"
+    },
+    {
+      "name": "h_med",
+      "type": "esriFieldTypeDouble",
+      "alias": "Hauteur médiane de l'emprise bâtie (m)"
+    },
+    {
+      "name": "h_min",
+      "type": "esriFieldTypeDouble",
+      "alias": "Hauteur minimale de l'emprise bâtie (m)"
+    },
+    {
+      "name": "h_max",
+      "type": "esriFieldTypeDouble",
+      "alias": "Hauteur maximale de l'emprise bâtie (m)"
+    },
+    {
+      "name": "m2_tuile",
+      "type": "esriFieldTypeDouble",
+      "alias": "Occupation de toiture en tuiles (m²)"
+    },
+    {
+      "name": "n_sq_ar",
+      "type": "esriFieldTypeInteger",
+      "alias": "Identifiant de l'arrondissement"
+    },
+    {
+      "name": "n_sq_pc",
+      "type": "esriFieldTypeInteger",
+      "alias": "Identifiant de la parcelle cadastrale"
+    },
+    {
+      "name": "n_sq_pu",
+      "type": "esriFieldTypeInteger",
+      "alias": "Identifiant de la parcelle urbaine"
+    },
+    {
+      "name": "m2_e_70_80",
+      "type": "esriFieldTypeInteger",
+      "alias": "Surface d'ensoleillement comprise entre 700 et 800 KWh/m²/an"
+    },
+    {
+      "name": "m2_e_80_90",
+      "type": "esriFieldTypeInteger",
+      "alias": "Surface d'ensoleillement comprise entre 800 et 900 KWh/m²/an"
+    },
+    {
+      "name": "m2_e_tot",
+      "type": "esriFieldTypeInteger",
+      "alias": "Surface totale d'ensoleillement (m²)"
+    },
+    {
+      "name": "c_source",
+      "type": "esriFieldTypeString",
+      "alias": "C_SOURCE",
+      "length": 1
+    },
+    {
+      "name": "created_user",
+      "type": "esriFieldTypeString",
+      "alias": "created_user",
+      "length": 255
+    },
+    {
+      "name": "created_date",
+      "type": "esriFieldTypeDate",
+      "alias": "created_date",
+      "length": 8
+    },
+    {
+      "name": "last_edited_user",
+      "type": "esriFieldTypeString",
+      "alias": "last_edited_user",
+      "length": 255
+    },
+    {
+      "name": "last_edited_date",
+      "type": "esriFieldTypeDate",
+      "alias": "last_edited_date",
+      "length": 8
+    },
+    {
+      "name": "c_morpho",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "c_morpho"
+    },
+    {
+      "name": "al_med_mne",
+      "type": "esriFieldTypeDouble",
+      "alias": "Altidude médiane MNE de l'emprise\nAltitude médiane MNE de l'emprise \n \n[‎16/‎07/‎2019 09:49]  BOUDEAU Marcelin:  \nAltitude médiane MNE de l'emprise \n \n"
+    },
+    {
+      "name": "al_med_mnt",
+      "type": "esriFieldTypeDouble",
+      "alias": "Altidude médiane MNT de l'emprise"
+    },
+    {
+      "name": "Shape_Area",
+      "type": "esriFieldTypeDouble",
+      "alias": "st_area(shape)"
+    },
+    {
+      "name": "Shape_Length",
+      "type": "esriFieldTypeDouble",
+      "alias": "st_length(shape)"
+    },
+    {
+      "name": "c_tissu",
+      "type": "esriFieldTypeString",
+      "alias": "c_tissu",
+      "length": 3
+    },
+    {
+      "name": "an_surelevation",
+      "type": "esriFieldTypeInteger",
+      "alias": "Année de surélévation"
+    },
+    {
+      "name": "b_terrasse",
+      "type": "esriFieldTypeString",
+      "alias": "Présence de terrasse (oui/non)",
+      "length": 1
+    },
+    {
+      "name": "b_terrasse_veg_100m2",
+      "type": "esriFieldTypeString",
+      "alias": "Présence de terrasse végétale >100m²",
+      "length": 1
+    },
+    {
+      "name": "m2_mineral",
+      "type": "esriFieldTypeDouble",
+      "alias": "Occupation de toiture en minéral (m²)"
+    },
+    {
+      "name": "m2_vegetal",
+      "type": "esriFieldTypeDouble",
+      "alias": "Occupation de toiture en végétal (m²)"
+    },
+    {
+      "name": "c_toiture_mat",
+      "type": "esriFieldTypeString",
+      "alias": "c_toiture_mat",
+      "length": 1
+    },
+    {
+      "name": "m2_penteinf10",
+      "type": "esriFieldTypeDouble",
+      "alias": "Surface de toiture avec pente inférieure à 10% (toitures plates)"
+    },
+    {
+      "name": "nb_penteinf10_100m2",
+      "type": "esriFieldTypeInteger",
+      "alias": "Nombre de toitures plates >100m²"
+    },
+    {
+      "name": "m2_penteinf10_100m2",
+      "type": "esriFieldTypeDouble",
+      "alias": "Surface des toitures plates de >100m²"
+    },
+    {
+      "name": "nb_penteinf10_200m2",
+      "type": "esriFieldTypeInteger",
+      "alias": "Nombre de toitures plates de >200m²"
+    },
+    {
+      "name": "m2_penteinf10_200m2",
+      "type": "esriFieldTypeDouble",
+      "alias": "Surface des toitures plates >200m²"
+    },
+    {
+      "name": "b_psolaire",
+      "type": "esriFieldTypeString",
+      "alias": "Présence de panneaux solaires",
+      "length": 1
+    },
+    {
+      "name": "c_forme_toit",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "Catégorie de forme de toiture"
+    },
+    {
+      "name": "m2_autre_dont_zinc",
+      "type": "esriFieldTypeDouble",
+      "alias": "Occupation de toiture en matériau autre donc zinc (m²)"
+    },
+    {
+      "name": "c_ens_moy",
+      "type": "esriFieldTypeInteger",
+      "alias": "Ensolleillement annuel moyen (KWh/m²/an)"
+    },
+    {
+      "name": "m2_e_in700",
+      "type": "esriFieldTypeInteger",
+      "alias": "Surface d'ensoleillement inférieure à 700 KWh/m²/an"
+    },
+    {
+      "name": "m2_e_90_10",
+      "type": "esriFieldTypeInteger",
+      "alias": "Surface d'ensoleillement comprise entre 900 et 1000 KWh/m²/an"
+    },
+    {
+      "name": "m2_e_s1000",
+      "type": "esriFieldTypeInteger",
+      "alias": "Surface d'ensoleillement supérieure à 1000 KWh/m²/an"
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID": 7610,
+        "n_sq_eb": 750015444,
+        "b_igh": "N",
+        "b_er": "N",
+        "b_ee": "N",
+        "an_const": 1898,
+        "an_rehab": null,
+        "c_perconst": 3,
+        "b_dalle": "N",
+        "b_horspu": "N",
+        "h_moy": 24.96611585,
+        "h_med": 25.9085701,
+        "h_min": 14.24000015,
+        "h_max": 27.88571777,
+        "m2_tuile": 1.45764858,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750026456,
+        "n_sq_pu": 750024549,
+        "m2_e_70_80": 76,
+        "m2_e_80_90": 100,
+        "m2_e_tot": 741,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 4,
+        "al_med_mne": 69.60857010000001,
+        "al_med_mnt": 43.7,
+        "Shape_Area": 743.2076485848366,
+        "Shape_Length": 170.20468870589067,
+        "c_tissu": "TR",
+        "an_surelevation": null,
+        "b_terrasse": "N",
+        "b_terrasse_veg_100m2": "N",
+        "m2_mineral": 8.75,
+        "m2_vegetal": 0,
+        "c_toiture_mat": "A",
+        "m2_penteinf10": 70.55766093999999,
+        "nb_penteinf10_100m2": 0,
+        "m2_penteinf10_100m2": 0,
+        "nb_penteinf10_200m2": 0,
+        "m2_penteinf10_200m2": 0,
+        "b_psolaire": null,
+        "c_forme_toit": 4,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654189.1199000031,
+              6862935.599100001
+            ],
+            [
+              654192.2129999995,
+              6862928.912999999
+            ],
+            [
+              654192.5371000022,
+              6862928.200199999
+            ],
+            [
+              654187.6877000034,
+              6862925.911200002
+            ],
+            [
+              654190.429899998,
+              6862920.238699999
+            ],
+            [
+              654195.179399997,
+              6862922.488699999
+            ],
+            [
+              654198.1055999994,
+              6862916.164299998
+            ],
+            [
+              654195.6758999974,
+              6862914.994399998
+            ],
+            [
+              654197.3957000002,
+              6862911.409600001
+            ],
+            [
+              654194.1008000001,
+              6862909.687399998
+            ],
+            [
+              654191.1384999976,
+              6862908.1226
+            ],
+            [
+              654187.4021999985,
+              6862915.774099998
+            ],
+            [
+              654178.315700002,
+              6862911.420899998
+            ],
+            [
+              654178.1208999977,
+              6862910.792599998
+            ],
+            [
+              654181.7159999982,
+              6862903.171599999
+            ],
+            [
+              654174.1551000029,
+              6862899.202799998
+            ],
+            [
+              654170.2855999991,
+              6862897.168400001
+            ],
+            [
+              654157.3931000009,
+              6862924.196800001
+            ],
+            [
+              654169.0505999997,
+              6862929.798700001
+            ],
+            [
+              654172.5872000009,
+              6862922.318700001
+            ],
+            [
+              654173.0966000035,
+              6862922.164000001
+            ],
+            [
+              654182.2228000015,
+              6862926.487399999
+            ],
+            [
+              654178.6191999987,
+              6862934.397999998
+            ],
+            [
+              654184.9851000011,
+              6862937.454399999
+            ],
+            [
+              654186.4692000002,
+              6862934.401799999
+            ],
+            [
+              654189.1199000031,
+              6862935.599100001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 14028,
+        "n_sq_eb": 750104635,
+        "b_igh": "O",
+        "b_er": "N",
+        "b_ee": "O",
+        "an_const": null,
+        "an_rehab": null,
+        "c_perconst": 11,
+        "b_dalle": "N",
+        "b_horspu": "N",
+        "h_moy": 28.59892507,
+        "h_med": 30.459286499999997,
+        "h_min": 8.53666687,
+        "h_max": 31.89666901,
+        "m2_tuile": 30.05958559,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750026592,
+        "n_sq_pu": 750001753,
+        "m2_e_70_80": 38,
+        "m2_e_80_90": 51,
+        "m2_e_tot": 400,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 4,
+        "al_med_mne": 74.1592865,
+        "al_med_mnt": 43.7,
+        "Shape_Area": 398.80958558944803,
+        "Shape_Length": 85.88502139880953,
+        "c_tissu": "TD",
+        "an_surelevation": null,
+        "b_terrasse": "O",
+        "b_terrasse_veg_100m2": "N",
+        "m2_mineral": 156,
+        "m2_vegetal": 0,
+        "c_toiture_mat": "A",
+        "m2_penteinf10": 163.76656794000002,
+        "nb_penteinf10_100m2": 1,
+        "m2_penteinf10_100m2": 140.15843332,
+        "nb_penteinf10_200m2": 0,
+        "m2_penteinf10_200m2": 0,
+        "b_psolaire": null,
+        "c_forme_toit": 1,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654195.6393000036,
+              6862877.177000001
+            ],
+            [
+              654182.8628999963,
+              6862870.806200001
+            ],
+            [
+              654178.0288999975,
+              6862880.943100002
+            ],
+            [
+              654170.2855999991,
+              6862897.168400001
+            ],
+            [
+              654174.1551000029,
+              6862899.202799998
+            ],
+            [
+              654181.7159999982,
+              6862903.171599999
+            ],
+            [
+              654195.6393000036,
+              6862877.177000001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 20111,
+        "n_sq_eb": 750042347,
+        "b_igh": "N",
+        "b_er": "N",
+        "b_ee": "N",
+        "an_const": 1899,
+        "an_rehab": null,
+        "c_perconst": 3,
+        "b_dalle": "N",
+        "b_horspu": "N",
+        "h_moy": 26.44655776,
+        "h_med": 26.72999878,
+        "h_min": 12.27999878,
+        "h_max": 29.11874847,
+        "m2_tuile": 2.32220933,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750027920,
+        "n_sq_pu": 750063421,
+        "m2_e_70_80": 44,
+        "m2_e_80_90": 71,
+        "m2_e_tot": 457,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 4,
+        "al_med_mne": 69.52999878,
+        "al_med_mnt": 42.8,
+        "Shape_Area": 455.57220932615525,
+        "Shape_Length": 122.14598776290444,
+        "c_tissu": "TC",
+        "an_surelevation": null,
+        "b_terrasse": "N",
+        "b_terrasse_veg_100m2": "N",
+        "m2_mineral": 28.75,
+        "m2_vegetal": 0,
+        "c_toiture_mat": "A",
+        "m2_penteinf10": 17.09469665,
+        "nb_penteinf10_100m2": 0,
+        "m2_penteinf10_100m2": 0,
+        "nb_penteinf10_200m2": 0,
+        "m2_penteinf10_200m2": 0,
+        "b_psolaire": null,
+        "c_forme_toit": 4,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654156.8954000026,
+              6862828.192000002
+            ],
+            [
+              654152.2163000032,
+              6862836.671399999
+            ],
+            [
+              654157.1213999987,
+              6862839.625
+            ],
+            [
+              654160.4287,
+              6862841.662099998
+            ],
+            [
+              654159.8972000033,
+              6862842.6763
+            ],
+            [
+              654159.304899998,
+              6862842.3913
+            ],
+            [
+              654156.2766999975,
+              6862848.556499999
+            ],
+            [
+              654156.8693000004,
+              6862848.8717
+            ],
+            [
+              654154.8924999982,
+              6862852.8083
+            ],
+            [
+              654151.2976000011,
+              6862851.028999999
+            ],
+            [
+              654145.9214999974,
+              6862848.509
+            ],
+            [
+              654143.4094000012,
+              6862853.635600001
+            ],
+            [
+              654155.549999997,
+              6862859.672800001
+            ],
+            [
+              654156.2862000018,
+              6862858.026900001
+            ],
+            [
+              654156.6128999963,
+              6862857.918299999
+            ],
+            [
+              654157.1221999973,
+              6862857.579599999
+            ],
+            [
+              654157.7853000015,
+              6862857.9245
+            ],
+            [
+              654156.5644000024,
+              6862860.1543999985
+            ],
+            [
+              654162.2378999963,
+              6862862.9562
+            ],
+            [
+              654166.8074000031,
+              6862853.368000001
+            ],
+            [
+              654169.5490999967,
+              6862847.615400001
+            ],
+            [
+              654174.1475000009,
+              6862837.966499999
+            ],
+            [
+              654156.8954000026,
+              6862828.192000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 23267,
+        "n_sq_eb": 750011056,
+        "b_igh": "N",
+        "b_er": "N",
+        "b_ee": "N",
+        "an_const": 1969,
+        "an_rehab": null,
+        "c_perconst": 7,
+        "b_dalle": "N",
+        "b_horspu": "N",
+        "h_moy": 18.939315779999998,
+        "h_med": 17.66750031,
+        "h_min": 3.6499984700000003,
+        "h_max": 35.95666962,
+        "m2_tuile": 0,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750024305,
+        "n_sq_pu": 750024381,
+        "m2_e_70_80": 241,
+        "m2_e_80_90": 182,
+        "m2_e_tot": 1437,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 6,
+        "al_med_mne": 60.36750031,
+        "al_med_mnt": 42.7,
+        "Shape_Area": 1436.2697429898776,
+        "Shape_Length": 237.17047307267575,
+        "c_tissu": "TD",
+        "an_surelevation": null,
+        "b_terrasse": "O",
+        "b_terrasse_veg_100m2": "O",
+        "m2_mineral": 395.75,
+        "m2_vegetal": 186.26974299,
+        "c_toiture_mat": "A",
+        "m2_penteinf10": 462.91836610999997,
+        "nb_penteinf10_100m2": 1,
+        "m2_penteinf10_100m2": 104.96328795,
+        "nb_penteinf10_200m2": 0,
+        "m2_penteinf10_200m2": 0,
+        "b_psolaire": null,
+        "c_forme_toit": 1,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654193.6930000037,
+              6862797.1116
+            ],
+            [
+              654179.0350999981,
+              6862790.175700001
+            ],
+            [
+              654162.0574000031,
+              6862782.1488999985
+            ],
+            [
+              654157.0697999969,
+              6862791.9507
+            ],
+            [
+              654145.8715000004,
+              6862783.835200001
+            ],
+            [
+              654140.925999999,
+              6862792.626800001
+            ],
+            [
+              654131.1895999983,
+              6862787.1591
+            ],
+            [
+              654125.8501999974,
+              6862796.7137
+            ],
+            [
+              654125.1897,
+              6862797.839299999
+            ],
+            [
+              654161.4521000013,
+              6862818.353799999
+            ],
+            [
+              654162.1419999972,
+              6862817.1274
+            ],
+            [
+              654176.248999998,
+              6862825.088500001
+            ],
+            [
+              654181.0855000019,
+              6862823.537999999
+            ],
+            [
+              654193.6930000037,
+              6862797.1116
+            ]
+          ],
+          [
+            [
+              654157.6556999981,
+              6862802.165399998
+            ],
+            [
+              654161.8642999977,
+              6862794.810600001
+            ],
+            [
+              654176.0222000033,
+              6862801.750799999
+            ],
+            [
+              654171.9051999971,
+              6862810.355700001
+            ],
+            [
+              654157.6556999981,
+              6862802.165399998
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 32640,
+        "n_sq_eb": 750055445,
+        "b_igh": "N",
+        "b_er": "N",
+        "b_ee": "O",
+        "an_const": 1900,
+        "an_rehab": null,
+        "c_perconst": 3,
+        "b_dalle": "N",
+        "b_horspu": "N",
+        "h_moy": 13.624057670000001,
+        "h_med": 14.01666718,
+        "h_min": 1.51199875,
+        "h_max": 16.07000046,
+        "m2_tuile": 4.14266104,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750026592,
+        "n_sq_pu": 750001753,
+        "m2_e_70_80": 42,
+        "m2_e_80_90": 22,
+        "m2_e_tot": 257,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 4,
+        "al_med_mne": 58.21666718,
+        "al_med_mnt": 44.2,
+        "Shape_Area": 257.1426610393602,
+        "Shape_Length": 74.40800153562844,
+        "c_tissu": "TC",
+        "an_surelevation": null,
+        "b_terrasse": "N",
+        "b_terrasse_veg_100m2": "N",
+        "m2_mineral": 19.25,
+        "m2_vegetal": 0,
+        "c_toiture_mat": "A",
+        "m2_penteinf10": 19.29464173,
+        "nb_penteinf10_100m2": 0,
+        "m2_penteinf10_100m2": 0,
+        "nb_penteinf10_200m2": 0,
+        "m2_penteinf10_200m2": 0,
+        "b_psolaire": null,
+        "c_forme_toit": 4,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654184.2378000021,
+              6862904.5009
+            ],
+            [
+              654188.8786000013,
+              6862906.941300001
+            ],
+            [
+              654189.7114000022,
+              6862907.384500001
+            ],
+            [
+              654190.7454999983,
+              6862905.396299999
+            ],
+            [
+              654195.1349000037,
+              6862907.699099999
+            ],
+            [
+              654194.1008000001,
+              6862909.687399998
+            ],
+            [
+              654197.3957000002,
+              6862911.409600001
+            ],
+            [
+              654199.8511999995,
+              6862912.689199999
+            ],
+            [
+              654205.9629999995,
+              6862901.547400001
+            ],
+            [
+              654201.5927999988,
+              6862899.2140999995
+            ],
+            [
+              654202.5979000032,
+              6862897.4059000015
+            ],
+            [
+              654196.4706000015,
+              6862894.2173000015
+            ],
+            [
+              654196.1647000015,
+              6862894.068
+            ],
+            [
+              654195.8300999999,
+              6862894
+            ],
+            [
+              654195.5062000006,
+              6862894.034000002
+            ],
+            [
+              654195.0806000009,
+              6862894.228100002
+            ],
+            [
+              654194.7828999981,
+              6862894.5309000015
+            ],
+            [
+              654194.3306000009,
+              6862895.335900001
+            ],
+            [
+              654193.9284000024,
+              6862895.119600002
+            ],
+            [
+              654194.3356000036,
+              6862894.418900002
+            ],
+            [
+              654194.4069000036,
+              6862894.111900002
+            ],
+            [
+              654194.2590000033,
+              6862893.752500001
+            ],
+            [
+              654191.1132000014,
+              6862892.1228
+            ],
+            [
+              654190.7673000023,
+              6862892.042599998
+            ],
+            [
+              654190.2431000024,
+              6862892.2782999985
+            ],
+            [
+              654189.8606999964,
+              6862892.984000001
+            ],
+            [
+              654189.0274000019,
+              6862892.610100001
+            ],
+            [
+              654187.3448999971,
+              6862895.864500001
+            ],
+            [
+              654182.5562999994,
+              6862903.614500001
+            ],
+            [
+              654184.2378000021,
+              6862904.5009
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 32899,
+        "n_sq_eb": 750123249,
+        "b_igh": "N",
+        "b_er": "N",
+        "b_ee": "O",
+        "an_const": null,
+        "an_rehab": null,
+        "c_perconst": 99,
+        "b_dalle": "O",
+        "b_horspu": "N",
+        "h_moy": 9.75360082,
+        "h_med": 10.235438160000001,
+        "h_min": 3.55500031,
+        "h_max": 15.42000122,
+        "m2_tuile": 22.2822047,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750026592,
+        "n_sq_pu": 750001753,
+        "m2_e_70_80": 6,
+        "m2_e_80_90": 12,
+        "m2_e_tot": 88,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 4,
+        "al_med_mne": 53.435438160000004,
+        "al_med_mnt": 43.2,
+        "Shape_Area": 87.28220470374852,
+        "Shape_Length": 48.56865375632567,
+        "c_tissu": "TD",
+        "an_surelevation": null,
+        "b_terrasse": "N",
+        "b_terrasse_veg_100m2": "N",
+        "m2_mineral": 2.25,
+        "m2_vegetal": 0,
+        "c_toiture_mat": "A",
+        "m2_penteinf10": 24.38103458,
+        "nb_penteinf10_100m2": 0,
+        "m2_penteinf10_100m2": 0,
+        "nb_penteinf10_200m2": 0,
+        "m2_penteinf10_200m2": 0,
+        "b_psolaire": null,
+        "c_forme_toit": 4,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654220.2757999972,
+              6862873.407499999
+            ],
+            [
+              654213.5777999982,
+              6862869.8255
+            ],
+            [
+              654210.7159999982,
+              6862875.6570999995
+            ],
+            [
+              654216.5291000009,
+              6862878.8376
+            ],
+            [
+              654217.9900999963,
+              6862876.537599999
+            ],
+            [
+              654227.4768000022,
+              6862881.754999999
+            ],
+            [
+              654229.3969999999,
+              6862878.3101
+            ],
+            [
+              654220.2757999972,
+              6862873.407499999
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 40257,
+        "n_sq_eb": 750080783,
+        "b_igh": "N",
+        "b_er": "N",
+        "b_ee": "N",
+        "an_const": null,
+        "an_rehab": 2016,
+        "c_perconst": 99,
+        "b_dalle": "N",
+        "b_horspu": "N",
+        "h_moy": 11.65806916,
+        "h_med": 11.87249985,
+        "h_min": 8.853331760000001,
+        "h_max": 17.85071564,
+        "m2_tuile": 1.3777042499999999,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750027942,
+        "n_sq_pu": 750024921,
+        "m2_e_70_80": 40,
+        "m2_e_80_90": 17,
+        "m2_e_tot": 147,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 4,
+        "al_med_mne": 53.97249985,
+        "al_med_mnt": 42.1,
+        "Shape_Area": 147.6277042524231,
+        "Shape_Length": 49.939191770878665,
+        "c_tissu": "TC",
+        "an_surelevation": 2016,
+        "b_terrasse": "N",
+        "b_terrasse_veg_100m2": "N",
+        "m2_mineral": 4.25,
+        "m2_vegetal": 0,
+        "c_toiture_mat": "A",
+        "m2_penteinf10": 43.26145048,
+        "nb_penteinf10_100m2": 0,
+        "m2_penteinf10_100m2": 0,
+        "nb_penteinf10_200m2": 0,
+        "m2_penteinf10_200m2": 0,
+        "b_psolaire": null,
+        "c_forme_toit": 4,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654156.8954000026,
+              6862828.192000002
+            ],
+            [
+              654143.4309,
+              6862820.575100001
+            ],
+            [
+              654139.0327000022,
+              6862829.072099999
+            ],
+            [
+              654152.2163000032,
+              6862836.671399999
+            ],
+            [
+              654156.8954000026,
+              6862828.192000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 49699,
+        "n_sq_eb": 750088910,
+        "b_igh": "N",
+        "b_er": "N",
+        "b_ee": "N",
+        "an_const": 1898,
+        "an_rehab": null,
+        "c_perconst": 3,
+        "b_dalle": "N",
+        "b_horspu": "N",
+        "h_moy": 3.76795976,
+        "h_med": 2.23249893,
+        "h_min": 1.2049987800000002,
+        "h_max": 10.584444430000001,
+        "m2_tuile": 0,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750026456,
+        "n_sq_pu": 750024549,
+        "m2_e_70_80": 0,
+        "m2_e_80_90": 0,
+        "m2_e_tot": 14,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 4,
+        "al_med_mne": 45.93249893,
+        "al_med_mnt": 43.7,
+        "Shape_Area": 13.472555013966991,
+        "Shape_Length": 15.109900931326457,
+        "c_tissu": "TR",
+        "an_surelevation": null,
+        "b_terrasse": "N",
+        "b_terrasse_veg_100m2": "N",
+        "m2_mineral": 0,
+        "m2_vegetal": 0,
+        "c_toiture_mat": "A",
+        "m2_penteinf10": 0,
+        "nb_penteinf10_100m2": 0,
+        "m2_penteinf10_100m2": 0,
+        "nb_penteinf10_200m2": 0,
+        "m2_penteinf10_200m2": 0,
+        "b_psolaire": null,
+        "c_forme_toit": 4,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654188.8786000013,
+              6862906.941300001
+            ],
+            [
+              654184.2378000021,
+              6862904.5009
+            ],
+            [
+              654183.3225999996,
+              6862906.3182
+            ],
+            [
+              654183.4487999976,
+              6862907.047600001
+            ],
+            [
+              654187.1959000006,
+              6862909.025800001
+            ],
+            [
+              654187.9535999969,
+              6862908.779199999
+            ],
+            [
+              654188.8786000013,
+              6862906.941300001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 51352,
+        "n_sq_eb": 750025864,
+        "b_igh": "N",
+        "b_er": "N",
+        "b_ee": "N",
+        "an_const": null,
+        "an_rehab": null,
+        "c_perconst": 3,
+        "b_dalle": "N",
+        "b_horspu": "N",
+        "h_moy": 12.084953969999999,
+        "h_med": 9.304499049999999,
+        "h_min": 1.4466682400000002,
+        "h_max": 21.2157135,
+        "m2_tuile": 2.4697511,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750025056,
+        "n_sq_pu": 750024096,
+        "m2_e_70_80": 112,
+        "m2_e_80_90": 83,
+        "m2_e_tot": 1017,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 6,
+        "al_med_mne": 51.904499050000005,
+        "al_med_mnt": 42.6,
+        "Shape_Area": 1018.4697511043819,
+        "Shape_Length": 328.6661141828848,
+        "c_tissu": "TC",
+        "an_surelevation": null,
+        "b_terrasse": "N",
+        "b_terrasse_veg_100m2": "N",
+        "m2_mineral": 49.25,
+        "m2_vegetal": 0,
+        "c_toiture_mat": "A",
+        "m2_penteinf10": 97.35649656999999,
+        "nb_penteinf10_100m2": 0,
+        "m2_penteinf10_100m2": 0,
+        "nb_penteinf10_200m2": 0,
+        "m2_penteinf10_200m2": 0,
+        "b_psolaire": null,
+        "c_forme_toit": 4,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654141.4061999992,
+              6862890.0222
+            ],
+            [
+              654142.3787999973,
+              6862888.043299999
+            ],
+            [
+              654147.9367000014,
+              6862877.057100002
+            ],
+            [
+              654156.5644000024,
+              6862860.1543999985
+            ],
+            [
+              654155.549999997,
+              6862859.672800001
+            ],
+            [
+              654143.4094000012,
+              6862853.635600001
+            ],
+            [
+              654129.8127999976,
+              6862846.9103000015
+            ],
+            [
+              654115.4531999975,
+              6862839.800900001
+            ],
+            [
+              654098.3910000026,
+              6862872.7743999995
+            ],
+            [
+              654109.2400999963,
+              6862878.246300001
+            ],
+            [
+              654114.3601000011,
+              6862880.828600001
+            ],
+            [
+              654117.0830999985,
+              6862878.6569
+            ],
+            [
+              654123.0617000014,
+              6862866.9562
+            ],
+            [
+              654123.2493999973,
+              6862866.624600001
+            ],
+            [
+              654119.1811000034,
+              6862864.5495
+            ],
+            [
+              654117.0135999992,
+              6862864.837299999
+            ],
+            [
+              654112.6966999993,
+              6862873.474199999
+            ],
+            [
+              654111.6621000022,
+              6862872.962400001
+            ],
+            [
+              654110.6872000024,
+              6862874.790899999
+            ],
+            [
+              654108.1357999966,
+              6862873.432500001
+            ],
+            [
+              654121.6313999966,
+              6862846.698899999
+            ],
+            [
+              654124.3625999987,
+              6862848.055799998
+            ],
+            [
+              654130.5958999991,
+              6862851.5227999985
+            ],
+            [
+              654128.9978,
+              6862854.101
+            ],
+            [
+              654123.7915999964,
+              6862851.4706999995
+            ],
+            [
+              654122.4751000032,
+              6862850.751400001
+            ],
+            [
+              654119.445600003,
+              6862856.767099999
+            ],
+            [
+              654120.8619000018,
+              6862857.485599998
+            ],
+            [
+              654119.9576999992,
+              6862859.352600001
+            ],
+            [
+              654120.8725999966,
+              6862861.085099999
+            ],
+            [
+              654125.1387000009,
+              6862863.049199998
+            ],
+            [
+              654129.6160999984,
+              6862865.070999999
+            ],
+            [
+              654131.7115999982,
+              6862860.984000001
+            ],
+            [
+              654127.2924999967,
+              6862858.761500001
+            ],
+            [
+              654129.0235999972,
+              6862855.356400002
+            ],
+            [
+              654138.9755000025,
+              6862860.322299998
+            ],
+            [
+              654147.4443000033,
+              6862864.6094
+            ],
+            [
+              654141.4681999981,
+              6862876.268399999
+            ],
+            [
+              654137.4636999965,
+              6862874.355300002
+            ],
+            [
+              654133.1683000028,
+              6862883.682500001
+            ],
+            [
+              654136.9268999994,
+              6862885.7436
+            ],
+            [
+              654134.1664000005,
+              6862891.0471
+            ],
+            [
+              654139.5073999986,
+              6862893.807700001
+            ],
+            [
+              654141.4061999992,
+              6862890.0222
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 65073,
+        "n_sq_eb": 750051443,
+        "b_igh": "N",
+        "b_er": "N",
+        "b_ee": "N",
+        "an_const": 1880,
+        "an_rehab": null,
+        "c_perconst": 3,
+        "b_dalle": "N",
+        "b_horspu": "N",
+        "h_moy": 20.99411808,
+        "h_med": 21.43857422,
+        "h_min": 8.694001770000002,
+        "h_max": 23.113336179999997,
+        "m2_tuile": 1.6399264699999998,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750024658,
+        "n_sq_pu": 750024034,
+        "m2_e_70_80": 12,
+        "m2_e_80_90": 14,
+        "m2_e_tot": 128,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 4,
+        "al_med_mne": 65.03857422,
+        "al_med_mnt": 43.6,
+        "Shape_Area": 127.38992646589944,
+        "Shape_Length": 55.00784575691694,
+        "c_tissu": "TR",
+        "an_surelevation": null,
+        "b_terrasse": "N",
+        "b_terrasse_veg_100m2": "N",
+        "m2_mineral": 0,
+        "m2_vegetal": 0,
+        "c_toiture_mat": "A",
+        "m2_penteinf10": 7.67413693,
+        "nb_penteinf10_100m2": 0,
+        "m2_penteinf10_100m2": 0,
+        "nb_penteinf10_200m2": 0,
+        "m2_penteinf10_200m2": 0,
+        "b_psolaire": null,
+        "c_forme_toit": 4,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654154.1309999973,
+              6862879.9551
+            ],
+            [
+              654147.9367000014,
+              6862877.057100002
+            ],
+            [
+              654142.3787999973,
+              6862888.043299999
+            ],
+            [
+              654143.4434999973,
+              6862888.5342999995
+            ],
+            [
+              654143.557099998,
+              6862888.800500002
+            ],
+            [
+              654143.918399997,
+              6862889.215399999
+            ],
+            [
+              654143.1635000035,
+              6862890.887200002
+            ],
+            [
+              654141.4061999992,
+              6862890.0222
+            ],
+            [
+              654139.5073999986,
+              6862893.807700001
+            ],
+            [
+              654146.1369000003,
+              6862896.722100001
+            ],
+            [
+              654148.9816000015,
+              6862890.748399999
+            ],
+            [
+              654154.1309999973,
+              6862879.9551
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 75684,
+        "n_sq_eb": 750117339,
+        "b_igh": "N",
+        "b_er": "N",
+        "b_ee": "N",
+        "an_const": 1880,
+        "an_rehab": null,
+        "c_perconst": 3,
+        "b_dalle": "N",
+        "b_horspu": "N",
+        "h_moy": 20.0379575,
+        "h_med": 20.75799866,
+        "h_min": 3.65500031,
+        "h_max": 26.16000214,
+        "m2_tuile": 0.18032031,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750027710,
+        "n_sq_pu": 750024797,
+        "m2_e_70_80": 12,
+        "m2_e_80_90": 17,
+        "m2_e_tot": 125,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 4,
+        "al_med_mne": 64.05799866000001,
+        "al_med_mnt": 43.3,
+        "Shape_Area": 124.43032031226512,
+        "Shape_Length": 50.97669062258642,
+        "c_tissu": "TR",
+        "an_surelevation": null,
+        "b_terrasse": "N",
+        "b_terrasse_veg_100m2": "N",
+        "m2_mineral": 4,
+        "m2_vegetal": 0,
+        "c_toiture_mat": "A",
+        "m2_penteinf10": 10.30670511,
+        "nb_penteinf10_100m2": 0,
+        "m2_penteinf10_100m2": 0,
+        "nb_penteinf10_200m2": 0,
+        "m2_penteinf10_200m2": 0,
+        "b_psolaire": null,
+        "c_forme_toit": 4,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654162.2378999963,
+              6862862.9562
+            ],
+            [
+              654156.5644000024,
+              6862860.1543999985
+            ],
+            [
+              654147.9367000014,
+              6862877.057100002
+            ],
+            [
+              654154.1309999973,
+              6862879.9551
+            ],
+            [
+              654162.2378999963,
+              6862862.9562
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 85246,
+        "n_sq_eb": 750014826,
+        "b_igh": "N",
+        "b_er": "N",
+        "b_ee": "N",
+        "an_const": 1974,
+        "an_rehab": null,
+        "c_perconst": 7,
+        "b_dalle": "O",
+        "b_horspu": "N",
+        "h_moy": 3.42344408,
+        "h_med": 3.30999832,
+        "h_min": 2.55,
+        "h_max": 17.42583466,
+        "m2_tuile": 8.30463814,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750024761,
+        "n_sq_pu": 750025481,
+        "m2_e_70_80": 0,
+        "m2_e_80_90": 0,
+        "m2_e_tot": 191,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 2,
+        "al_med_mne": 46.00999832,
+        "al_med_mnt": 42.7,
+        "Shape_Area": 191.05463814448154,
+        "Shape_Length": 55.65826262820454,
+        "c_tissu": "TD",
+        "an_surelevation": null,
+        "b_terrasse": "O",
+        "b_terrasse_veg_100m2": "N",
+        "m2_mineral": 170.5,
+        "m2_vegetal": 0,
+        "c_toiture_mat": "M",
+        "m2_penteinf10": 68.68038038,
+        "nb_penteinf10_100m2": 0,
+        "m2_penteinf10_100m2": 0,
+        "nb_penteinf10_200m2": 0,
+        "m2_penteinf10_200m2": 0,
+        "b_psolaire": null,
+        "c_forme_toit": 1,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654212.3514999971,
+              6862855.154100001
+            ],
+            [
+              654206.7151999995,
+              6862866.1554999985
+            ],
+            [
+              654213.5777999982,
+              6862869.8255
+            ],
+            [
+              654220.2757999972,
+              6862873.407499999
+            ],
+            [
+              654226.1046999991,
+              6862862.598700002
+            ],
+            [
+              654212.3514999971,
+              6862855.154100001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 89901,
+        "n_sq_eb": 750050095,
+        "b_igh": "N",
+        "b_er": "N",
+        "b_ee": "O",
+        "an_const": null,
+        "an_rehab": null,
+        "c_perconst": 99,
+        "b_dalle": "N",
+        "b_horspu": "N",
+        "h_moy": 18.21488184,
+        "h_med": 11.96708412,
+        "h_min": 10.28400116,
+        "h_max": 30.151998900000002,
+        "m2_tuile": 22.8720939,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750026592,
+        "n_sq_pu": 750001753,
+        "m2_e_70_80": 89,
+        "m2_e_80_90": 103,
+        "m2_e_tot": 884,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 4,
+        "al_med_mne": 55.76708412,
+        "al_med_mnt": 43.8,
+        "Shape_Area": 885.6220939014202,
+        "Shape_Length": 184.52021950142247,
+        "c_tissu": "TD",
+        "an_surelevation": null,
+        "b_terrasse": "O",
+        "b_terrasse_veg_100m2": "N",
+        "m2_mineral": 140,
+        "m2_vegetal": 1,
+        "c_toiture_mat": "M",
+        "m2_penteinf10": 278.25077976,
+        "nb_penteinf10_100m2": 1,
+        "m2_penteinf10_100m2": 202.7412877,
+        "nb_penteinf10_200m2": 1,
+        "m2_penteinf10_200m2": 202.7412877,
+        "b_psolaire": null,
+        "c_forme_toit": 1,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654249.9895000011,
+              6862889.306400001
+            ],
+            [
+              654245.3083000034,
+              6862886.796
+            ],
+            [
+              654236.1972000003,
+              6862881.9432
+            ],
+            [
+              654233.1137000024,
+              6862887.448600002
+            ],
+            [
+              654226.3329999968,
+              6862883.806499999
+            ],
+            [
+              654227.4768000022,
+              6862881.754999999
+            ],
+            [
+              654217.9900999963,
+              6862876.537599999
+            ],
+            [
+              654216.5291000009,
+              6862878.8376
+            ],
+            [
+              654210.7159999982,
+              6862875.6570999995
+            ],
+            [
+              654213.5777999982,
+              6862869.8255
+            ],
+            [
+              654206.7151999995,
+              6862866.1554999985
+            ],
+            [
+              654192.8825000003,
+              6862858.7579
+            ],
+            [
+              654189.4770999998,
+              6862856.936700001
+            ],
+            [
+              654182.8628999963,
+              6862870.806200001
+            ],
+            [
+              654195.6393000036,
+              6862877.177000001
+            ],
+            [
+              654235.8598999977,
+              6862898.521400001
+            ],
+            [
+              654238.186999999,
+              6862899.756299999
+            ],
+            [
+              654243.3805000037,
+              6862902.562100001
+            ],
+            [
+              654249.9895000011,
+              6862889.306400001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 90898,
+        "n_sq_eb": 750087964,
+        "b_igh": "N",
+        "b_er": "N",
+        "b_ee": "N",
+        "an_const": 1974,
+        "an_rehab": null,
+        "c_perconst": 7,
+        "b_dalle": "N",
+        "b_horspu": "N",
+        "h_moy": 31.82187042,
+        "h_med": 31.219999689999998,
+        "h_min": 30.53666382,
+        "h_max": 35.630001830000005,
+        "m2_tuile": 3.73333508,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750024761,
+        "n_sq_pu": 750025481,
+        "m2_e_70_80": 37,
+        "m2_e_80_90": 46,
+        "m2_e_tot": 285,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 4,
+        "al_med_mne": 73.81999969,
+        "al_med_mnt": 42.6,
+        "Shape_Area": 284.2333350810665,
+        "Shape_Length": 67.62914202170293,
+        "c_tissu": "TD",
+        "an_surelevation": null,
+        "b_terrasse": "O",
+        "b_terrasse_veg_100m2": "N",
+        "m2_mineral": 160.25,
+        "m2_vegetal": 2.25,
+        "c_toiture_mat": "M",
+        "m2_penteinf10": 74.99505823,
+        "nb_penteinf10_100m2": 0,
+        "m2_penteinf10_100m2": 0,
+        "nb_penteinf10_200m2": 0,
+        "m2_penteinf10_200m2": 0,
+        "b_psolaire": null,
+        "c_forme_toit": 1,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654212.3514999971,
+              6862855.154100001
+            ],
+            [
+              654214.9694999978,
+              6862850.141800001
+            ],
+            [
+              654214.0759000033,
+              6862849.6602
+            ],
+            [
+              654202.6541000009,
+              6862843.5163
+            ],
+            [
+              654200.996600002,
+              6862842.623799998
+            ],
+            [
+              654192.8825000003,
+              6862858.7579
+            ],
+            [
+              654206.7151999995,
+              6862866.1554999985
+            ],
+            [
+              654212.3514999971,
+              6862855.154100001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 116770,
+        "n_sq_eb": 750043725,
+        "b_igh": "N",
+        "b_er": "N",
+        "b_ee": "N",
+        "an_const": 1920,
+        "an_rehab": null,
+        "c_perconst": 5,
+        "b_dalle": "N",
+        "b_horspu": "N",
+        "h_moy": 24.60196419,
+        "h_med": 24.12583237,
+        "h_min": 2.90500031,
+        "h_max": 35.414999390000006,
+        "m2_tuile": 4.79662747,
+        "n_sq_ar": 750000011,
+        "n_sq_pc": 750025233,
+        "n_sq_pu": 750025192,
+        "m2_e_70_80": 118,
+        "m2_e_80_90": 154,
+        "m2_e_tot": 1294,
+        "c_source": null,
+        "created_user": "DIFFUSION",
+        "created_date": 1753805685000,
+        "last_edited_user": "DIFFUSION",
+        "last_edited_date": 1757513305000,
+        "c_morpho": 5,
+        "al_med_mne": 66.82583237,
+        "al_med_mnt": 42.7,
+        "Shape_Area": 1296.5466274731916,
+        "Shape_Length": 245.42334513919567,
+        "c_tissu": "TD",
+        "an_surelevation": null,
+        "b_terrasse": "O",
+        "b_terrasse_veg_100m2": "N",
+        "m2_mineral": 781,
+        "m2_vegetal": 16,
+        "c_toiture_mat": "M",
+        "m2_penteinf10": 354.41529460000004,
+        "nb_penteinf10_100m2": 0,
+        "m2_penteinf10_100m2": 0,
+        "nb_penteinf10_200m2": 0,
+        "m2_penteinf10_200m2": 0,
+        "b_psolaire": null,
+        "c_forme_toit": 1,
+        "m2_autre_dont_zinc": null,
+        "c_ens_moy": null,
+        "m2_e_in700": null,
+        "m2_e_90_10": null,
+        "m2_e_s1000": null
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              654265.6074000001,
+              6862858.195500001
+            ],
+            [
+              654267.4848999977,
+              6862854.0282999985
+            ],
+            [
+              654264.8898999989,
+              6862851.7104
+            ],
+            [
+              654241.9506999999,
+              6862839.5748
+            ],
+            [
+              654240.8693000004,
+              6862841.8543
+            ],
+            [
+              654223.3520999998,
+              6862832.6017
+            ],
+            [
+              654225.8879999965,
+              6862827.3508
+            ],
+            [
+              654230.1614999995,
+              6862818.574200001
+            ],
+            [
+              654218.2902999967,
+              6862810.995099999
+            ],
+            [
+              654216.9957000017,
+              6862814.0451
+            ],
+            [
+              654213.5417999998,
+              6862812.334899999
+            ],
+            [
+              654209.1457000002,
+              6862821.191199999
+            ],
+            [
+              654212.561300002,
+              6862822.9925
+            ],
+            [
+              654202.6541000009,
+              6862843.5163
+            ],
+            [
+              654214.0759000033,
+              6862849.6602
+            ],
+            [
+              654216.999300003,
+              6862844.164799999
+            ],
+            [
+              654217.2807999998,
+              6862844.303100001
+            ],
+            [
+              654217.8997000009,
+              6862842.998100001
+            ],
+            [
+              654218.1810000017,
+              6862843.135299999
+            ],
+            [
+              654219.3803000003,
+              6862840.7151999995
+            ],
+            [
+              654229.1640999988,
+              6862845.8924
+            ],
+            [
+              654224.2616000026,
+              6862855.143599998
+            ],
+            [
+              654231.8967999965,
+              6862859.2599
+            ],
+            [
+              654235.4394000024,
+              6862852.489799999
+            ],
+            [
+              654245.2831000015,
+              6862857.706599999
+            ],
+            [
+              654241.7204999998,
+              6862864.5364000015
+            ],
+            [
+              654250.5006000027,
+              6862869.2729
+            ],
+            [
+              654254.1429999992,
+              6862862.4122
+            ],
+            [
+              654261.4953000024,
+              6862866.2203
+            ],
+            [
+              654265.6074000001,
+              6862858.195500001
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,673 @@
+{
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "rnb_id": "SN25RTV8D9Q3",
+      "distance": 0.0,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.371294131888872,
+          48.88670425788689
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75119_3659_00041",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "41",
+          "street_rep": null,
+          "street": "Avenue de Flandre",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        },
+        {
+          "id": "75119_3659_00043",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "43",
+          "street_rep": null,
+          "street": "Avenue de Flandre",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        },
+        {
+          "id": "75119_3659_00045",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "45",
+          "street_rep": null,
+          "street": "Avenue de Flandre",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        },
+        {
+          "id": "75119_3659_00047",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "47",
+          "street_rep": null,
+          "street": "Avenue de Flandre",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-TDUC-63Y3-K5WD",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:58.250953+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000000152906",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:21:47.044474+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.37118890440781,
+                48.88668016093704
+              ],
+              [
+                2.371214921955584,
+                48.88667130432176
+              ],
+              [
+                2.371131571588772,
+                48.88657194083028
+              ],
+              [
+                2.371184948494081,
+                48.886556033314605
+              ],
+              [
+                2.371132885688043,
+                48.886463129399274
+              ],
+              [
+                2.371288193206679,
+                48.88658895118719
+              ],
+              [
+                2.371339381341308,
+                48.886641380808015
+              ],
+              [
+                2.371400859841057,
+                48.886745125946156
+              ],
+              [
+                2.371461065849871,
+                48.88672835483674
+              ],
+              [
+                2.371725700892986,
+                48.88694827964391
+              ],
+              [
+                2.371638026646599,
+                48.886981094579134
+              ],
+              [
+                2.371562921902665,
+                48.886876378746706
+              ],
+              [
+                2.371422076748805,
+                48.886908015118095
+              ],
+              [
+                2.371432855569353,
+                48.88691886360026
+              ],
+              [
+                2.371389023820454,
+                48.88693482133539
+              ],
+              [
+                2.371275461998789,
+                48.88696570144419
+              ],
+              [
+                2.371173530570702,
+                48.886823972176174
+              ],
+              [
+                2.371297968630062,
+                48.88679584724526
+              ],
+              [
+                2.37118890440781,
+                48.88668016093704
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "H9N1J7H2DSN6",
+      "distance": 2.06345354,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.371002652479976,
+          48.88656002295899
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75119_3659_00041",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "41",
+          "street_rep": null,
+          "street": "Avenue de Flandre",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-NGU1-JSVE-83XQ",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:57.167817+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000000152908",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:07:08.605583+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.370831948614266,
+                48.886426474755716
+              ],
+              [
+                2.370986494219999,
+                48.88638951509374
+              ],
+              [
+                2.37104941137606,
+                48.88648697272357
+              ],
+              [
+                2.371132885688043,
+                48.886463129399274
+              ],
+              [
+                2.371184948494081,
+                48.886556033314605
+              ],
+              [
+                2.371131571588772,
+                48.88657194083028
+              ],
+              [
+                2.371214921955584,
+                48.88667130432176
+              ],
+              [
+                2.37118890440781,
+                48.88668016093704
+              ],
+              [
+                2.371171122927342,
+                48.88668456417704
+              ],
+              [
+                2.371181847351831,
+                48.88669990902341
+              ],
+              [
+                2.37107371871965,
+                48.886732616128945
+              ],
+              [
+                2.371065688996431,
+                48.88671998340255
+              ],
+              [
+                2.371028729767346,
+                48.88673148048327
+              ],
+              [
+                2.370984457769782,
+                48.886670993141834
+              ],
+              [
+                2.370999522866029,
+                48.88666567633453
+              ],
+              [
+                2.370967295477885,
+                48.886624138081096
+              ],
+              [
+                2.370874297162069,
+                48.88664613259617
+              ],
+              [
+                2.370820740805635,
+                48.886564012603365
+              ],
+              [
+                2.370875492288422,
+                48.88654721312314
+              ],
+              [
+                2.37079082260949,
+                48.88644424514602
+              ],
+              [
+                2.370831948614266,
+                48.886426474755716
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "K3WFMR7X6YSJ",
+      "distance": 11.67949794,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.370862220611675,
+          48.886407994924724
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75119_3659_00035",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "35",
+          "street_rep": null,
+          "street": "Avenue de Flandre",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        },
+        {
+          "id": "75119_3659_00041",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "41",
+          "street_rep": null,
+          "street": "Avenue de Flandre",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        },
+        {
+          "id": "75119_3659_00039",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "39",
+          "street_rep": null,
+          "street": "Avenue de Flandre",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        },
+        {
+          "id": "75119_3659_00037",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "37",
+          "street_rep": null,
+          "street": "Avenue de Flandre",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-DKR5-TREJ-KLQK",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:55.252440+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000000152921",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:33:20.928955+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.371132885688043,
+                48.886463129399274
+              ],
+              [
+                2.37104941137606,
+                48.88648697272357
+              ],
+              [
+                2.370986494219999,
+                48.88638951509374
+              ],
+              [
+                2.370831948614266,
+                48.886426474755716
+              ],
+              [
+                2.370790230487621,
+                48.8863803899464
+              ],
+              [
+                2.370968109619108,
+                48.886330962371346
+              ],
+              [
+                2.371132885688043,
+                48.886463129399274
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "1DEVZBRSZQJA",
+      "distance": 24.68893951,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.370803232138673,
+          48.8864967591621
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75119_3659_00041",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "41",
+          "street_rep": null,
+          "street": "Avenue de Flandre",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-NC7U-TVV7-TGMR",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:57.137011+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000000152927",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:33:20.930791+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.37079082260949,
+                48.88644424514602
+              ],
+              [
+                2.370875492288422,
+                48.88654721312314
+              ],
+              [
+                2.370820740805635,
+                48.886564012603365
+              ],
+              [
+                2.370804627207901,
+                48.88654324345195
+              ],
+              [
+                2.370740292483396,
+                48.88645027487224
+              ],
+              [
+                2.37079082260949,
+                48.88644424514602
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "5QSXJVRQP6C1",
+      "distance": 42.2288118,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.371600028415739,
+          48.88704834986834
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75119_3659_00047",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "47",
+          "street_rep": null,
+          "street": "Avenue de Flandre",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        },
+        {
+          "id": "75119_6046_00005",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "5",
+          "street_rep": null,
+          "street": "Passage Marcel Landowski",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        },
+        {
+          "id": "75119_6046_00001",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "1",
+          "street_rep": null,
+          "street": "Passage Marcel Landowski",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        },
+        {
+          "id": "75119_6046_00004_u",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "4",
+          "street_rep": "u",
+          "street": "Passage Marcel Landowski",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        },
+        {
+          "id": "75119_6046_00003",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "3",
+          "street_rep": null,
+          "street": "Passage Marcel Landowski",
+          "city_name": "Paris 19e Arrondissement",
+          "city_zipcode": "75019",
+          "city_insee_code": "75119"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-UFKA-97SJ-K5VA",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:58.479479+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000000152914",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:18:23.251786+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.371389023820454,
+                48.88693482133539
+              ],
+              [
+                2.371432855569353,
+                48.88691886360026
+              ],
+              [
+                2.371422076748805,
+                48.886908015118095
+              ],
+              [
+                2.371562921902665,
+                48.886876378746706
+              ],
+              [
+                2.371638026646599,
+                48.886981094579134
+              ],
+              [
+                2.371725700892986,
+                48.88694827964391
+              ],
+              [
+                2.371783165551471,
+                48.88704570821735
+              ],
+              [
+                2.371727039347734,
+                48.88706340021737
+              ],
+              [
+                2.371751085770236,
+                48.887104895320036
+              ],
+              [
+                2.371771583776742,
+                48.887101405572764
+              ],
+              [
+                2.371805186592268,
+                48.88714205147847
+              ],
+              [
+                2.371821311622929,
+                48.88716192121636
+              ],
+              [
+                2.371767988538376,
+                48.88717333266922
+              ],
+              [
+                2.371774644009793,
+                48.887186857456136
+              ],
+              [
+                2.371673332956713,
+                48.88721960086209
+              ],
+              [
+                2.371662597429052,
+                48.88720515533451
+              ],
+              [
+                2.371618754657504,
+                48.887222012417084
+              ],
+              [
+                2.37160808425799,
+                48.887202171279604
+              ],
+              [
+                2.371561387789431,
+                48.88711649037223
+              ],
+              [
+                2.371479297976695,
+                48.887138542604085
+              ],
+              [
+                2.371418987096258,
+                48.88705099151933
+              ],
+              [
+                2.371469702254995,
+                48.887029673960306
+              ],
+              [
+                2.371444314164031,
+                48.88698637310447
+              ],
+              [
+                2.371421078050374,
+                48.886990747746275
+              ],
+              [
+                2.371389023820454,
+                48.88693482133539
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    }
+  ]
+}

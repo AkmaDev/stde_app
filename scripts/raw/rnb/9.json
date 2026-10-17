@@ -1,0 +1,1786 @@
+{
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "rnb_id": "S5Z3KHF159E4",
+      "distance": 1.69019221,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.397318140249661,
+          48.842478538785095
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75112_7402_00070",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "70",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_3955_00060",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "60",
+          "street_rep": null,
+          "street": "Rue de la Gare de Reuilly",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_3955_00058",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "58",
+          "street_rep": null,
+          "street": "Rue de la Gare de Reuilly",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-LHH6-BK92-1URQ",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:56.739311+00:00",
+          "source_version": "2023_01"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.397462854750087,
+                48.842429207512694
+              ],
+              [
+                2.397533277238404,
+                48.842466435891595
+              ],
+              [
+                2.397522263075719,
+                48.84247627336546
+              ],
+              [
+                2.397530406747027,
+                48.84247901245422
+              ],
+              [
+                2.397527650607021,
+                48.84248169664923
+              ],
+              [
+                2.397520879807705,
+                48.84247806511597
+              ],
+              [
+                2.397428668518587,
+                48.84255764358374
+              ],
+              [
+                2.397378527170186,
+                48.8425340076904
+              ],
+              [
+                2.397350986447572,
+                48.84255905098891
+              ],
+              [
+                2.397357746846921,
+                48.8425635818376
+              ],
+              [
+                2.397359098926931,
+                48.8425644880073
+              ],
+              [
+                2.397361792688512,
+                48.84256719965266
+              ],
+              [
+                2.397363144768688,
+                48.8425681058223
+              ],
+              [
+                2.397364476051838,
+                48.842570810604016
+              ],
+              [
+                2.397364444856228,
+                48.84257350852217
+              ],
+              [
+                2.397364403262075,
+                48.84257710574633
+              ],
+              [
+                2.397363009587394,
+                48.84257979680086
+              ],
+              [
+                2.397362988790267,
+                48.84258159541293
+              ],
+              [
+                2.39736160551398,
+                48.842583387161426
+              ],
+              [
+                2.397358859758397,
+                48.84258517204626
+              ],
+              [
+                2.397356124401309,
+                48.842586057625006
+              ],
+              [
+                2.397352016166125,
+                48.84258783564601
+              ],
+              [
+                2.397350653686853,
+                48.84258782878229
+              ],
+              [
+                2.397346555850192,
+                48.842588707497065
+              ],
+              [
+                2.397343830891606,
+                48.842588693769486
+              ],
+              [
+                2.397339743453728,
+                48.842588673178
+              ],
+              [
+                2.397332941456357,
+                48.842587739552535
+              ],
+              [
+                2.397330237296087,
+                48.84258592721258
+              ],
+              [
+                2.397324808177662,
+                48.842584101144574
+              ],
+              [
+                2.397049816720587,
+                48.842445113600945
+              ],
+              [
+                2.397056701924848,
+                48.842438852793656
+              ],
+              [
+                2.397135184814547,
+                48.84236819900501
+              ],
+              [
+                2.397335697406482,
+                48.84246723940198
+              ],
+              [
+                2.397408688472642,
+                48.842400155204714
+              ],
+              [
+                2.397462854750087,
+                48.842429207512694
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "8KKF2YXVB413",
+      "distance": 9.1691238,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.397475592568644,
+          48.842414681358704
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75112_7402_00072_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "72",
+          "street_rep": "b",
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-SHYU-JRFR-M8Y1",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:58.060423+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240746548",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:21:05.658889+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.39756358435573,
+                48.84243780904699
+              ],
+              [
+                2.397535981399536,
+                48.84246824822713
+              ],
+              [
+                2.397533277238404,
+                48.842466435891595
+              ],
+              [
+                2.397462854750087,
+                48.842429207512694
+              ],
+              [
+                2.397408688472642,
+                48.842400155204714
+              ],
+              [
+                2.397434856212564,
+                48.84237600433279
+              ],
+              [
+                2.39756358435573,
+                48.84243780904699
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "PRYBTREYS8Y3",
+      "distance": 13.10760071,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.397582914520053,
+          48.84223948422801
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75112_7402_00074",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "74",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_7402_00072_t",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "72",
+          "street_rep": "t",
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_7402_00072_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "72",
+          "street_rep": "b",
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_7402_00072",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "72",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-9WEY-RWLT-F44P",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:54.443621+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240746551",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:19:31.233041+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.39756358435573,
+                48.84243780904699
+              ],
+              [
+                2.397434856212564,
+                48.84237600433279
+              ],
+              [
+                2.397421314655266,
+                48.84236874125466
+              ],
+              [
+                2.397514940072303,
+                48.84228467310948
+              ],
+              [
+                2.397206023211096,
+                48.84213382335309
+              ],
+              [
+                2.397328520298968,
+                48.84202741684403
+              ],
+              [
+                2.397518236167335,
+                48.842117408988905
+              ],
+              [
+                2.397507242867536,
+                48.842125447851636
+              ],
+              [
+                2.397527565523678,
+                48.84213544314963
+              ],
+              [
+                2.39759981787757,
+                48.84213220957298
+              ],
+              [
+                2.397667285519514,
+                48.84207139289942
+              ],
+              [
+                2.397751280379505,
+                48.842113186294576
+              ],
+              [
+                2.397785155011166,
+                48.84212954528486
+              ],
+              [
+                2.397739715558082,
+                48.842170687031896
+              ],
+              [
+                2.397784406844584,
+                48.84219429534654
+              ],
+              [
+                2.39756358435573,
+                48.84243780904699
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "V344PAKPDQ31",
+      "distance": 18.28905222,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.397864252670885,
+          48.84255968230019
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75112_7402_00059",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "59",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_7402_00061",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "61",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_7402_00057",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "57",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_8811_00004",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "4",
+          "street_rep": null,
+          "street": "Rue Santerre",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_8811_00002",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "2",
+          "street_rep": null,
+          "street": "Rue Santerre",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-J9CR-TVFB-A2YZ",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:56.253204+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240747026",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:07:10.677980+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.398194568403756,
+                48.842545310537425
+              ],
+              [
+                2.398193091698914,
+                48.84255519605079
+              ],
+              [
+                2.398190366741857,
+                48.842555182342494
+              ],
+              [
+                2.39818890042025,
+                48.8425641685496
+              ],
+              [
+                2.398017342358925,
+                48.842553412432615
+              ],
+              [
+                2.397994304877151,
+                48.84254250420268
+              ],
+              [
+                2.397837091319612,
+                48.842705396172875
+              ],
+              [
+                2.397683858323374,
+                48.84264166967953
+              ],
+              [
+                2.397679812453645,
+                48.84263805187561
+              ],
+              [
+                2.397717067091682,
+                48.84259776831758
+              ],
+              [
+                2.397845460913395,
+                48.842452718596775
+              ],
+              [
+                2.397895643952754,
+                48.842472757071455
+              ],
+              [
+                2.397941208208791,
+                48.8424208236018
+              ],
+              [
+                2.398213495535454,
+                48.84244018081626
+              ],
+              [
+                2.398197490659295,
+                48.84252823742887
+              ],
+              [
+                2.398194568403756,
+                48.842545310537425
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "JEP9E858TGYY",
+      "distance": 25.73079378,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.397173057411447,
+          48.84277456521796
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75112_3955_00059",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "59",
+          "street_rep": null,
+          "street": "Rue de la Gare de Reuilly",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_3955_00061",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "61",
+          "street_rep": null,
+          "street": "Rue de la Gare de Reuilly",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_7402_00066",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "66",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_7402_00068",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "68",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-E8L8-LFY2-M6NS",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:55.390398+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240747378",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:07:39.802090+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.396973329571191,
+                48.842696548435455
+              ],
+              [
+                2.397065760278993,
+                48.842598084902725
+              ],
+              [
+                2.397166001252985,
+                48.84264895415127
+              ],
+              [
+                2.397084699386388,
+                48.84272768796197
+              ],
+              [
+                2.397129422061691,
+                48.842748598591875
+              ],
+              [
+                2.397137680182246,
+                48.84274144534197
+              ],
+              [
+                2.397262352621968,
+                48.84280053184404
+              ],
+              [
+                2.397258213165433,
+                48.84280500777903
+              ],
+              [
+                2.397153197597079,
+                48.842931288127254
+              ],
+              [
+                2.397123389300532,
+                48.84291674818027
+              ],
+              [
+                2.397215903324548,
+                48.842811090104384
+              ],
+              [
+                2.396973329571191,
+                48.842696548435455
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "FQ6VZWKFRQ36",
+      "distance": 31.5334748,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.396894412161458,
+          48.84227560805776
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75112_3955_00054",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "54",
+          "street_rep": null,
+          "street": "Rue de la Gare de Reuilly",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_3955_00052",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "52",
+          "street_rep": null,
+          "street": "Rue de la Gare de Reuilly",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_3955_00050",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "50",
+          "street_rep": null,
+          "street": "Rue de la Gare de Reuilly",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_3955_00056_b",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "56",
+          "street_rep": "b",
+          "street": "Rue de la Gare de Reuilly",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_3955_00056",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "56",
+          "street_rep": null,
+          "street": "Rue de la Gare de Reuilly",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-UUKJ-M71X-U37Y",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:58.571170+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240746546",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:29:57.355842+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.396968319169392,
+                48.842187486229726
+              ],
+              [
+                2.396935276525805,
+                48.84221699849936
+              ],
+              [
+                2.397173729340638,
+                48.84233421761617
+              ],
+              [
+                2.397135184814547,
+                48.84236819900501
+              ],
+              [
+                2.397056701924848,
+                48.842438852793656
+              ],
+              [
+                2.396459318240199,
+                48.842136353941534
+              ],
+              [
+                2.396539122299011,
+                48.84206930462413
+              ],
+              [
+                2.396576273291869,
+                48.84203801446492
+              ],
+              [
+                2.396738853058209,
+                48.84211797802119
+              ],
+              [
+                2.396769150000536,
+                48.84209025067528
+              ],
+              [
+                2.396968319169392,
+                48.842187486229726
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "5MPA56D6P951",
+      "distance": 33.40660985,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.398053759674735,
+          48.84263263009507
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75112_7402_00059",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "59",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-1HY3-QT7W-3CPB",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:52.626984+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000000167731",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:44:16.357704+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.397865776179667,
+                48.842699245049445
+              ],
+              [
+                2.397987367832907,
+                48.842553261593935
+              ],
+              [
+                2.398198417003308,
+                48.8425660151407
+              ],
+              [
+                2.398164961507197,
+                48.84274931592626
+              ],
+              [
+                2.398121455501776,
+                48.842741002822166
+              ],
+              [
+                2.397886016011787,
+                48.84271643472922
+              ],
+              [
+                2.397865776179667,
+                48.842699245049445
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "DDH6S23B3EXA",
+      "distance": 35.54035892,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.397023468460907,
+          48.8427912398069
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75112_3955_00061",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "61",
+          "street_rep": null,
+          "street": "Rue de la Gare de Reuilly",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_3955_00057",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "57",
+          "street_rep": null,
+          "street": "Rue de la Gare de Reuilly",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-NLZW-ZXDE-V4TK",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:57.197033+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240747379",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:44:24.286226+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.396833482153801,
+                48.842771389509416
+              ],
+              [
+                2.39688306232913,
+                48.842725772206585
+              ],
+              [
+                2.396845131368529,
+                48.84270669444352
+              ],
+              [
+                2.396894711472119,
+                48.84266107713326
+              ],
+              [
+                2.396973329571191,
+                48.842696548435455
+              ],
+              [
+                2.397215903324548,
+                48.842811090104384
+              ],
+              [
+                2.397123389300532,
+                48.84291674818027
+              ],
+              [
+                2.396833482153801,
+                48.842771389509416
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "6KRE8JBGXE7B",
+      "distance": 38.31877335,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.398465598146871,
+          48.84332802259581
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75112_8811_00017",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "17",
+          "street_rep": null,
+          "street": "Rue Santerre",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_7402_00049",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "49",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_7402_00051",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "51",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_7402_00053",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "53",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_7402_00055",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "55",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_8811_00001",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "1",
+          "street_rep": null,
+          "street": "Rue Santerre",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_8811_00003",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "3",
+          "street_rep": null,
+          "street": "Rue Santerre",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_8811_00007",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "7",
+          "street_rep": null,
+          "street": "Rue Santerre",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_8811_00009",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "9",
+          "street_rep": null,
+          "street": "Rue Santerre",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_8811_00015",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "15",
+          "street_rep": null,
+          "street": "Rue Santerre",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_8811_00013",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "13",
+          "street_rep": null,
+          "street": "Rue Santerre",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_8811_00011",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "11",
+          "street_rep": null,
+          "street": "Rue Santerre",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-99D2-5XU9-XBCK",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:54.300765+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000316905391",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:19:24.799904+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.399256421197091,
+                48.84345450231187
+              ],
+              [
+                2.399212751539057,
+                48.84381492533184
+              ],
+              [
+                2.398740198663171,
+                48.84379186602742
+              ],
+              [
+                2.39874319343477,
+                48.843768497788226
+              ],
+              [
+                2.398468111673752,
+                48.843754523931615
+              ],
+              [
+                2.397988757516752,
+                48.84373052809743
+              ],
+              [
+                2.398046787651252,
+                48.84330722267178
+              ],
+              [
+                2.398159833460691,
+                48.843311388871236
+              ],
+              [
+                2.398158086717757,
+                48.84334465632038
+              ],
+              [
+                2.398360995281974,
+                48.84335467052742
+              ],
+              [
+                2.398389968516704,
+                48.8432055228451
+              ],
+              [
+                2.398197970874009,
+                48.84319466421334
+              ],
+              [
+                2.398198251249407,
+                48.84317038296146
+              ],
+              [
+                2.397413880722393,
+                48.84312956091469
+              ],
+              [
+                2.397333784988135,
+                48.84322179130671
+              ],
+              [
+                2.397333566604944,
+                48.843240676722445
+              ],
+              [
+                2.397144273239984,
+                48.84323162873876
+              ],
+              [
+                2.39720905945306,
+                48.843167201429175
+              ],
+              [
+                2.39736121115694,
+                48.842971008586176
+              ],
+              [
+                2.397462024968419,
+                48.84297241575606
+              ],
+              [
+                2.397466299579909,
+                48.84295624884007
+              ],
+              [
+                2.397421483012639,
+                48.842943432091786
+              ],
+              [
+                2.397457448360088,
+                48.8428968466222
+              ],
+              [
+                2.397492727482223,
+                48.8429096153232
+              ],
+              [
+                2.397497095645851,
+                48.84288535465301
+              ],
+              [
+                2.398250166866727,
+                48.84292242131386
+              ],
+              [
+                2.398250914465124,
+                48.84285767129154
+              ],
+              [
+                2.398395140794798,
+                48.842875484484324
+              ],
+              [
+                2.399022500667678,
+                48.84294339155415
+              ],
+              [
+                2.399024800476811,
+                48.84298027678435
+              ],
+              [
+                2.399125541773491,
+                48.84298797769337
+              ],
+              [
+                2.399093870694505,
+                48.8432531291734
+              ],
+              [
+                2.399009426998712,
+                48.84325000690684
+              ],
+              [
+                2.399011007270993,
+                48.84323112833302
+              ],
+              [
+                2.398994678056416,
+                48.84322924758287
+              ],
+              [
+                2.398994584721555,
+                48.84323734133373
+              ],
+              [
+                2.398572449524,
+                48.843214534609125
+              ],
+              [
+                2.398559214496344,
+                48.843416823558776
+              ],
+              [
+                2.399256421197091,
+                48.84345450231187
+              ]
+            ],
+            [
+              [
+                2.398370182356622,
+                48.84350311074249
+              ],
+              [
+                2.398209500423129,
+                48.8434942083373
+              ],
+              [
+                2.398195856773561,
+                48.843613754259536
+              ],
+              [
+                2.39835382444205,
+                48.84362174367226
+              ],
+              [
+                2.398370182356622,
+                48.84350311074249
+              ]
+            ],
+            [
+              [
+                2.398123997505126,
+                48.842992835886335
+              ],
+              [
+                2.397968767145688,
+                48.842983960573264
+              ],
+              [
+                2.39795535162335,
+                48.84308372179787
+              ],
+              [
+                2.398107878064126,
+                48.843090784805995
+              ],
+              [
+                2.398123997505126,
+                48.842992835886335
+              ]
+            ],
+            [
+              [
+                2.398634381299965,
+                48.84304306859572
+              ],
+              [
+                2.398615537814818,
+                48.84314100388113
+              ],
+              [
+                2.398770779126512,
+                48.84314897904801
+              ],
+              [
+                2.398785534848124,
+                48.84305102319677
+              ],
+              [
+                2.398634381299965,
+                48.84304306859572
+              ]
+            ],
+            [
+              [
+                2.399049107186347,
+                48.84359016341533
+              ],
+              [
+                2.398882922984047,
+                48.84358573106456
+              ],
+              [
+                2.39887237929132,
+                48.8436729157567
+              ],
+              [
+                2.399037149413269,
+                48.84368183780374
+              ],
+              [
+                2.399049107186347,
+                48.84359016341533
+              ]
+            ],
+            [
+              [
+                2.397676008551853,
+                48.842967197829964
+              ],
+              [
+                2.397523451343674,
+                48.84296283218767
+              ],
+              [
+                2.397514216013959,
+                48.84305452019887
+              ],
+              [
+                2.397661292342703,
+                48.84306155632901
+              ],
+              [
+                2.397676008551853,
+                48.842967197829964
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "B9E7ZBXCZEN4",
+      "distance": 42.84578021,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.398034150974451,
+          48.842265129331565
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75112_2511_00001",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "1",
+          "street_rep": null,
+          "street": "Rue Dagorno",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_7402_00063",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "63",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_2511_00002",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "2",
+          "street_rep": null,
+          "street": "Rue Dagorno",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-6DN4-RR8X-DYTY",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:53.686617+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240746473",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:31:29.511708+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.397939906493943,
+                48.84229760492929
+              ],
+              [
+                2.398037898800268,
+                48.84218927566783
+              ],
+              [
+                2.398086926910456,
+                48.84219132108304
+              ],
+              [
+                2.398167281428423,
+                48.84219442344051
+              ],
+              [
+                2.3981983897681,
+                48.84221436582933
+              ],
+              [
+                2.39819401160299,
+                48.842239525846104
+              ],
+              [
+                2.398184922961731,
+                48.842318623680086
+              ],
+              [
+                2.39818195917629,
+                48.842339294016774
+              ],
+              [
+                2.397958700616471,
+                48.8423219821963
+              ],
+              [
+                2.397939906493943,
+                48.84229760492929
+              ]
+            ],
+            [
+              [
+                2.39809291877004,
+                48.84226240056408
+              ],
+              [
+                2.398105118693639,
+                48.842267858099056
+              ],
+              [
+                2.398105066765153,
+                48.84227235463082
+              ],
+              [
+                2.398137745301953,
+                48.84227431776232
+              ],
+              [
+                2.398145108063257,
+                48.84222668879823
+              ],
+              [
+                2.398100167327141,
+                48.84222466397257
+              ],
+              [
+                2.39809291877004,
+                48.84226240056408
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "3MPS95VPR6WG",
+      "distance": 48.07616447,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.396694703360384,
+          48.8426955931587
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75112_7402_00064",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "64",
+          "street_rep": null,
+          "street": "Rue de Picpus",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_3955_00051",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "51",
+          "street_rep": null,
+          "street": "Rue de la Gare de Reuilly",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_3955_00049",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "49",
+          "street_rep": null,
+          "street": "Rue de la Gare de Reuilly",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        },
+        {
+          "id": "75112_3955_00055",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "55",
+          "street_rep": null,
+          "street": "Rue de la Gare de Reuilly",
+          "city_name": "Paris 12e Arrondissement",
+          "city_zipcode": "75012",
+          "city_insee_code": "75112"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-67BC-FYC9-76ZB",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:53.645298+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000240747377",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:30:13.821929+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.395805053792047,
+                48.842862431120416
+              ],
+              [
+                2.395671001880662,
+                48.842789805337574
+              ],
+              [
+                2.396020605891568,
+                48.84248668839077
+              ],
+              [
+                2.39616238924535,
+                48.84236239329034
+              ],
+              [
+                2.396482100120849,
+                48.842522293760304
+              ],
+              [
+                2.396641729978352,
+                48.84238639647198
+              ],
+              [
+                2.396747399214054,
+                48.84243909218017
+              ],
+              [
+                2.39659182567158,
+                48.84257770813817
+              ],
+              [
+                2.396617577422342,
+                48.84258952968797
+              ],
+              [
+                2.39661482122948,
+                48.84259221386169
+              ],
+              [
+                2.396845131368529,
+                48.84270669444352
+              ],
+              [
+                2.39688306232913,
+                48.842725772206585
+              ],
+              [
+                2.396833482153801,
+                48.842771389509416
+              ],
+              [
+                2.396830767593584,
+                48.8427704764643
+              ],
+              [
+                2.396822499018376,
+                48.842778528998664
+              ],
+              [
+                2.39679539505227,
+                48.842765801319075
+              ],
+              [
+                2.396763735246636,
+                48.84279352178446
+              ],
+              [
+                2.396544262278824,
+                48.84268449187388
+              ],
+              [
+                2.396146503968293,
+                48.8430278383481
+              ],
+              [
+                2.396055727737164,
+                48.842983311551485
+              ],
+              [
+                2.396176950036089,
+                48.84286970497861
+              ],
+              [
+                2.396410947374983,
+                48.8426658321367
+              ],
+              [
+                2.396173888493837,
+                48.84254592049357
+              ],
+              [
+                2.395939869919704,
+                48.84275159150526
+              ],
+              [
+                2.395805053792047,
+                48.842862431120416
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    }
+  ]
+}

@@ -1,0 +1,1482 @@
+{
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "rnb_id": "28BZH3VNBP9R",
+      "distance": 0.44210612,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.278875722581562,
+          48.84010884248324
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75115_6451_00012",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "12",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00008",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "8",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00010",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "10",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-CR5E-6XRU-BQFL",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:55.067439+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000241917053",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T01:29:07.091500+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.278712080758664,
+                48.840215331089425
+              ],
+              [
+                2.278710930649281,
+                48.840003072423485
+              ],
+              [
+                2.279039392142702,
+                48.83999605880231
+              ],
+              [
+                2.27904045651225,
+                48.840214612542994
+              ],
+              [
+                2.278712080758664,
+                48.840215331089425
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "KC1PBCVG767J",
+      "distance": 7.12558098,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.278353879985184,
+          48.84024175246377
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75115_6451_00004",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "4",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00002",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "2",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00006",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "6",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_0639_00067",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "67",
+          "street_rep": null,
+          "street": "Rue Balard",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-F1KR-J874-SJKT",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:55.560135+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000241917136",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:28:22.599458+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.278248396519831,
+                48.84034474192998
+              ],
+              [
+                2.278237534653128,
+                48.84034197827855
+              ],
+              [
+                2.278187960171989,
+                48.8402814212519
+              ],
+              [
+                2.278182585291637,
+                48.84027599258918
+              ],
+              [
+                2.278204652796169,
+                48.84015830805222
+              ],
+              [
+                2.278238799933381,
+                48.8401522184884
+              ],
+              [
+                2.278408925425803,
+                48.84016583605797
+              ],
+              [
+                2.278427986558187,
+                48.840166850410185
+              ],
+              [
+                2.278429411207698,
+                48.84016236214519
+              ],
+              [
+                2.278430798506605,
+                48.84016057177006
+              ],
+              [
+                2.278434923052604,
+                48.84015789853446
+              ],
+              [
+                2.278440397546707,
+                48.84015613281335
+              ],
+              [
+                2.278444497192099,
+                48.840155258170675
+              ],
+              [
+                2.278449946786021,
+                48.84015529104239
+              ],
+              [
+                2.278454009082031,
+                48.84015711428929
+              ],
+              [
+                2.278458071378326,
+                48.84015893753604
+              ],
+              [
+                2.27846209632616,
+                48.84016345867255
+              ],
+              [
+                2.278490681800717,
+                48.84016542983537
+              ],
+              [
+                2.278538589826059,
+                48.84014953009653
+              ],
+              [
+                2.278557638507073,
+                48.84015144372477
+              ],
+              [
+                2.278608637929403,
+                48.84020751233835
+              ],
+              [
+                2.278248396519831,
+                48.84034474192998
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "SJ2Y8XV5N8GT",
+      "distance": 11.52130266,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.278934578166381,
+          48.840462128474826
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75115_4430_00081",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "81",
+          "street_rep": null,
+          "street": "Rue Gutenberg",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_0639_00065",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "65",
+          "street_rep": null,
+          "street": "Rue Balard",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_4430_00089",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "89",
+          "street_rep": null,
+          "street": "Rue Gutenberg",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_4430_00091",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "91",
+          "street_rep": null,
+          "street": "Rue Gutenberg",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_4430_00093",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "93",
+          "street_rep": null,
+          "street": "Rue Gutenberg",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00001",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "1",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00003",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "3",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00005",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "5",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00007",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "7",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00009",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "9",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00011",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "11",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_4430_00083",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "83",
+          "street_rep": null,
+          "street": "Rue Gutenberg",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_4430_00085",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "85",
+          "street_rep": null,
+          "street": "Rue Gutenberg",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_4430_00087",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "87",
+          "street_rep": null,
+          "street": "Rue Gutenberg",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-T9PA-Z9VS-Z9XD",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:58.222068+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000241917186",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:18:01.267290+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.278668464846339,
+                48.840314898338924
+              ],
+              [
+                2.27867802655695,
+                48.84031315725335
+              ],
+              [
+                2.278695750236946,
+                48.84031236475441
+              ],
+              [
+                2.278712111513793,
+                48.84031156403795
+              ],
+              [
+                2.278731197595319,
+                48.84031077974865
+              ],
+              [
+                2.278748896384362,
+                48.84031178583492
+              ],
+              [
+                2.278754345994842,
+                48.84031181869276
+              ],
+              [
+                2.278766595174087,
+                48.84031279191856
+              ],
+              [
+                2.27877884435379,
+                48.84031376514311
+              ],
+              [
+                2.278793805895462,
+                48.840315654090915
+              ],
+              [
+                2.278810129841,
+                48.84031755125067
+              ],
+              [
+                2.278829153706817,
+                48.84032126342847
+              ],
+              [
+                2.278846815172367,
+                48.84032496738985
+              ],
+              [
+                2.278864476640427,
+                48.840328671348615
+              ],
+              [
+                2.278880763265419,
+                48.84033326638833
+              ],
+              [
+                2.278897049893283,
+                48.84033786142577
+              ],
+              [
+                2.278914686485652,
+                48.84034336397015
+              ],
+              [
+                2.278926873467277,
+                48.84034883366215
+              ],
+              [
+                2.278943122780089,
+                48.840356126582854
+              ],
+              [
+                2.278953934922587,
+                48.84036248735627
+              ],
+              [
+                2.278964734626764,
+                48.84036974742519
+              ],
+              [
+                2.278975534333951,
+                48.84037700749309
+              ],
+              [
+                2.278986334044148,
+                48.84038426755997
+              ],
+              [
+                2.278999833686123,
+                48.84039334264212
+              ],
+              [
+                2.279010596082564,
+                48.840403300596186
+              ],
+              [
+                2.279026758344788,
+                48.84041688858058
+              ],
+              [
+                2.279042908175813,
+                48.84043137585909
+              ],
+              [
+                2.279057695609644,
+                48.84044585492426
+              ],
+              [
+                2.279067083182338,
+                48.840456703958246
+              ],
+              [
+                2.279076470758938,
+                48.8404675529914
+              ],
+              [
+                2.279083170842214,
+                48.840475687713024
+              ],
+              [
+                2.279076321490263,
+                48.84047834454874
+              ],
+              [
+                2.279076246855903,
+                48.84048374032736
+              ],
+              [
+                2.279078809963012,
+                48.84049544760246
+              ],
+              [
+                2.279078660694741,
+                48.84050623915953
+              ],
+              [
+                2.279078548743498,
+                48.84051433282728
+              ],
+              [
+                2.279078424353186,
+                48.84052332579136
+              ],
+              [
+                2.279076912676274,
+                48.840534109137415
+              ],
+              [
+                2.279075438316006,
+                48.84054219459417
+              ],
+              [
+                2.279073951516164,
+                48.84055117934725
+              ],
+              [
+                2.279071102306645,
+                48.84056015588942
+              ],
+              [
+                2.279066853369019,
+                48.84057182210968
+              ],
+              [
+                2.279062753701306,
+                48.84057269677337
+              ],
+              [
+                2.279059979124876,
+                48.84057627753694
+              ],
+              [
+                2.27905857939713,
+                48.84057896721507
+              ],
+              [
+                2.279055829698953,
+                48.840580749385815
+              ],
+              [
+                2.27905308000059,
+                48.8405825315565
+              ],
+              [
+                2.279047593042877,
+                48.84058519660134
+              ],
+              [
+                2.279043493373788,
+                48.84058607126436
+              ],
+              [
+                2.279039393704563,
+                48.8405869459272
+              ],
+              [
+                2.279035306474992,
+                48.840586921293585
+              ],
+              [
+                2.279029856835569,
+                48.84058688844855
+              ],
+              [
+                2.279025794485921,
+                48.84058506522192
+              ],
+              [
+                2.279021732136556,
+                48.840583241995134
+              ],
+              [
+                2.279016332258002,
+                48.84057961196407
+              ],
+              [
+                2.279010944820413,
+                48.84057508263639
+              ],
+              [
+                2.279006907352903,
+                48.84057146081637
+              ],
+              [
+                2.278927340172994,
+                48.840610553558925
+              ],
+              [
+                2.278668464846339,
+                48.840314898338924
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "8S7GZBVJWRSV",
+      "distance": 22.24098037,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.278313728986798,
+          48.84012108009466
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75115_0639_00069",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "69",
+          "street_rep": null,
+          "street": "Rue Balard",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-XT21-UJSU-1CKL",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:59.212698+00:00",
+          "source_version": "2023_01"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.278408925425803,
+                48.84016583605797
+              ],
+              [
+                2.278238799933381,
+                48.8401522184884
+              ],
+              [
+                2.278204652796169,
+                48.84015830805222
+              ],
+              [
+                2.278209113610088,
+                48.840131353815664
+              ],
+              [
+                2.278217910686343,
+                48.8400864383068
+              ],
+              [
+                2.278250433860948,
+                48.84009922574865
+              ],
+              [
+                2.278381074561897,
+                48.840110806373666
+              ],
+              [
+                2.278419333739452,
+                48.8401029428207
+              ],
+              [
+                2.278408925425803,
+                48.84016583605797
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "2SCD479JGCD8",
+      "distance": 24.01258924,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.278355956674557,
+          48.839902052712304
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75115_0639_00071",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "71",
+          "street_rep": null,
+          "street": "Rue Balard",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_0639_00075",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "75",
+          "street_rep": null,
+          "street": "Rue Balard",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_0639_00073",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "73",
+          "street_rep": null,
+          "street": "Rue Balard",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-PV32-GH1R-64BH",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:57.470923+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000241917216",
+          "source": "bdtopo",
+          "created_at": "2023-12-21T18:19:46.563132+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.278439826593445,
+                48.84000053804883
+              ],
+              [
+                2.278401704450599,
+                48.83999850934479
+              ],
+              [
+                2.278395669690761,
+                48.84004074341761
+              ],
+              [
+                2.278431054623098,
+                48.840043654984015
+              ],
+              [
+                2.278419333739452,
+                48.8401029428207
+              ],
+              [
+                2.278381074561897,
+                48.840110806373666
+              ],
+              [
+                2.278250433860948,
+                48.84009922574865
+              ],
+              [
+                2.278217910686343,
+                48.8400864383068
+              ],
+              [
+                2.278294234394573,
+                48.83969117514729
+              ],
+              [
+                2.278347305204362,
+                48.83969599218785
+              ],
+              [
+                2.278356189247059,
+                48.83964478157206
+              ],
+              [
+                2.278304468421403,
+                48.83964087205184
+              ],
+              [
+                2.278304530682278,
+                48.83963637556666
+              ],
+              [
+                2.278507326857616,
+                48.839651988861576
+              ],
+              [
+                2.278485322496277,
+                48.839765177022976
+              ],
+              [
+                2.278451300138172,
+                48.83976227368979
+              ],
+              [
+                2.278442565566914,
+                48.839802692744264
+              ],
+              [
+                2.278476587950916,
+                48.83980559607983
+              ],
+              [
+                2.278439826593445,
+                48.84000053804883
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "FKF7E65HV6MS",
+      "distance": 33.19343937,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.279501318748149,
+          48.84008309466365
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75115_6451_00018",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "18",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00014",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "14",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_8513_00190",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "190",
+          "street_rep": null,
+          "street": "Rue Saint-Charles",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00016",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "16",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_8513_00188",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "188",
+          "street_rep": null,
+          "street": "Rue Saint-Charles",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-ULUB-EMH5-Y1LY",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:58.516928+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000241917034",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T00:54:15.534290+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.279614355043802,
+                48.84009575550859
+              ],
+              [
+                2.279609004893583,
+                48.84008852831546
+              ],
+              [
+                2.279659674586806,
+                48.84006994664544
+              ],
+              [
+                2.279665161458981,
+                48.840067281571294
+              ],
+              [
+                2.27965309875579,
+                48.84005281898474
+              ],
+              [
+                2.279647624313621,
+                48.84005458476152
+              ],
+              [
+                2.279622136534265,
+                48.840025651378575
+              ],
+              [
+                2.279631723018693,
+                48.84002211162259
+              ],
+              [
+                2.279608935193389,
+                48.83999499323861
+              ],
+              [
+                2.279600698677071,
+                48.839999440494545
+              ],
+              [
+                2.279596673643137,
+                48.839994919395686
+              ],
+              [
+                2.279600897555369,
+                48.83998505174436
+              ],
+              [
+                2.279594185024356,
+                48.839977816345055
+              ],
+              [
+                2.279580573514387,
+                48.83997683499868
+              ],
+              [
+                2.279577898447538,
+                48.839973221401024
+              ],
+              [
+                2.279587484925326,
+                48.83996968164841
+              ],
+              [
+                2.279539184605541,
+                48.83991542844512
+              ],
+              [
+                2.279522910484283,
+                48.8399099341964
+              ],
+              [
+                2.279511949189362,
+                48.83991436503516
+              ],
+              [
+                2.279505249111323,
+                48.839906230333455
+              ],
+              [
+                2.279368276300478,
+                48.839958468185394
+              ],
+              [
+                2.279395101433421,
+                48.839989208425045
+              ],
+              [
+                2.27936634194618,
+                48.83999982763409
+              ],
+              [
+                2.279407879917277,
+                48.84005044268105
+              ],
+              [
+                2.279389770897164,
+                48.84007911348665
+              ],
+              [
+                2.279367860645601,
+                48.84008707584064
+              ],
+              [
+                2.279334976603946,
+                48.84010036830914
+              ],
+              [
+                2.279317302745004,
+                48.84009756371585
+              ],
+              [
+                2.279263883236231,
+                48.840117927416664
+              ],
+              [
+                2.279214899104618,
+                48.84011313541222
+              ],
+              [
+                2.279198463276594,
+                48.84011933197805
+              ],
+              [
+                2.279194077597025,
+                48.84014089047145
+              ],
+              [
+                2.279203490016751,
+                48.84014994090427
+              ],
+              [
+                2.279191166245628,
+                48.84015436350336
+              ],
+              [
+                2.279182432182411,
+                48.84019478259766
+              ],
+              [
+                2.279166095824332,
+                48.84019378478519
+              ],
+              [
+                2.279152901402723,
+                48.84026115814567
+              ],
+              [
+                2.279216847211027,
+                48.840267839069874
+              ],
+              [
+                2.279282590678247,
+                48.84024305278593
+              ],
+              [
+                2.279275878158194,
+                48.84023581737043
+              ],
+              [
+                2.27940600249374,
+                48.840186236492535
+              ],
+              [
+                2.279412715025471,
+                48.84019347190106
+              ],
+              [
+                2.279475721075662,
+                48.84016956839214
+              ],
+              [
+                2.279468996106055,
+                48.840163232283736
+              ],
+              [
+                2.279475832964491,
+                48.840161474721526
+              ],
+              [
+                2.279479920160908,
+                48.84016149934012
+              ],
+              [
+                2.279483994925378,
+                48.840162423255286
+              ],
+              [
+                2.279494894116041,
+                48.840162488903765
+              ],
+              [
+                2.279503118235535,
+                48.84015894095252
+              ],
+              [
+                2.279504542792248,
+                48.84015445267469
+              ],
+              [
+                2.279507304884138,
+                48.84015177119619
+              ],
+              [
+                2.279508717008776,
+                48.840148182215046
+              ],
+              [
+                2.279508729440295,
+                48.840147282918295
+              ],
+              [
+                2.279515566295299,
+                48.8401455253538
+              ],
+              [
+                2.279520916438412,
+                48.84015275255074
+              ],
+              [
+                2.27962639288722,
+                48.840112016692096
+              ],
+              [
+                2.279634616989797,
+                48.84010846873165
+              ],
+              [
+                2.279622566715092,
+                48.840093106845735
+              ],
+              [
+                2.279614355043802,
+                48.84009575550859
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    },
+    {
+      "rnb_id": "5TD2Z5V8YPVK",
+      "distance": 39.9331824,
+      "status": "constructed",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          2.279487633958309,
+          48.840404883283924
+        ]
+      },
+      "addresses": [
+        {
+          "id": "75115_8513_00178",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "178",
+          "street_rep": null,
+          "street": "Rue Saint-Charles",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00011",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "11",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_8513_00180",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "180",
+          "street_rep": null,
+          "street": "Rue Saint-Charles",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00015",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "15",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_8513_00186",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "186",
+          "street_rep": null,
+          "street": "Rue Saint-Charles",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_8513_00182",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "182",
+          "street_rep": null,
+          "street": "Rue Saint-Charles",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00013",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "13",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_8513_00184",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "184",
+          "street_rep": null,
+          "street": "Rue Saint-Charles",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_6451_00017",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "17",
+          "street_rep": null,
+          "street": "Rue de la Montagne d'Aulas",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        },
+        {
+          "id": "75115_8513_00176",
+          "ban_id": null,
+          "source": "bdnb",
+          "street_number": "176",
+          "street_rep": null,
+          "street": "Rue Saint-Charles",
+          "city_name": "Paris 15e Arrondissement",
+          "city_zipcode": "75015",
+          "city_insee_code": "75115"
+        }
+      ],
+      "ext_ids": [
+        {
+          "id": "bdnb-bc-N2EQ-JJ91-TP9Y",
+          "source": "bdnb",
+          "created_at": "2023-12-10T10:23:57.073620+00:00",
+          "source_version": "2023_01"
+        },
+        {
+          "id": "BATIMENT0000000241917487",
+          "source": "bdtopo",
+          "created_at": "2023-12-22T00:59:21.543615+00:00",
+          "source_version": "bdtopo_2023_09"
+        }
+      ],
+      "shape": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                2.279338035034205,
+                48.840568959283665
+              ],
+              [
+                2.279324634766211,
+                48.84055268986987
+              ],
+              [
+                2.279220544473036,
+                48.840591635062765
+              ],
+              [
+                2.279164952572953,
+                48.840473482436835
+              ],
+              [
+                2.279148541500988,
+                48.84047788040093
+              ],
+              [
+                2.279135228381827,
+                48.840455315889336
+              ],
+              [
+                2.27921603320792,
+                48.84042522417728
+              ],
+              [
+                2.279181170336618,
+                48.84038454239056
+              ],
+              [
+                2.279360602769644,
+                48.84031637187496
+              ],
+              [
+                2.279352565129431,
+                48.84030643036688
+              ],
+              [
+                2.279611426500092,
+                48.84020905869556
+              ],
+              [
+                2.279619464174664,
+                48.840219000187105
+              ],
+              [
+                2.279705742809321,
+                48.84018714236262
+              ],
+              [
+                2.27974729368671,
+                48.84023685798651
+              ],
+              [
+                2.279788389392324,
+                48.84022091673235
+              ],
+              [
+                2.279784376751786,
+                48.840215496343966
+              ],
+              [
+                2.279814486246593,
+                48.8402057845356
+              ],
+              [
+                2.27992176368114,
+                48.840330543618855
+              ],
+              [
+                2.27985329559966,
+                48.840355313848335
+              ],
+              [
+                2.279868070811658,
+                48.84037069211092
+              ],
+              [
+                2.279338035034205,
+                48.840568959283665
+              ]
+            ]
+          ]
+        ]
+      },
+      "validated_by": []
+    }
+  ]
+}
