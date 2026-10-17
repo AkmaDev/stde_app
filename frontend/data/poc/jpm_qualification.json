@@ -1,0 +1,106 @@
+{
+  "batiment_id": 16,
+  "batiment_nom": "Jean-Pierre Melville",
+  "note": "Qualification Brique 1 (C0_INPUT_REPORT) des entrées utilisées par le calcul Brique 3 de ce prototype. Rédigé à la main à partir de ce qui a été vérifié cette session — aucune nouvelle recherche de donnée, uniquement la formalisation de ce qui est déjà établi.",
+  "entrees": [
+    {
+      "parametre": "Hauteur du bâtiment",
+      "valeur": "19,08 m",
+      "unite": "m",
+      "source": "APUR — EMPRISE_BATIE_PARIS (open data), champ hauteur",
+      "confiance": "A",
+      "criticite": "haute",
+      "justification": "Mesure directe d'une source officielle, vérifiée par rapprochement RNB."
+    },
+    {
+      "parametre": "Longueur et orientation des façades",
+      "valeur": "21 segments reconstruits, 8 exploitables (non-bruit)",
+      "unite": "m / degrés",
+      "source": "Calcul géométrique sur le contour APUR (script enrich_rnb_apur.py)",
+      "confiance": "A",
+      "criticite": "haute",
+      "justification": "Calcul déterministe à partir d'une géométrie source officielle, reproductible."
+    },
+    {
+      "parametre": "Taux de vitrage par façade",
+      "valeur": "90% (Est/Nord, mur-rideau), 25% (Sud/Ouest)",
+      "unite": "",
+      "source": "Plans d'élévation réels (dossier 2_Plans pdf, Canal Architecture), lecture visuelle",
+      "confiance": "B",
+      "criticite": "haute",
+      "justification": "Plan réel disponible, mais lu visuellement — pas un calcul de côtes. Sud/Ouest mesurable plus précisément avec le même plan (travail commencé, non terminé)."
+    },
+    {
+      "parametre": "U_mur",
+      "valeur": "3,13",
+      "unite": "W/m².K",
+      "source": "DPE JPM, section 3.1.1, zone \"Bureaux Sud\" uniquement",
+      "confiance": "B",
+      "criticite": "haute",
+      "justification": "Valeur réelle et mesurée dans le DPE, mais appliquée ici à tout le bâtiment par simplification explicite — pas une valeur bâtiment entier."
+    },
+    {
+      "parametre": "U_vitrage",
+      "valeur": "5,20 (simple) ou 2,80 (double)",
+      "unite": "W/m².K",
+      "source": "DPE JPM, section 3.2.1 — deux valeurs, sans affectation claire par façade",
+      "confiance": "B",
+      "criticite": "haute",
+      "justification": "Deux valeurs réelles du DPE, ambiguïté non résolue sur laquelle va où — traitée en sensibilité (2 scénarios), jamais choisie arbitrairement."
+    },
+    {
+      "parametre": "Facteur solaire g",
+      "valeur": "0,85 (simple vitrage clair) ou 0,75 (double vitrage clair)",
+      "unite": "sans unité",
+      "source": "Catalogue standard du vitrage — jamais présent dans un DPE",
+      "confiance": "C",
+      "criticite": "haute",
+      "justification": "Aucune source propre au bâtiment — valeur de catalogue générique, pas mesurée ni documentée pour JPM spécifiquement."
+    },
+    {
+      "parametre": "Facteur de protection solaire (store extérieur)",
+      "valeur": "0,09",
+      "unite": "sans unité",
+      "source": "Guide ES-SO/ACTIBAIE (norme EN 14501/ISO 52022)",
+      "confiance": "B",
+      "criticite": "moyenne",
+      "justification": "Valeur de référence professionnelle reconnue, mais générique (pas mesurée sur un store réellement installé à JPM)."
+    },
+    {
+      "parametre": "Température de consigne intérieure (T_int)",
+      "valeur": "20",
+      "unite": "°C",
+      "source": "Convention — non mesurée, autorisée explicitement par la note méthodologique de référence",
+      "confiance": "C",
+      "criticite": "moyenne",
+      "justification": "Hypothèse conventionnelle assumée, jamais une température réellement mesurée dans le bâtiment."
+    },
+    {
+      "parametre": "Climat horaire (température extérieure, irradiance)",
+      "valeur": "8760 heures, année TMY",
+      "unite": "",
+      "source": "PVGIS (Joint Research Centre, Commission européenne), déjà en cache",
+      "confiance": "A",
+      "criticite": "haute",
+      "justification": "Source officielle, horaire réelle, cohérence déjà vérifiée (256/256 tests de cohérence)."
+    },
+    {
+      "parametre": "Ventilation (débit / taux de renouvellement d'air)",
+      "valeur": null,
+      "unite": "m³/h",
+      "source": null,
+      "confiance": null,
+      "criticite": "haute",
+      "justification": "Absente — aucune source trouvée dans les outils testés cette session. Hors périmètre de ce calcul (transmission + solaire uniquement)."
+    },
+    {
+      "parametre": "Apports internes (occupation, éclairage, équipements)",
+      "valeur": null,
+      "unite": "W",
+      "source": null,
+      "confiance": null,
+      "criticite": "haute",
+      "justification": "Absente — seulement du texte qualitatif dans le DPE, jamais chiffré. Hors périmètre de ce calcul."
+    }
+  ]
+}
