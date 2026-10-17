@@ -6,17 +6,17 @@
         "hooks": [
           {
             "type": "command",
-            "if": "Edit(scripts/*.py)",
+            "if": "Edit(scripts/**/*.py)",
             "shell": "bash",
             "timeout": 300,
-            "command": "mkdir -p \"${CLAUDE_PROJECT_DIR}/.claude\"; touch \"${CLAUDE_PROJECT_DIR}/.claude/scripts_dirty\"; ( cd \"${CLAUDE_PROJECT_DIR}/scripts\" && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_facade_geometry.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_identite_batiment.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_compute_integration.py ) 1>&2 || exit 2"
+            "command": "mkdir -p \"${CLAUDE_PROJECT_DIR}/.claude\"; touch \"${CLAUDE_PROJECT_DIR}/.claude/scripts_dirty\"; ( cd \"${CLAUDE_PROJECT_DIR}/scripts\" && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_facade_geometry.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_identite_batiment.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_compute_integration.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_appariement.py ) 1>&2 || exit 2"
           },
           {
             "type": "command",
-            "if": "Write(scripts/*.py)",
+            "if": "Write(scripts/**/*.py)",
             "shell": "bash",
             "timeout": 300,
-            "command": "mkdir -p \"${CLAUDE_PROJECT_DIR}/.claude\"; touch \"${CLAUDE_PROJECT_DIR}/.claude/scripts_dirty\"; ( cd \"${CLAUDE_PROJECT_DIR}/scripts\" && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_facade_geometry.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_identite_batiment.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_compute_integration.py ) 1>&2 || exit 2"
+            "command": "mkdir -p \"${CLAUDE_PROJECT_DIR}/.claude\"; touch \"${CLAUDE_PROJECT_DIR}/.claude/scripts_dirty\"; ( cd \"${CLAUDE_PROJECT_DIR}/scripts\" && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_facade_geometry.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_identite_batiment.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_compute_integration.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_appariement.py ) 1>&2 || exit 2"
           }
         ]
       }
@@ -28,7 +28,7 @@
             "type": "command",
             "shell": "bash",
             "timeout": 300,
-            "command": "test -f \"${CLAUDE_PROJECT_DIR}/.claude/scripts_dirty\" || exit 0; ( cd \"${CLAUDE_PROJECT_DIR}/scripts\" && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_facade_geometry.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_identite_batiment.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_compute_integration.py ) 1>&2 || exit 2; rm -f \"${CLAUDE_PROJECT_DIR}/.claude/scripts_dirty\""
+            "command": "test -f \"${CLAUDE_PROJECT_DIR}/.claude/scripts_dirty\" || exit 0; ( cd \"${CLAUDE_PROJECT_DIR}/scripts\" && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_facade_geometry.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_identite_batiment.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_compute_integration.py && \"${CLAUDE_PROJECT_DIR}/scripts/.venv/Scripts/python.exe\" tests/test_appariement.py ) 1>&2 || exit 2; rm -f \"${CLAUDE_PROJECT_DIR}/.claude/scripts_dirty\""
           }
         ]
       }

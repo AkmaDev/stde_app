@@ -12,6 +12,9 @@ scripts/out/
 scripts/out_irradiance/
 scripts/out_masques/
 
+# Fichier temoin des hooks (.claude/settings.json)
+.claude/scripts_dirty
+
 # Node / Next.js
 node_modules/
 .next/

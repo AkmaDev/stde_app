@@ -79,6 +79,10 @@ class EnvironnementTest:
     def out_existe(self, bid):
         return os.path.exists(os.path.join(E.OUT_DIR, f"{bid}_enrichment.json"))
 
+    def lire_sortie(self, bid):
+        with open(os.path.join(E.OUT_DIR, f"{bid}_enrichment.json"), encoding="utf-8") as f:
+            return json.load(f)
+
     def selection_hash(self):
         with open(E.MANUAL_SELECTION_PATH, "rb") as f:
             import hashlib
@@ -129,6 +133,24 @@ def test_fichier_propositions_absent_si_rien_a_proposer():
         assert env.propositions() is None
 
 
+def test_statut_suspect_donne_rnb_verifie_false():
+    """Contrairement a une derive d'identite (bloque, pas de sortie), un
+    ecart hauteur/etages enorme SANS note ('suspect') ecrit quand meme une
+    sortie -- mais avec rnb_verifie=False, pour signaler a la fusion
+    MANUELLE de ne pas la reprendre sans verification (jamais 'suspect' au
+    hasard confondu avec 'verifie')."""
+    with EnvironnementTest() as env:
+        choice = {"rnb_index": 0, "rnb_id": "AAA", "apur_objectid": 100, "apur_h_moy": 50.0, "apur_rings": [RING_A]}
+        # h_moy=50m avec 3 etages attendus -> ecart enorme, pas de note
+        env.ecrire_batiment(2, {"results": [_rnb_cand("AAA")]}, {"features": [_apur_feat(100, h_moy=50.0)]},
+                             choice, nombre_etages=3)
+        code = env.run_compute()
+        assert env.out_existe(2)  # suspect ecrit quand meme une sortie
+        sortie = env.lire_sortie(2)
+        assert sortie["rnb_verifie"] is False
+        assert sortie["hauteur_verification"]["statut"] == "suspect"
+
+
 def test_fichier_propositions_perime_est_purge():
     """Une proposition d'une execution precedente (probleme depuis resolu)
     ne doit jamais rester sur le disque sans etre signalee."""
@@ -146,6 +168,7 @@ if __name__ == "__main__":
         test_nominal_ecrit_sortie_et_ne_touche_pas_la_selection,
         test_proposition_en_attente_bloque_la_sortie,
         test_fichier_propositions_absent_si_rien_a_proposer,
+        test_statut_suspect_donne_rnb_verifie_false,
         test_fichier_propositions_perime_est_purge,
     ]
     failures = 0

@@ -13,8 +13,10 @@ echappe aux versions precedentes, et le contre-exemple d'appariement.
 
 Usage : python tests/test_identite_batiment.py
 """
+import json
 import os
 import sys
+import tempfile
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
@@ -161,6 +163,49 @@ def test_scenario_combine_rnb_et_apur_casses_simultanement():
     assert champs == {"rnb_index", "apur_objectid"}  # les DEUX proposes
 
 
+def _avec_batiment_test(nombre_etages, body):
+    """Pointe FRONTEND_DATA_DIR vers un repertoire temporaire avec un seul
+    batiment de test, execute body(), restaure ensuite -- jamais de test
+    qui touche le vrai frontend/data/."""
+    ancien = E.FRONTEND_DATA_DIR
+    tmp = tempfile.mkdtemp()
+    try:
+        E.FRONTEND_DATA_DIR = tmp
+        with open(os.path.join(tmp, "99.json"), "w", encoding="utf-8") as f:
+            json.dump({"batiment": {"nombre_etages": nombre_etages}}, f)
+        body()
+    finally:
+        E.FRONTEND_DATA_DIR = ancien
+
+
+def test_valide_hauteur_ok():
+    """Ecart faible (<= ECART_ETAGES_OK) -- statut 'ok', rnb_verifie=True
+    attendu en aval."""
+    def corps():
+        statut, etages_est, ecart = E.valide_hauteur(99, 9.0, None)  # 9m / 3m/etage = 3 etages, attendu 3
+        assert statut == "ok"
+    _avec_batiment_test(3, corps)
+
+
+def test_valide_hauteur_suspect_sans_note():
+    """Ecart enorme (> ECART_ETAGES_SUSPECT) et pas de note -- statut
+    'suspect', qui DOIT se traduire par rnb_verifie=False dans la sortie
+    (verifie cote integration dans test_compute_integration.py)."""
+    def corps():
+        statut, etages_est, ecart = E.valide_hauteur(99, 30.0, None)  # 10 etages estimes vs 3 attendus
+        assert statut == "suspect"
+    _avec_batiment_test(3, corps)
+
+
+def test_valide_hauteur_suspect_devient_explique_avec_note():
+    """Meme ecart enorme, mais une note humaine justifie le cas -- statut
+    'explique', pas 'suspect' (rnb_verifie=True malgre l'ecart)."""
+    def corps():
+        statut, etages_est, ecart = E.valide_hauteur(99, 30.0, "ecart documente, voir DPE p.5")
+        assert statut == "explique"
+    _avec_batiment_test(3, corps)
+
+
 def test_appariement_contre_exemple_cout_prohibitif():
     """Sans cout prohibitif hors tolerance, l'affectation hongroise peut
     choisir une mauvaise paire globale alors qu'une paire valide existe
@@ -191,6 +236,9 @@ if __name__ == "__main__":
         test_recouvrement_partiel_rejete_au_seuil_actuel,
         test_verdict_final_revalide_sans_empreinte_geometrique,
         test_scenario_combine_rnb_et_apur_casses_simultanement,
+        test_valide_hauteur_ok,
+        test_valide_hauteur_suspect_sans_note,
+        test_valide_hauteur_suspect_devient_explique_avec_note,
         test_appariement_contre_exemple_cout_prohibitif,
     ]
     failures = 0

@@ -457,17 +457,21 @@ def reconstruire_positions_anciennes(anciens, apur_rings):
         for i in range(len(aretes)):
             if aretes[i]["orientation"] != ancien["orientation"]:
                 continue
-            cum, xs, ys = 0.0, [], []
+            cum = 0.0
+            x_premier, y_premier = aretes[i]["x1"], aretes[i]["y1"]
             for j in range(i, len(aretes)):
                 if aretes[j]["orientation"] != ancien["orientation"]:
                     break
                 cum += aretes[j]["longueur"]
-                xs += [aretes[j]["x1"], aretes[j]["x2"]]
-                ys += [aretes[j]["y1"], aretes[j]["y2"]]
                 diff = abs(cum - ancien["longueur_m"])
                 if meilleure_diff is None or diff < meilleure_diff:
                     meilleure_diff = diff
-                    meilleure_pos = (sum(xs) / len(xs), sum(ys) / len(ys))
+                    # Milieu = (premier point + dernier point) / 2 -- PAS la
+                    # moyenne de tous les sommets intermediaires (ecart de
+                    # 8,93m mesure sur un cas reel avec arretes inegales :
+                    # cette moyenne pondere a tort chaque sommet partage
+                    # selon le nombre d'aretes qui s'y rejoignent).
+                    meilleure_pos = ((x_premier + aretes[j]["x2"]) / 2, (y_premier + aretes[j]["y2"]) / 2)
 
         nouveau = dict(ancien)
         if meilleure_pos is not None and meilleure_diff <= max(2.0, ancien["longueur_m"] * 0.5):
