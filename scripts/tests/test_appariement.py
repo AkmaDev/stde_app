@@ -167,6 +167,35 @@ def test_milieu_de_mur_premier_dernier_point():
     assert abs(seg["mid_y"] - 5.0) < 0.05
 
 
+def test_simplify_tolerance_ne_sur_fusionne_pas():
+    """Deux murs reellement distincts, separes par un leger decroche de
+    0,4m (comparable au decroche de 42cm constate sur un batiment reel,
+    Mohammed Arkoun) doivent rester 2 facades a la tolerance actuelle
+    (0,15m), pas fusionner en une seule -- detecterait une regression si
+    SIMPLIFY_TOLERANCE_M etait relevee (ex. 1,5m, qui absorberait ce
+    decroche a tort)."""
+    ring = [(0, 0), (5, -0.4), (10, 0), (10, 10), (0, 10), (0, 0)]
+    segs = E.polygon_to_facades(ring)
+    murs_sud = [s for s in segs if s["orientation"] == "S" and not s["bruit"]]
+    assert len(murs_sud) == 2, f"attendu 2 murs distincts, trouve {len(murs_sud)} : {murs_sud}"
+
+
+def test_segment_court_reel_reste_non_bruit():
+    """Facade reelle porteuse de donnees (Jean-Pierre Melville, 2,74m,
+    vitrage 90%) doit rester bruit=False au seuil actuel (2,0m) --
+    detecterait une regression si NOISE_THRESHOLD_M etait relevee (ex. 20m,
+    qui la classerait a tort comme un artefact geometrique). Verifie via
+    _coords_to_facades() directement (la vraie fonction qui applique le
+    seuil), pas par une comparaison numerique a cote."""
+    coords = [(0.0, 0.0), (2.74, 0.0)]  # un seul mur de 2.74m, Est
+    segs = E._coords_to_facades(coords)
+    assert len(segs) == 1
+    assert segs[0]["bruit"] is False, (
+        f"NOISE_THRESHOLD_M={E.NOISE_THRESHOLD_M} classe a tort en 'bruit' "
+        f"une facade reelle de 2,74m porteuse de donnees (JPM)"
+    )
+
+
 def test_position_necessaire_pour_choisir_le_bon_mur():
     """Sans position, un ancien segment peut s'apparier a un nouveau
     candidat geometriquement eloigne (autre mur) simplement parce que sa
@@ -210,6 +239,8 @@ if __name__ == "__main__":
         test_helene_berr_facade5_vitrage_appariee,
         test_francois_villon_facade2_non_appariee_plutot_que_devinee,
         test_milieu_de_mur_premier_dernier_point,
+        test_simplify_tolerance_ne_sur_fusionne_pas,
+        test_segment_court_reel_reste_non_bruit,
         test_position_necessaire_pour_choisir_le_bon_mur,
     ]
     failures = 0

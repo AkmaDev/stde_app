@@ -28,6 +28,10 @@ RING_LOIN = [(750000, 6900000), (750000, 6900010), (750010, 6900010), (750010, 6
 # RING_A decale de 2m sur x : recouvrement ~0.667 avec RING_A (ni 0% ni 100%,
 # teste le SEUIL RECOUVREMENT_MIN lui-meme, pas juste "zero vs un").
 RING_PARTIEL = [(700002, 6860000), (700002, 6860010), (700012, 6860010), (700012, 6860000), (700002, 6860000)]
+# RING_A decale de 0.4m : recouvrement ~0.923 -- entre 0.9 et le seuil actuel
+# 0.95, pour detecter specifiquement un abaissement a 0.9 (RING_PARTIEL,
+# a 0.667, reste rejete dans les deux cas et ne le detecterait pas).
+RING_QUASI = [(700000.4, 6860000), (700000.4, 6860010), (700010.4, 6860010), (700010.4, 6860000), (700000.4, 6860000)]
 
 
 def rnb_cand(rnb_id):
@@ -134,6 +138,20 @@ def test_recouvrement_partiel_rejete_au_seuil_actuel():
     assert apur_c is None
 
 
+def test_recouvrement_proche_du_seuil_rejete_a_0_95():
+    """Recouvrement ~0.923 (entre 0.9 et le seuil actuel 0.95) -- doit etre
+    REJETE. Si RECOUVREMENT_MIN passait a 0.9 sans revue, ce cas serait
+    accepte a tort et ce test echouerait (contrairement a
+    test_recouvrement_partiel_rejete_au_seuil_actuel, dont le recouvrement
+    ~0.667 reste rejete meme a 0.9 et ne detecterait pas ce changement
+    precis)."""
+    choice = choice_de_base()
+    rnb_data = {"results": [rnb_cand("AAA")]}
+    apur_data = {"features": [apur_feat(100, RING_QUASI)]}
+    rnb_c, apur_c, props, echec = E.resoudre_identite(choice, rnb_data, apur_data)
+    assert echec is not None and echec[0] == "apur"
+
+
 def test_verdict_final_revalide_sans_empreinte_geometrique():
     """Sans apur_rings enregistre (anciennes entrees), resoudre_identite()
     retrouve RNB et APUR directement par id -- mais DOIT quand meme rappeler
@@ -234,6 +252,7 @@ if __name__ == "__main__":
         test_apur_objectid_reattribue_a_un_autre_batiment,
         test_apur_objectid_reattribue_mais_polygone_recuperable,
         test_recouvrement_partiel_rejete_au_seuil_actuel,
+        test_recouvrement_proche_du_seuil_rejete_a_0_95,
         test_verdict_final_revalide_sans_empreinte_geometrique,
         test_scenario_combine_rnb_et_apur_casses_simultanement,
         test_valide_hauteur_ok,
