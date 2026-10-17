@@ -10,6 +10,8 @@ au-dela du contre-exemple deja dans test_identite_batiment.py :
 
 Usage : python tests/test_appariement.py
 """
+import json
+import math
 import os
 import sys
 
@@ -167,6 +169,89 @@ def test_milieu_de_mur_premier_dernier_point():
     assert abs(seg["mid_y"] - 5.0) < 0.05
 
 
+def test_appariement_reel_regression_complete():
+    """Rejoue l'appariement sur les 9 batiments reels publies et verifie
+    trois proprietes globales -- PAS seulement un cas isole (JPM, Helene
+    Berr, Villon individuellement) : une regression dans la fenetre de
+    tolerance ou la desambiguisation par azimut peut n'affecter QU'UN SEUL
+    bâtiment different de ceux deja figes en tests separes (confirme :
+    elargir la fenetre de longueur a 0.3m fait regresser Francois Villon
+    #2, un cas deja couvert ailleurs, mais rien n'empechait une regression
+    equivalente sur un autre batiment de passer inapercue).
+
+    1. Au plus 3 facades porteuses de donnees restent non appariees
+       (etat actuel connu : Francois Villon #1 et #2, Jean-Pierre
+       Melville #11 -- aucun equivalent exact, traites a la main).
+    2. Toute facade appariee dont la position a pu etre reconstruite est a
+       moins de tolerance_position_m (3m, la garantie reellement conçue
+       par apparier_facades_par_geometrie -- PAS 0.5m : 3 cas reels
+       connus, JPM #10 et Francois Villon #7/#8, sont a 1-2.7m a cause
+       d'un decoupage simplify() different entre l'ancienne et la
+       nouvelle version du contour, sans que ce soit un mauvais mur).
+    3. Au moins 36 des facades appariees avec position sont a moins de
+       0.5m (etat actuel verifie : 36 sur 39) -- plus laxiste ne
+       detecterait pas une regression comme l'elargissement de la fenetre
+       de selection (confirme par mutation)."""
+    base = os.path.join(os.path.dirname(__file__), "..")
+    sel_path = os.path.join(base, "manual_selection.json")
+    if not os.path.exists(sel_path):
+        return  # donnees non disponibles dans cet environnement
+    with open(sel_path, encoding="utf-8") as f:
+        selection = json.load(f)
+
+    total_porteuses = 0
+    total_non_appariees = 0
+    total_avec_position = 0
+    total_proches = 0  # position reconstruite ET a moins de 0.5m (sous-ensemble du dessus)
+
+    for bid_str in selection:
+        bid = int(bid_str)
+        old_path = os.path.join(base, "..", "frontend", "data", "batiment", f"{bid}.json")
+        new_path = os.path.join(base, "out", f"{bid}_enrichment.json")
+        if not (os.path.exists(old_path) and os.path.exists(new_path)):
+            continue
+        with open(old_path, encoding="utf-8") as f:
+            old = json.load(f)["batiment"]["facade_segments"]
+        with open(new_path, encoding="utf-8") as f:
+            new = json.load(f)["facade_segments"]
+
+        porteuses_idx = {
+            s["index"] for s in old
+            if not s.get("bruit") and (
+                s.get("taux_vitrage_estime_pct") is not None
+                or s.get("vitrage_note")
+                or s.get("irradiance_kwh_m2_an") is not None
+            )
+        }
+        if not porteuses_idx:
+            continue
+        total_porteuses += len(porteuses_idx)
+
+        rings = selection[bid_str].get("apur_rings")
+        old_pos = E.reconstruire_positions_anciennes(old, rings) if rings else old
+        paires, non_apparies = E.apparier_facades_par_geometrie(old_pos, new)
+        par_index = {a["index"]: n for a, n in paires}
+        non_app_idx = {a["index"] for a in non_apparies}
+
+        for idx in porteuses_idx:
+            if idx in non_app_idx:
+                total_non_appariees += 1
+                continue
+            n = par_index.get(idx)
+            assert n is not None, f"batiment {bid} facade {idx} : ni appariee ni dans non_apparies (incoherent)"
+            a = next(s for s in old_pos if s["index"] == idx)
+            if a.get("mid_x") is not None and n.get("mid_x") is not None:
+                d = math.hypot(a["mid_x"] - n["mid_x"], a["mid_y"] - n["mid_y"])
+                assert d <= 3.0, f"batiment {bid} facade {idx} : a {d:.2f}m de la vraie position (max 3m, garantie de l'algorithme)"
+                total_avec_position += 1
+                if d <= 0.5:
+                    total_proches += 1
+
+    assert total_porteuses > 0, "aucune donnee trouvee -- verifier les chemins"
+    assert total_non_appariees <= 3, f"{total_non_appariees} facades non appariees (max toleré 3, etat connu)"
+    assert total_proches >= 36, f"seulement {total_proches}/{total_avec_position} facades a moins de 0.5m (attendu >= 36)"
+
+
 def test_simplify_tolerance_ne_sur_fusionne_pas():
     """Deux murs reellement distincts, separes par un leger decroche de
     0,4m (comparable au decroche de 42cm constate sur un batiment reel,
@@ -239,6 +324,7 @@ if __name__ == "__main__":
         test_helene_berr_facade5_vitrage_appariee,
         test_francois_villon_facade2_non_appariee_plutot_que_devinee,
         test_milieu_de_mur_premier_dernier_point,
+        test_appariement_reel_regression_complete,
         test_simplify_tolerance_ne_sur_fusionne_pas,
         test_segment_court_reel_reste_non_bruit,
         test_position_necessaire_pour_choisir_le_bon_mur,
