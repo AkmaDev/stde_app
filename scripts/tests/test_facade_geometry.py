@@ -209,6 +209,40 @@ def test_buffon_facade_nord_reference():
     assert len(nord) == 1, f"attendu 1 facade Nord, trouve {len(nord)} : {nord}"
     assert abs(nord[0]["longueur_m"] - 42.18) < 0.1
 
+    # Azimut de reference reel (pas seulement la longueur) : une rotation
+    # systematique de tous les azimuts (ex. 30 deg) ne serait pas vue par
+    # outward_ok() (qui ne detecte qu'une erreur de plus de 90 deg), ni par
+    # le test sur la longueur seule -- confirme par une revue.
+    sud = [s for s in segs if s["anneau"] == "exterieur" and s["orientation"] == "S" and not s["bruit"]]
+    assert len(sud) == 1, f"attendu 1 facade Sud, trouve {len(sud)} : {sud}"
+    assert abs(sud[0]["azimut_deg"] - 159.1) < 0.5, f"azimut Sud = {sud[0]['azimut_deg']}, attendu ~159.1"
+
+
+@settings(max_examples=500, suppress_health_check=[HealthCheck.too_slow])
+@given(radii_strategy, st.floats(0, 2 * math.pi), st.booleans())
+def test_azimut_perpendiculaire_au_mur(rs, rot, cw):
+    """L'azimut d'une facade doit etre perpendiculaire a la direction du
+    mur, a 0.1 deg pres -- independant de toute notion de dedans/dehors
+    (contrairement a outward_ok, qui ne detecte qu'une erreur de plus de
+    90 deg et ne verrait donc PAS une rotation systematique de tous les
+    azimuts, ex. 30 deg, qui fausserait l'irradiance et une partie des
+    classes N/E/S/O sans jamais inverser un mur -- confirme par une revue
+    comme angle mort des tests existants)."""
+    ring = star(rs, rot, cw)
+    poly_simpl = E._normalized_polygon([ring])
+    coords = list(poly_simpl.exterior.coords)
+    segs = E._coords_to_facades(coords)
+    for (x1, y1), (x2, y2), s in zip(coords, coords[1:], segs):
+        if s["longueur_m"] == 0:
+            continue
+        dx, dy = x2 - x1, y2 - y1
+        az = math.radians(s["azimut_deg"])
+        nx, ny = math.sin(az), math.cos(az)
+        # Produit scalaire direction-mur . normale-azimut : doit etre nul
+        # (perpendiculaires), normalise par la longueur du mur.
+        produit_scalaire = abs(dx * nx + dy * ny) / s["longueur_m"]
+        assert produit_scalaire < 0.002, f"azimut non perpendiculaire au mur (produit scalaire normalise={produit_scalaire})"
+
 
 def test_u_shape_concave_contour():
     """Contour en U (cour en renfoncement) : les 3 murs a l'interieur du
@@ -224,6 +258,7 @@ if __name__ == "__main__":
         test_normals_point_outside,
         test_direction_of_travel_irrelevant,
         test_direction_of_travel_irrelevant_contre_exemple_fige,
+        test_azimut_perpendiculaire_au_mur,
         test_patio_hole_oriented_inward,
         test_u_shape_concave_contour,
         test_buffon_facade_nord_reference,

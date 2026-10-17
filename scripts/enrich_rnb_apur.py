@@ -85,10 +85,15 @@ def get_batiment_coords(bid):
     """Lit (nom, lat, lon) depuis le fichier de donnees du site -- jamais
     recopie a la main, pour eviter toute derive entre le script et le site."""
     data_path = os.path.join(FRONTEND_DATA_DIR, f"{bid}.json")
+    if not os.path.exists(data_path):
+        raise RuntimeError(
+            f"batiment {bid} : {data_path} introuvable -- frontend/data/ est-il present "
+            f"(clone propre du depot) ? (RuntimeError, pas un crash brut)"
+        )
     with open(data_path, encoding="utf-8") as f:
         b = json.load(f)["batiment"]
     if b.get("latitude") is None or b.get("longitude") is None:
-        raise ValueError(
+        raise RuntimeError(
             f"batiment {bid} ({b.get('nom')}) : latitude/longitude manquantes "
             f"dans {data_path} -- impossible de geocoder sans donnee source."
         )
@@ -229,7 +234,11 @@ def build_review_geojson(batiment_id, lat, lon, rnb_data, apur_data):
 def cmd_fetch():
     ensure_dirs()
     for bid in BATIMENT_IDS:
-        nom, lat, lon = get_batiment_coords(bid)
+        try:
+            nom, lat, lon = get_batiment_coords(bid)
+        except RuntimeError as e:
+            print(f"\n=== {bid} ===\n  /!\\ ERREUR : {e}")
+            continue
         print(f"\n=== {bid} — {nom} ===")
 
         rnb_path = os.path.join(RAW_RNB_DIR, f"{bid}.json")

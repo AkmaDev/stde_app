@@ -127,22 +127,27 @@ def test_francois_villon_facade2_non_appariee_plutot_que_devinee():
     imparfait : reste une ambiguite de position que ce correctif seul ne
     resout pas entierement pour ce batiment precis."""
     import json
-    import os
     base = os.path.join(os.path.dirname(__file__), "..")
     sel_path = os.path.join(base, "manual_selection.json")
     old_path = os.path.join(base, "..", "frontend", "data", "batiment", "11.json")
-    new_path = os.path.join(base, "out", "11_enrichment.json")
-    if not (os.path.exists(sel_path) and os.path.exists(old_path) and os.path.exists(new_path)):
-        return  # donnees non disponibles dans cet environnement, rien a verifier ici
+    # frontend/data/ et manual_selection.json sont tous deux versionnes --
+    # presents sur tout clone du depot, donc une absence ici est une vraie
+    # anomalie d'environnement, pas un cas a ignorer en silence (CLAUDE.md :
+    # pas de test qui passe sans rien verifier).
+    assert os.path.exists(sel_path), f"{sel_path} absent -- scripts/ est-il bien clone ?"
+    assert os.path.exists(old_path), f"{old_path} absent -- frontend/data/ est-il bien clone ?"
     with open(sel_path, encoding="utf-8") as f:
         sel = json.load(f)
     rings = sel.get("11", {}).get("apur_rings")
-    if rings is None:
-        return  # pas d'empreinte dans cet environnement, rien a verifier ici
+    assert rings is not None, "apur_rings absent pour le batiment 11 dans manual_selection.json"
     with open(old_path, encoding="utf-8") as f:
         old = json.load(f)["batiment"]["facade_segments"]
-    with open(new_path, encoding="utf-8") as f:
-        new = json.load(f)["facade_segments"]
+    # Facades NOUVELLES regenerees EN MEMOIRE depuis apur_rings (pas lues
+    # dans out/, qui peut dater d'une execution precedente et ne reveler
+    # une regression de la generation qu'apres un nouveau 'compute' --
+    # confirme par une revue : casser le generateur laissait ce test au
+    # vert tant que out/ n'etait pas regenere).
+    new = E.polygon_with_holes_to_facades(rings)
     old_pos = E.reconstruire_positions_anciennes(old, rings)
     paires, non_apparies = E.apparier_facades_par_geometrie(old_pos, new)
     idx_non_apparies = {a["index"] for a in non_apparies}
@@ -189,31 +194,40 @@ def test_appariement_reel_regression_complete():
        d'un decoupage simplify() different entre l'ancienne et la
        nouvelle version du contour, sans que ce soit un mauvais mur).
     3. Au moins 36 des facades appariees avec position sont a moins de
-       0.5m (etat actuel verifie : 36 sur 39) -- plus laxiste ne
-       detecterait pas une regression comme l'elargissement de la fenetre
-       de selection (confirme par mutation)."""
+       0.5m (etat actuel verifie : 36 sur 39) -- seule assertion avec un
+       vrai pouvoir de detection : une distance <= tolerance_position_m
+       est deja GARANTIE par construction (apparier_facades_par_geometrie
+       rejette tout ecart superieur), donc l'affirmer ici ne testerait
+       rien de plus que ce que le code impose deja lui-meme -- retiree
+       suite a une revue qui l'a signalee comme tautologique.
+
+    Les NOUVELLES facades sont regenerees EN MEMOIRE depuis apur_rings
+    (polygon_with_holes_to_facades), jamais lues dans out/ : out/ peut
+    dater d'une execution compute() anterieure et ne revelerait une
+    regression du generateur qu'apres un nouveau compute -- jamais via
+    les hooks seuls, qui ne relancent pas compute (confirme par une revue :
+    casser le generateur laissait ce test au vert tant que out/ n'etait
+    pas regenere a la main)."""
     base = os.path.join(os.path.dirname(__file__), "..")
     sel_path = os.path.join(base, "manual_selection.json")
-    if not os.path.exists(sel_path):
-        return  # donnees non disponibles dans cet environnement
+    # frontend/data/ et manual_selection.json sont versionnes -- une
+    # absence ici est une vraie anomalie d'environnement, jamais un cas a
+    # ignorer en silence (CLAUDE.md : pas de test qui passe sans rien
+    # verifier).
+    assert os.path.exists(sel_path), f"{sel_path} absent -- scripts/ est-il bien clone ?"
     with open(sel_path, encoding="utf-8") as f:
         selection = json.load(f)
 
     total_porteuses = 0
     total_non_appariees = 0
-    total_avec_position = 0
-    total_proches = 0  # position reconstruite ET a moins de 0.5m (sous-ensemble du dessus)
+    total_proches = 0
 
     for bid_str in selection:
         bid = int(bid_str)
         old_path = os.path.join(base, "..", "frontend", "data", "batiment", f"{bid}.json")
-        new_path = os.path.join(base, "out", f"{bid}_enrichment.json")
-        if not (os.path.exists(old_path) and os.path.exists(new_path)):
-            continue
+        assert os.path.exists(old_path), f"{old_path} absent -- frontend/data/ est-il bien clone ?"
         with open(old_path, encoding="utf-8") as f:
             old = json.load(f)["batiment"]["facade_segments"]
-        with open(new_path, encoding="utf-8") as f:
-            new = json.load(f)["facade_segments"]
 
         porteuses_idx = {
             s["index"] for s in old
@@ -225,10 +239,13 @@ def test_appariement_reel_regression_complete():
         }
         if not porteuses_idx:
             continue
-        total_porteuses += len(porteuses_idx)
 
         rings = selection[bid_str].get("apur_rings")
-        old_pos = E.reconstruire_positions_anciennes(old, rings) if rings else old
+        assert rings is not None, f"batiment {bid} : apur_rings absent de manual_selection.json"
+        total_porteuses += len(porteuses_idx)
+
+        new = E.polygon_with_holes_to_facades(rings)
+        old_pos = E.reconstruire_positions_anciennes(old, rings)
         paires, non_apparies = E.apparier_facades_par_geometrie(old_pos, new)
         par_index = {a["index"]: n for a, n in paires}
         non_app_idx = {a["index"] for a in non_apparies}
@@ -242,14 +259,12 @@ def test_appariement_reel_regression_complete():
             a = next(s for s in old_pos if s["index"] == idx)
             if a.get("mid_x") is not None and n.get("mid_x") is not None:
                 d = math.hypot(a["mid_x"] - n["mid_x"], a["mid_y"] - n["mid_y"])
-                assert d <= 3.0, f"batiment {bid} facade {idx} : a {d:.2f}m de la vraie position (max 3m, garantie de l'algorithme)"
-                total_avec_position += 1
                 if d <= 0.5:
                     total_proches += 1
 
     assert total_porteuses > 0, "aucune donnee trouvee -- verifier les chemins"
     assert total_non_appariees <= 3, f"{total_non_appariees} facades non appariees (max toleré 3, etat connu)"
-    assert total_proches >= 36, f"seulement {total_proches}/{total_avec_position} facades a moins de 0.5m (attendu >= 36)"
+    assert total_proches >= 36, f"seulement {total_proches} facades a moins de 0.5m (attendu >= 36)"
 
 
 def test_simplify_tolerance_ne_sur_fusionne_pas():
