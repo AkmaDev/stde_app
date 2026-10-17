@@ -449,11 +449,21 @@ def reconstruire_positions_anciennes(anciens, apur_rings):
         nx, ny = dy / longueur, -dx / longueur
         azimut = math.degrees(math.atan2(nx, ny)) % 360
         aretes.append({"x1": x1, "y1": y1, "x2": x2, "y2": y2, "longueur": longueur,
-                        "orientation": classify_orientation(azimut)})
+                        "azimut": azimut, "orientation": classify_orientation(azimut)})
 
     resultat = []
     for ancien in anciens:
-        meilleure_diff, meilleure_pos = None, None
+        # Sur une facade COURBE (ex. mur-rideau en verre de Jean-Pierre
+        # Melville), plusieurs sequences d'aretes a des endroits differents
+        # de la courbe peuvent sommer a une longueur quasi identique --
+        # choisir seulement par longueur est alors ambigu (confirme : 9m
+        # d'erreur sur un cas reel). On garde TOUS les candidats a moins de
+        # 0.3m du meilleur, et on depart par l'azimut (le dernier azimut de
+        # la courbe a cet endroit se rapproche de l'azimut du mur simplifie
+        # d'origine) ; si meme l'azimut ne depart pas clairement, c'est
+        # une vraie ambiguite -- aucune position n'est assignee plutot que
+        # d'en deviner une.
+        candidats = []
         for i in range(len(aretes)):
             if aretes[i]["orientation"] != ancien["orientation"]:
                 continue
@@ -464,19 +474,32 @@ def reconstruire_positions_anciennes(anciens, apur_rings):
                     break
                 cum += aretes[j]["longueur"]
                 diff = abs(cum - ancien["longueur_m"])
-                if meilleure_diff is None or diff < meilleure_diff:
-                    meilleure_diff = diff
-                    # Milieu = (premier point + dernier point) / 2 -- PAS la
-                    # moyenne de tous les sommets intermediaires (ecart de
-                    # 8,93m mesure sur un cas reel avec arretes inegales :
-                    # cette moyenne pondere a tort chaque sommet partage
-                    # selon le nombre d'aretes qui s'y rejoignent).
-                    meilleure_pos = ((x_premier + aretes[j]["x2"]) / 2, (y_premier + aretes[j]["y2"]) / 2)
+                # Milieu = (premier point + dernier point) / 2 -- PAS la
+                # moyenne de tous les sommets intermediaires (ecart de
+                # 8,93m mesure sur un cas reel avec aretes inegales : cette
+                # moyenne pondere a tort chaque sommet partage selon le
+                # nombre d'aretes qui s'y rejoignent).
+                pos = ((x_premier + aretes[j]["x2"]) / 2, (y_premier + aretes[j]["y2"]) / 2)
+                az_diff = _angle_diff(aretes[j]["azimut"], ancien["azimut_deg"])
+                candidats.append((diff, az_diff, pos))
 
         nouveau = dict(ancien)
-        if meilleure_pos is not None and meilleure_diff <= max(2.0, ancien["longueur_m"] * 0.5):
-            nouveau["mid_x"] = round(meilleure_pos[0], 2)
-            nouveau["mid_y"] = round(meilleure_pos[1], 2)
+        if candidats:
+            meilleur_diff = min(c[0] for c in candidats)
+            # Fenetre etroite (5cm) : ne retient que les candidats dont la
+            # longueur est quasiment aussi bonne que la meilleure -- une
+            # fenetre plus large (ex. 0.3m) incluait a tort des candidats
+            # nettement moins bons en longueur, qui l'emportaient ensuite
+            # sur l'azimut alors qu'ils n'auraient jamais du concourir.
+            proches = [c for c in candidats if c[0] - meilleur_diff <= 0.05]
+            proches.sort(key=lambda c: c[1])  # depart par l'azimut
+            # Ambigu si au moins 2 candidats restent proches en longueur ET
+            # en azimut (meme cote de la courbe que le meilleur) : pas de
+            # position plutot qu'une devinette.
+            ambigu = len(proches) > 1 and (proches[1][1] - proches[0][1]) <= 5.0
+            if not ambigu and meilleur_diff <= max(2.0, ancien["longueur_m"] * 0.5):
+                nouveau["mid_x"] = round(proches[0][2][0], 2)
+                nouveau["mid_y"] = round(proches[0][2][1], 2)
         resultat.append(nouveau)
     return resultat
 

@@ -134,6 +134,18 @@ def test_direction_of_travel_irrelevant(rs):
     assert sorted(x["orientation"] for x in s1) == sorted(x["orientation"] for x in s2)
 
 
+def test_direction_of_travel_irrelevant_contre_exemple_fige():
+    """Cas trouve par recherche aleatoire (retrait de normalize() dans
+    _normalized_polygon) : le test Hypothesis ci-dessus ne le detecte que
+    par chance selon le tirage -- fige ici en cas fixe pour une detection
+    garantie, independante du hasard."""
+    rs = [4.491251666886823, 14.898098841989949, 32.52863857491835, 38.67240325485007,
+          6.946425145681676, 35.472658235913634, 4.802553835031892]
+    s1 = E.polygon_to_facades(star(rs, 0, True))
+    s2 = E.polygon_to_facades(star(rs, 0, False))
+    assert sorted(round(x["longueur_m"], 1) for x in s1) == sorted(round(x["longueur_m"], 1) for x in s2)
+
+
 def test_patio_hole_oriented_inward():
     """Un trou (patio) carre au centre d'un grand contour exterieur doit
     produire 4 facades, une par orientation N/E/S/O, chacune tournee VERS le
@@ -211,6 +223,7 @@ if __name__ == "__main__":
     tests = [
         test_normals_point_outside,
         test_direction_of_travel_irrelevant,
+        test_direction_of_travel_irrelevant_contre_exemple_fige,
         test_patio_hole_oriented_inward,
         test_u_shape_concave_contour,
         test_buffon_facade_nord_reference,
