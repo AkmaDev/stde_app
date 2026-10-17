@@ -1,118 +1,121 @@
-import { getBatiment } from "@/lib/api";
-import { ETAT_CLASS, ETAT_LABEL, ORIGINE_CLASS, ORIGINE_LABEL } from "@/lib/ui";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { getBatiment, getBatiments, objectifConso, scoreRisque, scoreUrgence, scoreFaisabilite, prioriteGlobale, priorite } from "@/lib/api";
+import { adaptCarac } from "@/lib/caracAdapter";
+import { PRIORITE_LABEL, FORME_INSUFFISANTE } from "@/lib/ui";
+import FicheBatimentTabs from "@/components/FicheBatimentTabs";
 
 export default async function FicheBatimentPage({ params }: { params: { id: string } }) {
-  const { batiment, score, leviers } = await getBatiment(Number(params.id));
+  const detail = await getBatiment(Number(params.id));
+  if (!detail) notFound();
+  const { batiment, leviers } = detail;
+  const batiments = await getBatiments();
+  const carac = adaptCarac(batiment);
 
-  const caracteristiques: { label: string; valeur: string | number | null; origine: keyof typeof ORIGINE_LABEL }[] = [
-    { label: "Année de construction", valeur: batiment.annee_construction, origine: "documentee" },
-    { label: "Surface de référence", valeur: batiment.surface_m2 ? `${batiment.surface_m2} m²` : null, origine: "documentee" },
-    { label: "Énergie principale", valeur: batiment.energie_principale, origine: "documentee" },
-    { label: "Orientation vitrage dominante", valeur: batiment.orientation_vitrage_dominante, origine: "hypothese" },
-    { label: "Type d'isolation", valeur: batiment.type_isolation, origine: "hypothese" },
-    { label: "DPE", valeur: batiment.dpe, origine: "documentee" },
-    { label: "Consommation mesurée", valeur: batiment.conso_mesuree_kwh_m2 ? `${batiment.conso_mesuree_kwh_m2} kWh/m²·an` : null, origine: batiment.conso_origine },
-    { label: "Contrainte patrimoniale", valeur: batiment.statut_patrimonial, origine: "documentee" },
-  ];
+  const risque = scoreRisque(batiment);
+  const urgence = scoreUrgence(batiment);
+  const faisabilite = scoreFaisabilite(batiment);
+  const scoreGlobal =
+    risque != null && urgence != null && faisabilite != null
+      ? Math.round((risque * 0.5 + urgence * 0.3 + faisabilite * 0.2) * 10) / 10
+      : null;
+  const scoreManquant = [
+    risque == null && "Risque",
+    urgence == null && "Urgence",
+    faisabilite == null && "Faisabilité",
+  ].filter((v): v is string => !!v);
+  const pg = prioriteGlobale(batiment);
+  const objectif2030 = objectifConso(batiment.conso_mesuree_kwh_m2);
 
   return (
     <>
       <div className="crumb">Ensemble du parc &nbsp;›&nbsp; Fiche bâtiment</div>
-      <div className="h1">
-        {batiment.nom}
-        <small>
-          Paris {batiment.arrondissement} · {batiment.statut_patrimonial}
-        </small>
-      </div>
-      <div className="panel">
-        <div className="tabs">
-          <div className="tab on">Caractéristiques</div>
-          <div className="tab">Leviers</div>
+      <section style={{ padding: "0 0 48px", display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: 24, flexWrap: "wrap" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+          <h1 style={{ margin: 0, fontSize: 44, fontWeight: 800, color: "#000091", lineHeight: 1.15 }}>{batiment.nom}</h1>
+          <p style={{ margin: 0, fontFamily: "var(--font-serif),Spectral,Georgia,serif", fontStyle: "italic", fontSize: 20, color: "#000091" }}>
+            {batiment.adresse ?? `Paris ${batiment.arrondissement} — adresse à vérifier`}
+          </p>
         </div>
-        <div className="content" style={{ display: "flex", gap: 18 }}>
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 10 }}>Caractéristiques du bâtiment</div>
-            <table>
-              <thead>
-                <tr>
-                  <th>Donnée</th>
-                  <th>Valeur</th>
-                  <th>Origine</th>
-                </tr>
-              </thead>
-              <tbody>
-                {caracteristiques.map((c) => (
-                  <tr key={c.label}>
-                    <td className="mut" style={{ width: 230 }}>{c.label}</td>
-                    <td>
-                      <b>{c.valeur ?? "—"}</b>
-                    </td>
-                    <td style={{ width: 140 }}>
-                      <span className={`tag ${ORIGINE_CLASS[c.origine]}`}>{ORIGINE_LABEL[c.origine]}</span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+          <button type="button" className="btn ghost inline">Exporter la fiche</button>
+          <button type="button" className="btn inline">Voir les leviers</button>
+        </div>
+      </section>
 
-            <div style={{ fontSize: 13, fontWeight: 700, margin: "20px 0 10px" }}>Leviers qualifiés</div>
-            <table>
-              <thead>
-                <tr>
-                  <th>Levier</th>
-                  <th>État</th>
-                  <th>Gain indicatif</th>
-                  <th>Commentaire</th>
-                </tr>
-              </thead>
-              <tbody>
-                {leviers.map((l) => (
-                  <tr key={l.levier.id}>
-                    <td><b>{l.levier.nom}</b></td>
-                    <td>
-                      <span className={`state ${ETAT_CLASS[l.etat]}`}>{ETAT_LABEL[l.etat]}</span>
-                    </td>
-                    <td style={{ color: l.gain_indicatif_pct ? "#3E7B5C" : "#9AA8AE", fontWeight: 700 }}>
-                      {l.gain_indicatif_pct ? `− ${l.gain_indicatif_pct}%` : "—"}
-                    </td>
-                    <td className="mut">{l.commentaire ?? "—"}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+      <div className="section-bleed" style={{ background: "#f6f6f6" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "48px 32px", display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(200px,1fr))", gap: 24 }}>
+          <div style={{ background: "#fff", boxShadow: "0 6px 18px rgba(0,0,18,.08)", padding: 28, display: "flex", flexDirection: "column", gap: 4 }}>
+            <span style={{ fontSize: 14, textTransform: "uppercase", letterSpacing: ".02em", color: "#666" }}>Consommation constatée</span>
+            <span className="num" style={{ fontSize: 32, fontWeight: 800, color: "#161616" }}>
+              {batiment.conso_mesuree_kwh_m2 ?? "—"} <span style={{ fontSize: 15, fontWeight: 400, color: "#666" }}>kWh/m²·an</span>
+            </span>
           </div>
-          <div style={{ width: 300, display: "flex", flexDirection: "column", gap: 13 }}>
-            <div style={{ border: "1px solid #E1E9EC", borderRadius: 7, padding: "14px 16px", background: "#FBFCFD" }}>
-              <div style={{ fontSize: 11, letterSpacing: 0.9, color: "#8A9AA3" }}>COUVERTURE DES DONNÉES</div>
-              <div style={{ fontSize: 30, fontWeight: 700, color: "#1C7293", margin: "4px 0 2px" }}>
-                {batiment.couverture_donnees_pct ?? "—"}%
-              </div>
-            </div>
-            <div style={{ border: "1px solid #E1E9EC", borderRadius: 7, padding: "14px 16px" }}>
-              <div style={{ fontSize: 11, letterSpacing: 0.9, color: "#8A9AA3", marginBottom: 9 }}>SCORE (SCT)</div>
-              <div style={{ fontSize: 12.5, lineHeight: 2.1 }}>
-                <div style={{ display: "flex" }}>
-                  <span className="mut" style={{ flex: 1 }}>Risque</span><b>{score.risque}/100</b>
-                </div>
-                <div style={{ display: "flex" }}>
-                  <span className="mut" style={{ flex: 1 }}>Urgence</span><b>{score.urgence}/100</b>
-                </div>
-                <div style={{ display: "flex" }}>
-                  <span className="mut" style={{ flex: 1 }}>Faisabilité</span><b>{score.faisabilite}/100</b>
-                </div>
-                <div style={{ display: "flex", borderTop: "1px solid #F0F4F5", marginTop: 6, paddingTop: 6 }}>
-                  <span style={{ flex: 1, fontWeight: 700 }}>Score global</span><b>{score.sct}/100</b>
-                </div>
-              </div>
-              <div style={{ fontSize: 11, color: "#8A9AA3", marginTop: 10, lineHeight: 1.5, borderTop: "1px solid #F0F4F5", paddingTop: 9 }}>
-                Score comparatif, calculé sur données de démonstration — pas une prédiction (moteur d&apos;analyse à calibrer).
-              </div>
-            </div>
-            <div style={{ border: "1px solid #E1E9EC", borderRadius: 7, padding: "14px 16px" }}>
-              <div style={{ fontSize: 11, letterSpacing: 0.9, color: "#8A9AA3", marginBottom: 9 }}>DERNIÈRE MISE À JOUR</div>
-              <div style={{ fontSize: 12.5, color: "#4A5C65" }}>{batiment.derniere_maj ?? "—"}</div>
-            </div>
+          <div style={{ background: "#fff", boxShadow: "0 6px 18px rgba(0,0,18,.08)", padding: 28, display: "flex", flexDirection: "column", gap: 4 }}>
+            <span style={{ fontSize: 14, textTransform: "uppercase", letterSpacing: ".02em", color: "#666" }}>Objectif 2030</span>
+            <span className="num" style={{ fontSize: 32, fontWeight: 800, color: "#161616" }}>
+              {objectif2030 ?? "—"} <span style={{ fontSize: 15, fontWeight: 400, color: "#666" }}>soit −40 %</span>
+            </span>
           </div>
+          <div
+            style={{ background: "#fff", boxShadow: "0 6px 18px rgba(0,0,18,.08)", padding: 28, display: "flex", flexDirection: "column", gap: 4 }}
+            title={scoreGlobal == null ? `Non calculable : ${scoreManquant.join(" et ")} indisponible (données manquantes pour ce bâtiment).` : undefined}
+          >
+            <span style={{ fontSize: 14, textTransform: "uppercase", letterSpacing: ".02em", color: "#666" }}>Score global</span>
+            <span className="num" style={{ fontSize: 32, fontWeight: 800, color: "#161616" }}>
+              {scoreGlobal ?? "—"} <span style={{ fontSize: 15, fontWeight: 400, color: "#666" }}>/ 100</span>
+            </span>
+          </div>
+          <div style={{ background: "#fff", boxShadow: "0 6px 18px rgba(0,0,18,.08)", padding: 28, display: "flex", flexDirection: "column", gap: 4 }}>
+            <span style={{ fontSize: 14, textTransform: "uppercase", letterSpacing: ".02em", color: "#666" }}>Priorité</span>
+            <span style={{ fontSize: 32, fontWeight: 800, color: "#161616" }}>
+              {pg != null ? PRIORITE_LABEL[priorite(pg.valeur)] : FORME_INSUFFISANTE + " Données insuffisantes"}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div style={{ padding: "64px 0 112px", display: "flex", gap: "clamp(24px,4vw,64px)", alignItems: "flex-start", flexWrap: "wrap" }}>
+        <aside style={{ flex: "1 1 180px", maxWidth: 220, minWidth: 160, display: "flex", flexDirection: "column", gap: 16 }}>
+          <span style={{ fontSize: 14, fontWeight: 700, color: "#161616" }}>Autres bâtiments</span>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            {batiments.map(({ batiment: b }) => {
+              const actif = b.id === batiment.id;
+              return (
+                <Link
+                  key={b.id}
+                  href={`/batiments/${b.id}`}
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    gap: 8,
+                    borderLeft: `2px solid ${actif ? "#000091" : "transparent"}`,
+                    padding: "9px 12px",
+                    fontSize: 15,
+                    color: actif ? "#000091" : "#3a3a3a",
+                    fontWeight: actif ? 500 : 400,
+                    textDecoration: "none",
+                  }}
+                >
+                  <span>{b.nom}</span>
+                  <span style={{ color: "#888", fontSize: 13, fontWeight: 400 }}>{b.arrondissement}</span>
+                </Link>
+              );
+            })}
+          </div>
+        </aside>
+
+        <div style={{ flex: "999 1 480px", minWidth: 0 }}>
+          <FicheBatimentTabs
+            carac={carac}
+            leviers={leviers}
+            documents={batiment.documents}
+            latitude={batiment.latitude}
+            longitude={batiment.longitude}
+            nom={batiment.nom}
+            batiment={batiment}
+          />
         </div>
       </div>
     </>

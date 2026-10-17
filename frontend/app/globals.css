@@ -1,66 +1,162 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%}
-body{font-family:'Segoe UI',-apple-system,Roboto,Helvetica,Arial,sans-serif;
-background:#EEF2F4;color:#1B2A32}
+/* overflow-x:hidden ici uniquement pour absorber le débord de .section-bleed
+   (calc(50vw) inclut la largeur de la scrollbar verticale -- débord cosmétique
+   de quelques px, aucun contenu n'est réellement coupé). */
+html{overflow-x:hidden}
+body{font-family:var(--font-sans),'Public Sans','Segoe UI',-apple-system,Roboto,Helvetica,Arial,sans-serif;
+background:#fff;color:#161616;font-variant-numeric:tabular-nums}
 .app{display:flex;flex-direction:column;min-height:100vh}
 
-.topbar{height:56px;background:#12333F;display:flex;align-items:center;padding:0 24px;gap:20px;flex:0 0 56px}
-.logo{font-weight:700;color:#fff;font-size:17px;letter-spacing:.5px}
-.logo span{color:#D98C2B}
-.topbar .sub{color:#7E9BA6;font-size:12.5px;border-left:1px solid #2A4E5C;padding-left:20px}
-.topbar .right{margin-left:auto;display:flex;gap:22px;align-items:center;color:#9FBBC5;font-size:12.5px}
-.pill-user{background:#1A4454;color:#CFE0E6;padding:5px 12px;border-radius:20px;font-size:12px}
+/* Bandeau de démonstration -- pleine largeur, au-dessus du header (mockup institutionnel) */
+.banner-demo{background:#3558a2;color:#fff;font-size:14px}
+.banner-demo .inner{max-width:1200px;margin:0 auto;padding:11px 32px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.banner-demo b{font-weight:700}
 
-.body{flex:1;display:flex;min-height:0}
-.side{width:288px;background:#fff;border-right:1px solid #DCE5E9;display:flex;flex-direction:column;flex:0 0 288px}
-.side h3{font-size:11px;letter-spacing:1.4px;color:#7A8D97;text-transform:uppercase;padding:20px 20px 10px}
-.search{margin:0 20px 12px;background:#F1F5F7;border:1px solid #E1E9EC;border-radius:6px;
-padding:7px 10px;font-size:12.5px;color:#8A9AA3}
-.blist{flex:1;overflow-y:auto;padding:0 12px}
-.bitem{padding:9px 10px;border-radius:6px;display:flex;align-items:center;gap:9px;font-size:13px;color:#2B3D46;text-decoration:none}
-.bitem.on{background:#E8F1F4;color:#12333F;font-weight:600;box-shadow:inset 3px 0 0 #1C7293}
+/* En-tête institutionnel (remplace l'ancien topbar + sidebar de navigation par bâtiment --
+   la recherche + le tableau/carte de l'accueil deviennent le point d'entrée vers un bâtiment,
+   cf. mockup "Redesign institutionnel SDTE") */
+.topbar{background:#fff;box-shadow:0 1px 3px rgba(0,0,18,.08);flex:0 0 auto}
+.topbar-row{max-width:1200px;margin:0 auto;padding:32px 32px 28px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.logo-block{display:flex;align-items:center;gap:24px;text-decoration:none;cursor:pointer}
+.logo{font-weight:800;color:#000091;font-size:30px;letter-spacing:-.01em;line-height:1}
+.logo-sub{display:flex;flex-direction:column;gap:2px}
+.logo-sub .t{font-size:15px;font-weight:700;color:#161616}
+.logo-sub .s{font-size:14px;color:#666}
+.topbar-right{display:flex;flex-direction:column;align-items:flex-end;gap:16px}
+.topbar-stats{display:flex;gap:24px;font-size:14px;color:#161616;font-weight:500;flex-wrap:wrap}
+
+.search-wrap{position:relative;width:384px;max-width:100%}
+.search{flex:1;min-width:0;border:0;border-bottom:2px solid #000091;border-radius:4px 0 0 0;
+background:#eee;padding:10px 16px;font-size:16px;font-style:italic;color:#161616;outline:none}
+.search-btn{width:40px;border:0;border-radius:0 4px 0 0;background:#000091;color:#fff;font-size:18px;cursor:pointer}
+.search-results{position:absolute;top:calc(100% + 4px);left:0;right:0;z-index:50;background:#fff;
+border:1px solid #e5e5e5;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,18,.12);overflow:hidden}
+
+.blist{display:flex;flex-direction:column}
+.bitem{padding:9px 14px;display:flex;align-items:center;gap:9px;font-size:13px;color:#2B3D46;text-decoration:none}
+.bitem:hover{background:#f5f5fe}
+.bitem.on{background:#f5f5fe;color:#000091;font-weight:600;box-shadow:inset 3px 0 0 #000091}
 .dot{width:8px;height:8px;border-radius:50%;flex:0 0 8px}
 .g{background:#3E9E6E}.o{background:#D98C2B}.r{background:#C0503F}.n{background:#B7C4CA}
-.bitem .meta{margin-left:auto;font-size:11px;color:#8A9AA3;font-weight:400}
-.sidefoot{padding:16px 20px 20px;border-top:1px solid #E7EDEF}
-.btn{display:block;width:100%;text-align:center;background:#1C7293;color:#fff;font-size:13px;font-weight:600;
-padding:11px;border-radius:6px;letter-spacing:.4px;text-decoration:none;border:none;cursor:pointer}
-.btn.ghost{background:#fff;color:#1C7293;border:1px solid #BFD5DE;margin-top:8px;font-weight:500}
+.bitem .meta{margin-left:auto;font-size:11px;color:#666;font-weight:400}
 
-.main{flex:1;padding:22px 26px;display:flex;flex-direction:column;min-width:0}
-.crumb{font-size:11.5px;color:#8A9AA3;margin-bottom:5px;letter-spacing:.3px}
-.h1{font-size:23px;font-weight:700;margin-bottom:16px}
-.h1 small{font-size:12px;font-weight:500;color:#7A8D97;margin-left:10px}
-.panel{background:#fff;border:1px solid #DCE5E9;border-radius:8px;flex:1;display:flex;flex-direction:column;min-height:0}
-.tabs{display:flex;border-bottom:1px solid #E1E9EC;padding:0 6px;flex:0 0 auto}
-.tab{padding:13px 20px;font-size:13.5px;color:#67797F;text-decoration:none}
-.tab.on{color:#12333F;font-weight:600;box-shadow:inset 0 -3px 0 #D98C2B}
-.subtabs{display:flex;gap:8px;padding:12px 18px;border-bottom:1px solid #EDF1F3;flex:0 0 auto;flex-wrap:wrap}
-.chip{font-size:12px;padding:5px 13px;border-radius:20px;background:#F1F5F7;color:#5B6E77;border:1px solid #E4EAED;cursor:pointer}
-.chip.on{background:#12333F;color:#fff;border-color:#12333F}
+.nav2{border-top:1px solid #e5e5e5}
+.nav2-row{max-width:1200px;margin:0 auto;padding:0 32px;display:flex;flex-wrap:wrap}
+.nav2-item{background:none;border:0;border-bottom:2px solid transparent;color:#161616;padding:18px 16px 16px;
+font-size:15px;font-weight:400;text-decoration:none;cursor:pointer}
+.nav2-item.on{border-bottom-color:#000091;color:#000091;font-weight:500}
+.nav2-item:hover{background:#f6f6f6}
+
+.btn{display:block;width:100%;text-align:center;background:#000091;color:#fff;font-size:15px;font-weight:500;
+padding:10px 20px;letter-spacing:normal;text-decoration:none;border:1px solid #000091;cursor:pointer}
+.btn.ghost{background:#fff;color:#161616;border:1px solid #161616;margin-top:8px;font-weight:500}
+.btn.inline{display:inline-block;width:auto;padding:10px 20px}
+.btn.ghost.inline{margin-top:0}
+
+.main{flex:1;max-width:1200px;width:100%;margin:0 auto;padding:22px 32px;display:flex;flex-direction:column;min-width:0}
+
+/* Section pleine largeur de la page d'accueil (hero, bloc "où en est le parc"...) --
+   sort du conteneur centré .main pour aller d'un bord à l'autre, comme le mockup. */
+.section-bleed{margin:0 calc(50% - 50vw);padding:0 calc(50vw - 50%)}
+/* Variante sans le padding compensatoire : à utiliser quand le contenu interne
+   (ex. les deux colonnes "Où en est le parc") doit lui-même atteindre le bord
+   de l'écran (fond gris de la colonne de droite), pas seulement l'enveloppe. */
+.full-bleed{margin:0 calc(50% - 50vw)}
+.hero{background:#f6f6f6}
+.hero-inner{max-width:880px;margin:0 auto;padding:96px 32px 104px;display:flex;flex-direction:column;align-items:center;gap:28px;text-align:center}
+.hero-badge{border:1px solid #000091;border-radius:6px;color:#000091;font-size:15px;padding:3px 12px}
+.hero h1{margin:0;font-size:52px;font-weight:800;line-height:1.15;color:#000091;letter-spacing:-.01em}
+.hero .lead{margin:0;font-family:var(--font-serif),Spectral,Georgia,serif;font-style:italic;font-size:22px;color:#000091}
+.crumb{font-size:11.5px;color:#666;margin-bottom:5px;letter-spacing:.3px}
+.h1{font-size:23px;font-weight:800;margin-bottom:16px}
+.h1 small{font-size:12px;font-weight:500;color:#666;margin-left:10px}
+.panel{background:#fff;border:1px solid #e5e5e5;border-radius:8px;flex:1;display:flex;flex-direction:column;min-height:0}
+.tabs{display:flex;border-bottom:1px solid #e5e5e5;padding:0 6px;flex:0 0 auto}
+.tab{padding:13px 20px;font-size:13.5px;color:#3a3a3a;text-decoration:none}
+.tab.on{color:#000091;font-weight:600;box-shadow:inset 0 -3px 0 #000091}
+.subtabs{display:flex;gap:8px;padding:12px 18px;border-bottom:1px solid #eee;flex:0 0 auto;flex-wrap:wrap}
+.chip{font-size:12px;padding:5px 13px;border-radius:20px;background:#eee;color:#3a3a3a;border:1px solid #e5e5e5;cursor:pointer}
+.chip.on{background:#000091;color:#fff;border-color:#000091}
+
+/* Pastille de tri (mockup institutionnel) -- toujours bordée bleu, pleine
+   quand active, contour quand non-active (distinct de .chip ci-dessus). */
+.pill-toggle{font-size:13px;padding:4px 14px;border-radius:16px;background:#fff;color:#000091;border:1px solid #000091;cursor:pointer}
+.pill-toggle.on{background:#000091;color:#fff}
 .content{flex:1;padding:18px;min-height:0;position:relative;overflow-y:auto}
 
-.tag{font-size:10px;padding:2px 8px;border-radius:4px;font-weight:600;letter-spacing:.3px;text-transform:uppercase}
-.t-mes{background:#E2F0EA;color:#2C7A56}
-.t-doc{background:#E7EEF1;color:#4A6C7A}
-.t-hyp{background:#FBEEDA;color:#96601A}
+.tag{display:inline-flex;align-items:center;gap:5px;font-size:10px;padding:2px 8px;border-radius:4px;font-weight:600;letter-spacing:.3px;text-transform:uppercase}
+.tag .dot{width:6px;height:6px;border-radius:50%;flex:0 0 6px;background:currentColor}
+.t-mes{background:#b8fec9;color:#18753c}
+.t-doc{background:#e8edff;color:#0063cb}
+.t-hyp{background:#feecc2;color:#716043}
+.t-ia{background:#EAECFB;color:#000091;border:1px dashed #000091}
+.t-abs{background:#eee;color:#666}
 .state{font-size:11px;padding:3px 9px;border-radius:4px;font-weight:600}
-.s-ok{background:#E9F1EC;color:#3E7B5C}
-.s-app{background:#E4EFF3;color:#1C6A88}
-.s-non{background:#F0F2F3;color:#79878D}
-.s-ins{background:#FBEEDA;color:#96601A}
+.s-ok{background:#b8fec9;color:#18753c}
+.s-app{background:#e8edff;color:#0063cb}
+.s-non{background:#eee;color:#666}
+.s-ins{background:#feecc2;color:#716043}
 table{width:100%;border-collapse:collapse;font-size:12.5px}
-th{text-align:left;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;color:#8A9AA3;
-padding:0 12px 9px;font-weight:600;border-bottom:1px solid #E7EDEF}
-td{padding:11px 12px;border-bottom:1px solid #F0F4F5;color:#2B3D46}
+th{text-align:left;font-size:13px;color:#666;
+padding:0 12px 9px;font-weight:400;border-bottom:1px solid #e5e5e5}
+td{padding:11px 12px;border-bottom:1px solid #eee;color:#2B3D46}
 tr:last-child td{border-bottom:none}
-.mut{color:#7A8D97}
-.footbar{height:34px;background:#12333F;display:flex;align-items:center;padding:0 24px;
-color:#7E9BA6;font-size:11.5px;gap:22px;flex:0 0 34px}
-.footbar .demo{color:#D98C2B;font-weight:600;letter-spacing:.5px}
-.footbar .r{margin-left:auto}
+tbody tr:nth-child(even) td{background:#fafafa}
+.table-row-hover:hover{background:#fafafa}
 
-.kpi{flex:1;border:1px solid #E1E9EC;border-radius:7px;padding:15px 17px;background:#FBFCFD}
-.kpi .val{font-size:29px;font-weight:700;color:#12333F;line-height:1.1}
-.kpi .val span{font-size:12px;font-weight:600;color:#8A9AA3}
-.kpi .label{font-size:11.5px;color:#6E8089;margin-top:6px;line-height:1.4}
+/* Chiffres tabulaires (kWh/m², scores, %) -- Public Sans, PAS de mono (cf. handoff
+   design : le mono sert uniquement aux codes de donnée A.1/E.3/D1). tabular-nums
+   est déjà global sur body, cette classe ne sert plus qu'à documenter l'intention. */
+.num{font-variant-numeric:tabular-nums}
+
+/* Codes de donnée (A.1, E.3, D1...) -- seul usage légitime de la police mono. */
+.code-mono{font-family:var(--font-mono),ui-monospace,Menlo,monospace}
+
+/* Jauge de score courte (fiche bâtiment) */
+.gauge{height:5px;background:#EDF1F3;border-radius:3px;overflow:hidden;margin-top:4px}
+.gauge>div{height:5px;border-radius:3px}
+
+/* Badge de priorité accessible : pastille + libellé texte, jamais la couleur seule */
+.badge-priorite{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;
+padding:5px 12px;border-radius:20px}
+.badge-priorite .dot{width:7px;height:7px;flex:0 0 7px}
+
+/* Variante "plate" (pastille + texte, sans fond) -- tableaux denses (mockup institutionnel) */
+.badge-priorite.plain{background:none !important;padding:0;font-weight:400;font-size:13px;color:#161616}
+.badge-priorite.plain .dot{width:7px;height:7px;border-radius:50%}
+
+/* Pastille accessibilité sur les badges d'état existants (.state) -- même couleur, on ajoute la forme */
+.state{display:inline-flex;align-items:center;gap:6px}
+.state .dot{width:6px;height:6px;border-radius:50%;flex:0 0 6px;background:currentColor}
+
+/* Focus clavier visible (RGAA, testable au Tab) */
+:focus-visible{outline:2px solid #000091;outline-offset:2px}
+
+/* Fond de carte atténué (mockup "fond IGN estompé") -- filtre CSS posé directement
+   sur les tuiles (className du TileLayer react-leaflet), la source de données
+   (IGN_WMTS_URL) ne change pas, seul le rendu est assourdi. !important nécessaire :
+   Leaflet pose ses propres styles inline sur chaque <img> de tuile. */
+.tuile-attenuee{filter:grayscale(70%) brightness(1.12) contrast(0.85) !important}
+.mut{color:#666}
+.footbar{background:#f6f6f6;flex:0 0 auto}
+.footer-main{max-width:1200px;margin:0 auto;padding:56px 32px;display:flex;justify-content:space-between;gap:48px;flex-wrap:wrap}
+.footer-brand{display:flex;flex-direction:column;gap:12px;max-width:400px}
+.footer-brand p{margin:0;font-size:14px;color:#161616}
+.footer-cols{display:flex;gap:64px;flex-wrap:wrap;font-size:14px}
+.footer-col{display:flex;flex-direction:column;gap:10px}
+.footer-col a{color:#3a3a3a;text-decoration:none}
+.footer-col a:hover{color:#000091}
+.footer-col-title{font-weight:700;color:#161616}
+.footbar-row{border-top:1px solid #ddd;max-width:1200px;margin:0 auto;padding:16px 32px;color:#666;font-size:12px}
+
+/* Carte "priorité de rénovation" (accueil) */
+.card-prio{width:100%;max-width:500px;background:#fff;box-shadow:0 6px 18px rgba(0,0,18,.10);
+padding:24px 28px;display:flex;justify-content:space-between;align-items:center;gap:14px;
+text-decoration:none;color:inherit}
+.card-prio:hover{box-shadow:0 8px 24px rgba(0,0,18,.18)}
+
+.kpi{flex:1;border:1px solid #e5e5e5;border-radius:7px;padding:11px 14px;background:#fafafa}
+.kpi .val{font-size:29px;font-weight:800;color:#000091;line-height:1.1}
+.kpi .val span{font-size:12px;font-weight:600;color:#666}
+.kpi .label{font-size:11.5px;color:#666;margin-top:6px;line-height:1.4}
