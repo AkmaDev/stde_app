@@ -30,7 +30,35 @@ export function dpeExpireLim(batiment: Batiment): string | undefined {
   return `DPE de ${annee} : légalement expiré depuis le 31/12/2022 (réforme DPE 2021, durée de validité raccourcie pour les DPE réalisés avant 2013). Utilisé quand même faute d'alternative, aucun nouveau DPE n'a été commandé pour ce bâtiment à ce jour.`;
 }
 
+const LIM_MIN_MAX_APUR =
+  "hauteur_min_m/hauteur_max_m restent issus d'APUR (fourchette sur l'emprise) -- TerraLab ne donne qu'une valeur unique, pas la même source que hauteur_m.";
+
+function combineLim(...parts: (string | null | undefined)[]): string | undefined {
+  const kept = parts.filter((p): p is string => !!p);
+  return kept.length > 0 ? kept.join(" ") : undefined;
+}
+
 function hauteurDoc(batiment: Batiment): FieldDoc {
+  if (batiment.hauteur_origine === "terralab") {
+    return {
+      src: "TerraLab (IGN BD TOPO)",
+      ref: "Hauteur du bâtiment, du sol à la gouttière",
+      meth: "Open data",
+      fiab: "Élevée",
+      steps: ["Hauteur relevée directement sur TerraLab (terra-lab.ai), outil basé sur l'IGN BD TOPO, le 26/10/2026."],
+      lim: combineLim(LIM_MIN_MAX_APUR, batiment.hauteur_verification?.note),
+    };
+  }
+  if (batiment.hauteur_origine === "estimation") {
+    return {
+      src: "TerraLab + Google Earth",
+      ref: "Comparaison visuelle, pas de RNB confirmé",
+      meth: "Estimation visuelle",
+      fiab: "Faible",
+      steps: ["Bâtiment sans identifiant RNB confirmé -- hauteur estimée par comparaison visuelle sur TerraLab et Google Earth, pas une mesure directe."],
+      lim: combineLim(LIM_MIN_MAX_APUR, batiment.hauteur_verification?.note),
+    };
+  }
   const src =
     batiment.facade_source === "ign_bdtopo"
       ? "IGN BDTOPO"

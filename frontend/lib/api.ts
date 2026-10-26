@@ -126,6 +126,11 @@ export interface Batiment {
   // bâtiment partagé avec une école) -- absent quand aucun écart notable
   // n'a été creusé.
   hauteur_verification: { statut: string; note: string } | null;
+  // Source de hauteur_m, distincte de facade_source (qui documente la
+  // longueur des façades, pas la hauteur) -- une façade peut venir d'APUR
+  // pendant que la hauteur vient de TerraLab. "estimation" = pas une mesure
+  // directe (bâtiment sans RNB confirmé), fiabilité à afficher comme faible.
+  hauteur_origine: "apur" | "terralab" | "estimation" | null;
   // Factures réelles mensuelles (janv. 2023 - juin 2026, voir
   // stde_app/scripts/extract_consommation_mensuelle.py). Un mois absent du
   // tableau = aucune facture reçue ce mois-là (pas une consommation nulle) —

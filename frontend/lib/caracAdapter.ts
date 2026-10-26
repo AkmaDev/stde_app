@@ -80,13 +80,21 @@ export function adaptCarac(batiment: Batiment): CaracData {
   });
   const autresAccesRNB = batiment.rnb_adresses.filter((a) => a !== adressePrincipaleRNB);
 
+  // C.1 ne dépend plus de rnb_verifie : hauteur_origine peut être "terralab"
+  // ou "estimation", indépendants de l'identité RNB (contrairement à
+  // C.2..C.4+ ci-dessous, qui restent liés à la géométrie RNB/APUR vérifiée).
+  push(
+    "C.1",
+    "Hauteur du bâtiment",
+    batiment.hauteur_m
+      ? batiment.hauteur_min_m != null && batiment.hauteur_max_m != null
+        ? `${batiment.hauteur_m} m (min ${batiment.hauteur_min_m} · max ${batiment.hauteur_max_m})`
+        : `${batiment.hauteur_m} m`
+      : null,
+    batiment.hauteur_origine === "estimation" ? "hypothese" : "documentee"
+  );
+
   if (batiment.rnb_verifie) {
-    push(
-      "C.1",
-      "Hauteur du bâtiment (APUR)",
-      batiment.hauteur_m ? `${batiment.hauteur_m} m (min ${batiment.hauteur_min_m} · max ${batiment.hauteur_max_m})` : null,
-      "documentee"
-    );
     const het = hauteurEtageReelle(batiment);
     push("C.2", "Hauteur d'étage (moyenne calculée)", het ? `${het} m` : null, "hypothese");
     if (adressePrincipaleRNB) {
