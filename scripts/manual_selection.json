@@ -951,5 +951,93 @@
         ]
       ]
     ]
+  },
+  "14": {
+    "rnb_index": 0,
+    "rnb_id": "SPMCRVSDR4AY",
+    "rnb_distance_m": 0.0,
+    "apur_objectid": 65296,
+    "apur_h_moy": 24.497727270000002,
+    "apur_rings": [
+      [
+        [
+          654466.4051999971,
+          6862437.602400001
+        ],
+        [
+          654477.009300001,
+          6862414.210900001
+        ],
+        [
+          654471.0520000011,
+          6862411.377700001
+        ],
+        [
+          654469.8187000006,
+          6862413.897100002
+        ],
+        [
+          654467.574000001,
+          6862412.845400002
+        ],
+        [
+          654464.178199999,
+          6862420.092599999
+        ],
+        [
+          654457.1296000034,
+          6862434.839200001
+        ],
+        [
+          654442.8403000012,
+          6862428.014600001
+        ],
+        [
+          654450.2286000028,
+          6862413.0374
+        ],
+        [
+          654457.2019999996,
+          6862416.394299999
+        ],
+        [
+          654460.5582000017,
+          6862409.558699999
+        ],
+        [
+          654450.9583000019,
+          6862405.061500002
+        ],
+        [
+          654452.0571999997,
+          6862402.340399999
+        ],
+        [
+          654444.3969999999,
+          6862398.703400001
+        ],
+        [
+          654428.9804000035,
+          6862431.1932
+        ],
+        [
+          654430.0546000004,
+          6862434.083500002
+        ],
+        [
+          654458.987999998,
+          6862447.5397000015
+        ],
+        [
+          654463.8033000007,
+          6862436.2892
+        ],
+        [
+          654466.4051999971,
+          6862437.602400001
+        ]
+      ]
+    ],
+    "note": "Resolu le 26/10/2026. RNB SPMCRVSDR4AY (adresses 76/78 rue du Chemin Vert, 20/22 avenue Parmentier) deja confirme independamment par BDNB (bdnb-bg-AX2N-YWJM-1MEX, memes 4 adresses exactement). Cache RNB precedent pour ce batiment etait perime (ancienne requete ne retournait pas SPMCRVSDR4AY du tout dans un rayon de 50m -- supprime et retelecharge). Parmi 17 candidats APUR, objectid=65296 choisi par la methode validee sur Helene Berr/Villon : distance minimale mur-point d'adresse geocodee (20 avenue Parmentier, 75011) = 8.0m, largement le plus proche (candidat suivant le plus proche : 55125 a 13.5m, puis 45560 a 18.5m). h_moy=24.5m, surface=965m2, polygone simple (1 anneau, pas de cour). h_moy different de hauteur_m retenue (22.5m, TerraLab/IGN BD TOPO) -- hauteur_origine reste terralab, facade_source=apur pour la geometrie/longueur des facades uniquement (meme logique que les autres batiments)."
   }
 }

@@ -194,14 +194,24 @@ export function getFacadeFieldDoc(sousCode: "E.1" | "E.2" | "E.3" | "E.4" | "E.5
   if (sousCode === "E.3") {
     const facades = batiment.facade_segments.filter((f) => !f.bruit && f.vitrage_note);
     const origines = new Set(facades.map((f) => f.vitrage_origine));
+    // Cas particulier : une seule valeur BDNB, moyenne de tout le bâtiment,
+    // appliquée identiquement à chaque façade faute de donnée par orientation
+    // -- à distinguer clairement des estimations faites façade par façade
+    // (plan, photo), fiabilité affichée plus faible pour ne pas laisser croire
+    // à une mesure par orientation.
+    const estBdnbSeul = origines.size === 1 && origines.has("estimee_bdnb_batiment");
     const src =
       origines.size === 0
         ? null
+        : estBdnbSeul
+        ? "BDNB — moyenne du bâtiment entier"
         : origines.has("estimee_photo_description") && origines.has("estimee_plan")
         ? "Plans d'élévation + photos de rue"
         : origines.has("estimee_photo_description")
         ? "Photos de rue + description architecturale"
-        : "Plans d'élévation";
+        : origines.has("estimee_plan")
+        ? "Plans d'élévation"
+        : "Open data (BDNB)";
     // Une note identique peut apparaitre sur plusieurs facades (ex. murs mitoyens) :
     // dedupe par texte tout en gardant le bon index de la premiere facade concernee
     // (un indexage par position, comme avant, decalait l'attribution des qu'une note
@@ -216,11 +226,13 @@ export function getFacadeFieldDoc(sousCode: "E.1" | "E.2" | "E.3" | "E.4" | "E.5
     }
     return {
       src,
-      ref: "Lecture d'élévations / estimation visuelle",
-      meth: "Variable selon la façade",
-      fiab: "Moyenne",
+      ref: estBdnbSeul ? "Moyenne bâtiment (BDNB)" : "Lecture d'élévations / estimation visuelle",
+      meth: estBdnbSeul ? "Open data" : "Variable selon la façade",
+      fiab: estBdnbSeul ? "Faible" : "Moyenne",
       steps: steps.length > 0 ? steps : [NON_RETRACE],
-      lim: "La méthode diffère par façade (calcul sur cotes réelles vs estimation visuelle) — voir le détail ci-dessus.",
+      lim: estBdnbSeul
+        ? "Valeur unique BDNB pour tout le bâtiment (toutes orientations confondues), pas une mesure par façade — appliquée ici de façon identique à chaque façade, faute de donnée par orientation."
+        : "La méthode diffère par façade (calcul sur cotes réelles vs estimation visuelle) — voir le détail ci-dessus.",
     };
   }
   if (sousCode === "E.4") {
