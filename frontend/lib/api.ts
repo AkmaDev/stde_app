@@ -319,15 +319,23 @@ export function apportSolaireTotal(batiment: Batiment): number | null {
 
 // Urgence = apport solaire réel par m², normalisé entre le bâtiment le moins et le
 // plus exposé parmi les seuls bâtiments où l'apport solaire est intégralement
-// calculable (façades + vitrage + irradiance corrigée des masques). Calibré le
-// 03/09/2026 sur 4 bâtiments (min Oscar Wilde 17,7 kWh/an/m², max Jean-Pierre
-// Melville 179,0 kWh/an/m²) -- échelle purement relative entre ces 4 connus, aucun
-// seuil absolu documenté n'existe pour "l'apport solaire acceptable" par m². À
-// recalculer si Jean fournit le vitrage manquant pour d'autres bâtiments (voir
-// 21_CHANTIERS_OUVERTS_ET_BLOCAGES.md). null pour tout bâtiment sans vitrage estimé
-// (7 bâtiments sur 11 actuellement) -- jamais de proxy plus faible mélangé ici.
-const URGENCE_APPORT_MIN_KWH_M2 = 17.7;
-const URGENCE_APPORT_MAX_KWH_M2 = 179.0;
+// calculable (façades + vitrage + irradiance corrigée des masques). Recalibré le
+// 26/10/2026 sur 5 bâtiments dont la source de vitrage n'est PAS contestée
+// (Hélène Berr, Gutenberg, Jean-Pierre Melville, Oscar Wilde, François Villon) :
+// min Oscar Wilde 25,3 kWh/an/m² (était 17,7, valeur documentée le 03/09 devenue
+// obsolète), max Hélène Berr 196,6 kWh/an/m² (dépasse Jean-Pierre Melville, 137,7,
+// depuis la mise à jour de son vitrage le même jour via relecture Fable 5.1 des
+// élévations réelles -- plusieurs segments étaient surestimés à 90% uniforme, dont
+// un qui s'est révélé être une grille de ventilation opaque).
+// Buffon (489,3 kWh/an/m² si calculé) est VOLONTAIREMENT EXCLU de cette
+// calibration : sa source de vitrage ("plans Cabinet GEOSAT") s'est révélée fausse
+// le 26/10/2026 (voir 23_NOTES_ERREURS_IA.md n°4 et 21_CHANTIERS_OUVERTS_ET_BLOCAGES.md)
+// -- le réintégrer seulement après correction de sa donnée. À recalculer aussi si
+// Jean fournit le vitrage manquant pour d'autres bâtiments. null pour tout
+// bâtiment sans vitrage estimé (7 bâtiments sur 11 actuellement) -- jamais de
+// proxy plus faible mélangé ici.
+const URGENCE_APPORT_MIN_KWH_M2 = 25.3;
+const URGENCE_APPORT_MAX_KWH_M2 = 196.6;
 
 export function scoreUrgence(batiment: Batiment): number | null {
   const total = apportSolaireTotal(batiment);
