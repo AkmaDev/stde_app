@@ -12,6 +12,20 @@ export default async function FicheBatimentPage({ params }: { params: { id: stri
   const batiments = await getBatiments();
   const carac = adaptCarac(batiment);
 
+  // Hélène Berr (9) et Jean-Pierre Melville (16) sont les deux bâtiments
+  // retenus comme cas pilotes (voir le rapport de qualité des données) --
+  // mis en tête de la liste "Autres bâtiments" uniquement, sans toucher à
+  // l'ordre de batiments.json (utilisé par d'autres pages).
+  const ORDRE_PILOTES = [9, 16];
+  const batimentsTries = [...batiments].sort((a, b) => {
+    const ia = ORDRE_PILOTES.indexOf(a.batiment.id);
+    const ib = ORDRE_PILOTES.indexOf(b.batiment.id);
+    if (ia === -1 && ib === -1) return 0;
+    if (ia === -1) return 1;
+    if (ib === -1) return -1;
+    return ia - ib;
+  });
+
   const risque = scoreRisque(batiment);
   const urgence = scoreUrgence(batiment);
   const faisabilite = scoreFaisabilite(batiment);
@@ -79,7 +93,7 @@ export default async function FicheBatimentPage({ params }: { params: { id: stri
         <aside style={{ flex: "1 1 180px", maxWidth: 220, minWidth: 160, display: "flex", flexDirection: "column", gap: 16 }}>
           <span style={{ fontSize: 14, fontWeight: 700, color: "#161616" }}>Autres bâtiments</span>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            {batiments.map(({ batiment: b }) => {
+            {batimentsTries.map(({ batiment: b }) => {
               const actif = b.id === batiment.id;
               return (
                 <Link
