@@ -193,13 +193,33 @@ export function getFacadeFieldDoc(sousCode: "E.1" | "E.2" | "E.3" | "E.4" | "E.5
   }
   if (sousCode === "E.3") {
     const facades = batiment.facade_segments.filter((f) => !f.bruit && f.vitrage_note);
-    const notes = Array.from(new Set(facades.map((f) => f.vitrage_note as string)));
+    const origines = new Set(facades.map((f) => f.vitrage_origine));
+    const src =
+      origines.size === 0
+        ? null
+        : origines.has("estimee_photo_description") && origines.has("estimee_plan")
+        ? "Plans d'élévation + photos de rue"
+        : origines.has("estimee_photo_description")
+        ? "Photos de rue + description architecturale"
+        : "Plans d'élévation";
+    // Une note identique peut apparaitre sur plusieurs facades (ex. murs mitoyens) :
+    // dedupe par texte tout en gardant le bon index de la premiere facade concernee
+    // (un indexage par position, comme avant, decalait l'attribution des qu'une note
+    // se repetait).
+    const seen = new Set<string>();
+    const steps: string[] = [];
+    for (const f of facades) {
+      const n = f.vitrage_note as string;
+      if (seen.has(n)) continue;
+      seen.add(n);
+      steps.push(`Façade ${f.index} : ${n}`);
+    }
     return {
-      src: "Plans d'élévation",
+      src,
       ref: "Lecture d'élévations / estimation visuelle",
       meth: "Variable selon la façade",
       fiab: "Moyenne",
-      steps: notes.length > 0 ? notes.map((n, i) => `Façade ${facades[i]?.index ?? ""} : ${n}`) : [NON_RETRACE],
+      steps: steps.length > 0 ? steps : [NON_RETRACE],
       lim: "La méthode diffère par façade (calcul sur cotes réelles vs estimation visuelle) — voir le détail ci-dessus.",
     };
   }

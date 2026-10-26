@@ -67,7 +67,7 @@ export interface FacadeSegment {
   // réelle (cf. hauteurEtageReelle), comparées visuellement sur le plan.
   // Volontairement absent des segments non estimés (pas de valeur inventée).
   taux_vitrage_estime_pct: number | null;
-  vitrage_origine: "estimee_plan" | null;
+  vitrage_origine: "estimee_plan" | "estimee_photo_description" | null;
   vitrage_note: string | null;
   // Irradiance solaire annuelle reçue par cette façade (PVGIS, plan vertical,
   // azimut réel du segment), SANS correction par les masques solaires
