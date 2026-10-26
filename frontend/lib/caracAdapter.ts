@@ -78,8 +78,6 @@ export function adaptCarac(batiment: Batiment): CaracData {
     const numeroComplet = `${a.numero ?? ""}${a.suffixe ?? ""}`.toLowerCase();
     return numeroComplet.length > 0 && adresseConnueNorm.includes(numeroComplet) && adresseConnueNorm.includes(a.rue.toLowerCase());
   });
-  const autresAccesRNB = batiment.rnb_adresses.filter((a) => a !== adressePrincipaleRNB);
-
   // C.1 ne dépend plus de rnb_verifie : hauteur_origine peut être "terralab"
   // ou "estimation", indépendants de l'identité RNB (contrairement à
   // C.2..C.4+ ci-dessous, qui restent liés à la géométrie RNB/APUR vérifiée).
@@ -100,9 +98,6 @@ export function adaptCarac(batiment: Batiment): CaracData {
     if (adressePrincipaleRNB) {
       push("C.3", "Adresse vérifiée (RNB)", formatAdresseRNB(adressePrincipaleRNB), "documentee");
     }
-    autresAccesRNB.forEach((a, i) => {
-      push(`C.${4 + i}`, `Autre accès au même bâtiment (${i + 1})`, formatAdresseRNB(a), "documentee");
-    });
   }
 
   // D. Enveloppe
