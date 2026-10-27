@@ -1,0 +1,130 @@
+{
+  "batiment_id": 16,
+  "batiment_nom": "Jean-Pierre Melville",
+  "leviers": [
+    {
+      "nom": "Isolation facade",
+      "u_mur_baseline": 3.13,
+      "u_mur_variant": 0.361,
+      "source_intervention": "DPE JPM section 3.1.3 : fibre de bois, 12cm, lambda=0.049 W/m.K",
+      "cout_indicatif": "50 001-75 000 EUR HT, 15.4% EP declare (estimation DPE, pas un calcul Brique 5)",
+      "confort": "non calculable avec ce modele",
+      "scenarios": [
+        {
+          "scenario": "simple_vitrage_alu (DPE, 5.20) x g=0.85 (simple vitrage clair)",
+          "besoin_chauffage_baseline_kwh": 313747.1,
+          "besoin_chauffage_variant_kwh": 136773.5,
+          "delta_hiver_kwh": 176973.6,
+          "delta_hiver_pct": 56.4,
+          "classe_hiver": "fort",
+          "apport_ete_baseline_kwh": 149706.2,
+          "apport_ete_variant_kwh": 149706.2,
+          "delta_ete_kwh": 0.0,
+          "delta_ete_pct": 0.0,
+          "classe_ete": "sans effet"
+        },
+        {
+          "scenario": "simple_vitrage_alu (DPE, 5.20) x g=0.75 (double vitrage clair)",
+          "besoin_chauffage_baseline_kwh": 331146.8,
+          "besoin_chauffage_variant_kwh": 148816.6,
+          "delta_hiver_kwh": 182330.2,
+          "delta_hiver_pct": 55.1,
+          "classe_hiver": "fort",
+          "apport_ete_baseline_kwh": 132093.5,
+          "apport_ete_variant_kwh": 132093.5,
+          "delta_ete_kwh": 0.0,
+          "delta_ete_pct": 0.0,
+          "classe_ete": "sans effet"
+        },
+        {
+          "scenario": "double_vitrage_alu (DPE, 2.80) x g=0.85 (simple vitrage clair)",
+          "besoin_chauffage_baseline_kwh": 204332.5,
+          "besoin_chauffage_variant_kwh": 49456.3,
+          "delta_hiver_kwh": 154876.2,
+          "delta_hiver_pct": 75.8,
+          "classe_hiver": "fort",
+          "apport_ete_baseline_kwh": 149706.2,
+          "apport_ete_variant_kwh": 149706.2,
+          "delta_ete_kwh": 0.0,
+          "delta_ete_pct": 0.0,
+          "classe_ete": "sans effet"
+        },
+        {
+          "scenario": "double_vitrage_alu (DPE, 2.80) x g=0.75 (double vitrage clair)",
+          "besoin_chauffage_baseline_kwh": 218092.3,
+          "besoin_chauffage_variant_kwh": 55945.9,
+          "delta_hiver_kwh": 162146.4,
+          "delta_hiver_pct": 74.3,
+          "classe_hiver": "fort",
+          "apport_ete_baseline_kwh": 132093.5,
+          "apport_ete_variant_kwh": 132093.5,
+          "delta_ete_kwh": 0.0,
+          "delta_ete_pct": 0.0,
+          "classe_ete": "sans effet"
+        }
+      ]
+    },
+    {
+      "nom": "Protection solaire",
+      "g_facteur": 0.09,
+      "source_intervention": "Store exterieur, reference ES-SO/ACTIBAIE (EN14501)",
+      "cout_indicatif": "Non chiffre dans le DPE pour ce batiment -- pas de valeur inventee.",
+      "confort": "non calculable avec ce modele",
+      "scenarios": [
+        {
+          "scenario": "simple_vitrage_alu (DPE, 5.20) x g=0.85 (simple vitrage clair)",
+          "besoin_chauffage_baseline_kwh": 313747.1,
+          "besoin_chauffage_variant_kwh": 490595.4,
+          "delta_hiver_kwh": -176848.3,
+          "delta_hiver_pct": -56.4,
+          "classe_hiver": "defavorable",
+          "apport_ete_baseline_kwh": 149706.2,
+          "apport_ete_variant_kwh": 13473.4,
+          "delta_ete_kwh": 136232.8,
+          "delta_ete_pct": 91.0,
+          "classe_ete": "fort"
+        },
+        {
+          "scenario": "simple_vitrage_alu (DPE, 5.20) x g=0.75 (double vitrage clair)",
+          "besoin_chauffage_baseline_kwh": 331146.8,
+          "besoin_chauffage_variant_kwh": 492912.3,
+          "delta_hiver_kwh": -161765.5,
+          "delta_hiver_pct": -48.9,
+          "classe_hiver": "defavorable",
+          "apport_ete_baseline_kwh": 132093.5,
+          "apport_ete_variant_kwh": 11888.3,
+          "delta_ete_kwh": 120205.2,
+          "delta_ete_pct": 91.0,
+          "classe_ete": "fort"
+        },
+        {
+          "scenario": "double_vitrage_alu (DPE, 2.80) x g=0.85 (simple vitrage clair)",
+          "besoin_chauffage_baseline_kwh": 204332.5,
+          "besoin_chauffage_variant_kwh": 364868.3,
+          "delta_hiver_kwh": -160535.8,
+          "delta_hiver_pct": -78.6,
+          "classe_hiver": "defavorable",
+          "apport_ete_baseline_kwh": 149706.2,
+          "apport_ete_variant_kwh": 13473.4,
+          "delta_ete_kwh": 136232.8,
+          "delta_ete_pct": 91.0,
+          "classe_ete": "fort"
+        },
+        {
+          "scenario": "double_vitrage_alu (DPE, 2.80) x g=0.75 (double vitrage clair)",
+          "besoin_chauffage_baseline_kwh": 218092.3,
+          "besoin_chauffage_variant_kwh": 367184.4,
+          "delta_hiver_kwh": -149092.1,
+          "delta_hiver_pct": -68.4,
+          "classe_hiver": "defavorable",
+          "apport_ete_baseline_kwh": 132093.5,
+          "apport_ete_variant_kwh": 11888.3,
+          "delta_ete_kwh": 120205.2,
+          "delta_ete_pct": 91.0,
+          "classe_ete": "fort"
+        }
+      ]
+    }
+  ],
+  "mise_en_garde": "Seuls 2 des 6 leviers du catalogue (frontend/data/leviers.json) sont simules ici -- les 4 autres (GTB, Relamping LED, Ventilation double flux, Changement generateur) agissent sur des flux hors du perimetre de ce modele (ventilation, eclairage, rendement systeme), pas simules faute de modele physique disponible."
+}
