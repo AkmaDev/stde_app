@@ -87,7 +87,7 @@ export default function StreetView({
               <img
                 src={p.url}
                 alt={p.legende}
-                style={{ width: "100%", aspectRatio: "16/9", objectFit: "cover", display: "block", background: "#f6f6f6" }}
+                style={{ width: "100%", height: "auto", maxHeight: "80vh", display: "block", background: "#f6f6f6" }}
               />
               <span style={{ fontSize: 14, color: "#666" }}>
                 {p.legende} — Photo :{" "}
