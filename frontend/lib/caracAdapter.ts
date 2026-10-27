@@ -141,7 +141,7 @@ export function adaptCarac(batiment: Batiment): CaracData {
     { h: "Orientation", anchor: anchorFor(bs, "E.2") },
     { h: "Vitrage", anchor: anchorFor(bs, "E.3") },
     { h: "Irradiation", anchor: anchorFor(bs, "E.4") },
-    { h: "Apport", anchor: anchorFor(bs, "E.5") },
+    { h: "Irradiation reçue", anchor: anchorFor(bs, "E.5") },
   ];
   const facades: FacadeRow[] = facadesReelles.map((f) => {
     const ap = apportSolaireFacade(batiment, f);

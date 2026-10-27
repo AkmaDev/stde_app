@@ -11,22 +11,42 @@
         {
           "id": "isole",
           "u_mur": 0.202,
-          "source": "DPE Helene Berr section 3.1.3 (fibre de bois 12cm)"
+          "cout_iti": "100 001-200 000 EUR HT (cote rue), 1,5% EP declare (estimation DPE 3.1.3)",
+          "cout_ite": "75 001-100 000 EUR HT (cote cour), 1,7% EP declare (estimation DPE 3.1.3)"
         }
       ]
     },
     "Protection solaire": {
       "options": [
         {
-          "id": "sans_protection",
-          "facteur_g": 1.0
+          "id": "existant",
+          "note": "stores interieurs (0,38) ou exterieurs (0,10) selon facade, deja en place"
         },
         {
-          "id": "store_exterieur",
-          "facteur_g": 0.09,
-          "source": "ES-SO/ACTIBAIE (EN14501)"
+          "id": "upgrade_saisonnier",
+          "g_ete": 0.1,
+          "mois_actifs": "mai-septembre",
+          "segments": [
+            0,
+            17,
+            5
+          ]
         }
       ]
+    },
+    "Remplacement menuiseries": {
+      "options": [
+        {
+          "id": "actuel",
+          "u_vitrage": "2,0 ou 2,6 (DPE, sensibilite)"
+        },
+        {
+          "id": "remplace",
+          "u_vitrage": 1.8,
+          "cout_indicatif": "100 001-200 000 EUR HT, 2,6% EP declare (estimation DPE 3.2.3)"
+        }
+      ],
+      "note": "Non inclus dans le cocktail teste ici -- 3e levier, a tester separement."
     },
     "leviers_exclus": [
       "Installation GTB",
@@ -34,49 +54,54 @@
       "Ventilation double flux",
       "Changement generateur"
     ],
-    "note_exclusion": "Hors perimetre de ce modele (enveloppe seule -- transmission + solaire), pas une exclusion physique (Brique 8), une limite de modele."
+    "note_exclusion": "Hors perimetre de ce modele (enveloppe + ventilation forfaitaire), pas une exclusion Brique 8."
   },
   "next_generation": {
     "cocktails_generes": [
-      "Isolation facade (isole) + Protection solaire (store exterieur)"
+      "Isolation facade (isole) + Protection solaire (upgrade saisonnier)"
     ],
     "choix_humain": "Demande explicite de l'utilisateur, conversation en cours."
   },
   "physical_results": [
     {
       "scenario": "double_vitrage_pvc (DPE, 2.0)",
-      "besoin_chauffage_baseline_kwh": 14314.4,
-      "besoin_chauffage_combine_kwh": 82816.2,
-      "delta_hiver_combine_kwh": -68501.8,
-      "delta_hiver_combine_pct": -478.6,
-      "classe_hiver_combine": "defavorable",
-      "delta_hiver_somme_naive_kwh": -82173.7,
-      "ecart_hiver_vs_naif_kwh": 13671.9,
-      "apport_ete_baseline_kwh": 133924.3,
-      "apport_ete_combine_kwh": 12053.0,
-      "delta_ete_combine_kwh": 121871.3,
-      "delta_ete_combine_pct": 91.0,
+      "besoin_chauffage_baseline_kwh": 130247.1,
+      "besoin_chauffage_combine_kwh": 114657.7,
+      "delta_hiver_combine_kwh": 15589.4,
+      "delta_hiver_combine_pct": 12.0,
+      "classe_hiver_combine": "moyen",
+      "delta_hiver_somme_naive_kwh": 15589.4,
+      "ecart_hiver_vs_naif_kwh": 0.0,
+      "apport_ete_baseline_kwh": 33575.5,
+      "apport_ete_combine_kwh": 16881.1,
+      "delta_ete_combine_kwh": 16694.4,
+      "delta_ete_combine_pct": 49.7,
       "classe_ete_combine": "fort",
-      "delta_ete_somme_naive_kwh": 121871.3,
+      "delta_ete_somme_naive_kwh": 16694.4,
       "ecart_ete_vs_naif_kwh": 0.0
     },
     {
       "scenario": "double_vitrage_pvc (DPE, 2.6)",
-      "besoin_chauffage_baseline_kwh": 25731.8,
-      "besoin_chauffage_combine_kwh": 107298.1,
-      "delta_hiver_combine_kwh": -81566.3,
-      "delta_hiver_combine_pct": -317.0,
-      "classe_hiver_combine": "defavorable",
-      "delta_hiver_somme_naive_kwh": -93092.8,
-      "ecart_hiver_vs_naif_kwh": 11526.5,
-      "apport_ete_baseline_kwh": 133924.3,
-      "apport_ete_combine_kwh": 12053.0,
-      "delta_ete_combine_kwh": 121871.3,
-      "delta_ete_combine_pct": 91.0,
+      "besoin_chauffage_baseline_kwh": 150796.5,
+      "besoin_chauffage_combine_kwh": 133433.5,
+      "delta_hiver_combine_kwh": 17363.0,
+      "delta_hiver_combine_pct": 11.5,
+      "classe_hiver_combine": "moyen",
+      "delta_hiver_somme_naive_kwh": 17363.0,
+      "ecart_hiver_vs_naif_kwh": 0.0,
+      "apport_ete_baseline_kwh": 33575.5,
+      "apport_ete_combine_kwh": 16881.1,
+      "delta_ete_combine_kwh": 16694.4,
+      "delta_ete_combine_pct": 49.7,
       "classe_ete_combine": "fort",
-      "delta_ete_somme_naive_kwh": 121871.3,
+      "delta_ete_somme_naive_kwh": 16694.4,
       "ecart_ete_vs_naif_kwh": 0.0
     }
   ],
-  "mise_en_garde": "Cocktail combine recalcule integralement (pas une addition des gains individuels) -- les ecarts entre gain combine et somme naive sont affiches explicitement, jamais masques."
+  "synthese": {
+    "verdict_hiver": "favorable",
+    "verdict_ete": "favorable",
+    "note": "Recalcule integralement sur le modele corrige suite audit Fable (voir poc_bilan_horaire_helene_berr.py) -- remplace la conclusion de la version precedente, devenue obsolete."
+  },
+  "mise_en_garde": "Cocktail combine recalcule integralement (pas une addition des gains individuels) -- les ecarts entre gain combine et somme naive sont affiches explicitement, jamais masques. apport_ete_kwh reste un indicateur de confort, pas une economie d'energie (pas de climatisation existante)."
 }

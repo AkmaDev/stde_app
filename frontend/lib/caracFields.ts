@@ -250,7 +250,7 @@ export function getFacadeFieldDoc(sousCode: "E.1" | "E.2" | "E.3" | "E.4" | "E.5
     ref: "E.1 × hauteur du bâtiment × E.3 × E.4",
     meth: "Calcul",
     fiab: "Moyenne",
-    steps: ["Surface de façade = longueur (E.1) × hauteur du bâtiment (C.1).", "Surface vitrée = surface de façade × taux de vitrage (E.3).", "Apport = surface vitrée × irradiation corrigée (E.4)."],
-    lim: "Apport brut, sans facteur solaire du vitrage ni occultations.",
+    steps: ["Surface de façade = longueur (E.1) × hauteur du bâtiment (C.1).", "Surface vitrée = surface de façade × taux de vitrage (E.3).", "Irradiation reçue = surface vitrée × irradiation corrigée (E.4)."],
+    lim: "N'intègre pas le facteur solaire du vitrage ni les protections existantes (stores) — mesure l'irradiation reçue par la surface vitrée, pas un gain thermique net. Un bâtiment déjà équipé de protections solaires efficaces apparaît donc aussi exposé qu'un bâtiment nu.",
   };
 }

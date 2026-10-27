@@ -1,7 +1,7 @@
 {
   "batiment_id": 9,
   "batiment_nom": "Hélène Berr",
-  "hauteur_m": 23,
+  "hauteur_m_batiment": 23,
   "nb_segments": 8,
   "hypotheses": {
     "u_mur": {
@@ -18,14 +18,51 @@
       2.0,
       2.6
     ],
-    "g": {
-      "valeur": 0.75,
-      "note": "double vitrage clair, reference catalogue -- pas d'ambiguite de type a cette fois (contrairement a JPM)"
+    "protection_solaire_existante_par_segment": {
+      "0": {
+        "type": "interieur",
+        "g": 0.38,
+        "source": "FACADE PICPUS : stores toiles interieurs. Gtot=0,38 : EN 13363-1 / ES-SO (store interieur clair + double vitrage, fourchette 0,35-0,45), valeur centrale retenue."
+      },
+      "17": {
+        "type": "interieur",
+        "g": 0.38,
+        "source": "FACADE PICPUS : stores toiles interieurs. Gtot=0,38 : EN 13363-1 / ES-SO, idem segment 0."
+      },
+      "5": {
+        "type": "interieur",
+        "g": 0.38,
+        "source": "FACADE REUILLY : stores toiles interieurs. Gtot=0,38 : EN 13363-1 / ES-SO, idem segment 0."
+      },
+      "1": {
+        "type": "exterieur",
+        "g": 0.1,
+        "source": "COUPE-FACADE SUD : stores toiles exterieurs (Gtot~0,10, ES-SO/ACTIBAIE)"
+      },
+      "2": {
+        "type": "exterieur",
+        "g": 0.1,
+        "source": "COUPE-FACADE SUD : stores toiles exterieurs"
+      },
+      "3": {
+        "type": "exterieur",
+        "g": 0.1,
+        "source": "COUPE-FACADE EST : stores toiles exterieurs + store a bannes RDC"
+      },
+      "4": {
+        "type": "aucune_donnee",
+        "g": 0.5,
+        "source": "Aucune donnee de protection -- verre seul corrige cadre+salissure"
+      },
+      "18": {
+        "type": "aucune_donnee",
+        "g": 0.5,
+        "source": "Quasi aveugle (2% vitrage), aucune donnee de protection"
+      }
     },
-    "f_protection_store_ext": {
-      "valeur": 0.09,
-      "note": "reference ES-SO/ACTIBAIE (EN14501)"
-    },
+    "h_plancher_toiture_w_k": 700.0,
+    "h_ventilation_w_k": 1200.0,
+    "surface_emprise_apur_m2": 400.0,
     "etape_cerema_comparaison": "NON FAITE -- pas d'acces a l'outil, blocage reel"
   },
   "comparaison_conso_reelle": {
@@ -84,356 +121,191 @@
       "2024",
       "2025"
     ],
-    "mise_en_garde": "Comparaison de forme (saisonnalite), pas de magnitude : ce calcul ne couvre que 2 des 5 flux attendus par la Brique 3 (solaire + transmission -- pas ventilation, pas apports internes, pas rendement reel du systeme de chauffage/froid, pas eclairage/equipements). La consommation reelle mesuree couvre TOUS les usages du batiment. On ne peut donc pas dire que ce calcul 'tombe juste' face a la facture reelle -- seule la FORME (pic hiver, creux ete) est comparable, pas la valeur absolue."
+    "mise_en_garde": "Comparaison de forme (saisonnalite), pas de magnitude, et toutes energies confondues -- voir comparaison_vapeur ci-dessous pour la comparaison en magnitude, au bon poste (chauffage seul)."
+  },
+  "comparaison_vapeur": {
+    "reference_chauffage_annuelle_kwh": 151000.0,
+    "chaleur_livree_hypothese_kwh": 135900.0,
+    "rendement_distribution_hypothese": 0.9,
+    "annees_utilisees": [
+      "2023",
+      "2024"
+    ],
+    "mois_suspects_par_annee": {
+      "2023": [],
+      "2024": [],
+      "2025": [
+        11,
+        12,
+        4
+      ]
+    },
+    "avertissement": null,
+    "alerte_jean": "Vapeur 2025-2026 anormalement basse par rapport a 2023-2024 (ex. novembre : 20-22 000 -> 1 000 kWh ; decembre : 29-30 000 -> 9 000 kWh) -- la baisse se poursuit en 2026 (janvier 12 000 contre 30-40 000 les annees precedentes). Deux explications possibles, aucune confirmee ici : (1) le batiment consomme reellement beaucoup moins qu'avant (DPE et modele a reinterroger si confirme), (2) la facturation/le comptage DAC pour cette periode est incomplet ou errone. Seul Jean ou le gestionnaire du batiment peut trancher -- 2025 exclue de la reference de comparaison en attendant.",
+    "note": "N1 (2e passe d'audit) : reference de chauffage = Vapeur seule (oct-avril), avec detection d'anomalie par mois (ecart x3 ou /3 a la mediane des autres annees) -- regle donnee par l'audit Fable, pas la meme regle que annees_completes()/moyenne_mensuelle_reelle (gardees pour la conso toutes energies au m2, qui reste le bon usage ailleurs dans le projet). Le rendement de distribution (0,9) est une HYPOTHESE non sourcee (pas de document la confirmant pour ce reseau vapeur), affichee separement de la reference brute, jamais fusionnee silencieusement."
   },
   "scenarios": [
     {
-      "nom": "double_vitrage_pvc (DPE, 2.0) x g=0.75",
+      "nom": "double_vitrage_pvc (DPE, 2.0), protection solaire existante (etat reel)",
       "u_vitrage": 2.0,
       "u_vitrage_label": "double_vitrage_pvc (DPE, 2.0)",
-      "g": 0.75,
-      "g_label": "0.75 (double vitrage clair, reference catalogue)",
-      "protection_solaire": false,
       "par_mois": [
         {
           "mois": "Janvier",
-          "transmission_kwh": 23001.2,
-          "solaire_kwh": 12678.8,
-          "solde_kwh": -10322.2
+          "transmission_kwh": 42941.9,
+          "solaire_kwh": 6729.1,
+          "solde_kwh": -36213.0
         },
         {
           "mois": "Fevrier",
-          "transmission_kwh": 17141.1,
-          "solaire_kwh": 27110.3,
-          "solde_kwh": 9969.5
+          "transmission_kwh": 32001.2,
+          "solaire_kwh": 14262.4,
+          "solde_kwh": -17739.0
         },
         {
           "mois": "Mars",
-          "transmission_kwh": 15523.3,
-          "solaire_kwh": 31996.4,
-          "solde_kwh": 16473.1
+          "transmission_kwh": 28981.3,
+          "solaire_kwh": 17292.5,
+          "solde_kwh": -11688.8
         },
         {
           "mois": "Avril",
-          "transmission_kwh": 12123.0,
-          "solaire_kwh": 41249.2,
-          "solde_kwh": 29126.2
+          "transmission_kwh": 22633.2,
+          "solaire_kwh": 22709.2,
+          "solde_kwh": 75.9
         },
         {
           "mois": "Mai",
-          "transmission_kwh": 9744.0,
-          "solaire_kwh": 38938.7,
-          "solde_kwh": 29194.8
+          "transmission_kwh": 18191.6,
+          "solaire_kwh": 9747.8,
+          "solde_kwh": -8443.7
         },
         {
           "mois": "Juin",
-          "transmission_kwh": 976.0,
-          "solaire_kwh": 42874.7,
-          "solde_kwh": 41898.7
+          "transmission_kwh": 1822.2,
+          "solaire_kwh": 11124.9,
+          "solde_kwh": 9302.7
         },
         {
           "mois": "Juillet",
-          "transmission_kwh": -2508.7,
-          "solaire_kwh": 49241.5,
-          "solde_kwh": 51750.4
+          "transmission_kwh": -4683.8,
+          "solaire_kwh": 12576.0,
+          "solde_kwh": 17259.6
         },
         {
           "mois": "Aout",
-          "transmission_kwh": -729.0,
-          "solaire_kwh": 41808.1,
-          "solde_kwh": 42537.2
+          "transmission_kwh": -1360.9,
+          "solaire_kwh": 9874.6,
+          "solde_kwh": 11235.7
         },
         {
           "mois": "Septembre",
-          "transmission_kwh": 3530.6,
-          "solaire_kwh": 33759.4,
-          "solde_kwh": 30229.0
+          "transmission_kwh": 6591.5,
+          "solaire_kwh": 7134.8,
+          "solde_kwh": 543.1
         },
         {
           "mois": "Octobre",
-          "transmission_kwh": 9150.6,
-          "solaire_kwh": 18899.6,
-          "solde_kwh": 9749.1
+          "transmission_kwh": 17083.8,
+          "solaire_kwh": 10270.8,
+          "solde_kwh": -6813.0
         },
         {
           "mois": "Novembre",
-          "transmission_kwh": 16475.8,
-          "solaire_kwh": 15908.4,
-          "solde_kwh": -567.5
+          "transmission_kwh": 30759.8,
+          "solaire_kwh": 8401.6,
+          "solde_kwh": -22358.1
         },
         {
           "mois": "Decembre",
-          "transmission_kwh": 18756.4,
-          "solaire_kwh": 15331.6,
-          "solde_kwh": -3424.7
+          "transmission_kwh": 35017.5,
+          "solaire_kwh": 8026.1,
+          "solde_kwh": -26991.5
         }
       ],
-      "total_annuel": {
-        "transmission_kwh": 123184.3,
-        "solaire_kwh": 369796.7,
-        "solde_kwh": 246613.6
-      }
+      "besoin_chauffage_kwh": 130247.1,
+      "apport_ete_kwh": 33575.5
     },
     {
-      "nom": "double_vitrage_pvc (DPE, 2.0) x g=0.75 + store exterieur",
-      "u_vitrage": 2.0,
-      "u_vitrage_label": "double_vitrage_pvc (DPE, 2.0)",
-      "g": 0.75,
-      "g_label": "0.75 (double vitrage clair, reference catalogue)",
-      "protection_solaire": true,
-      "par_mois": [
-        {
-          "mois": "Janvier",
-          "transmission_kwh": 23001.2,
-          "solaire_kwh": 1141.1,
-          "solde_kwh": -21860.0
-        },
-        {
-          "mois": "Fevrier",
-          "transmission_kwh": 17141.1,
-          "solaire_kwh": 2439.9,
-          "solde_kwh": -14700.9
-        },
-        {
-          "mois": "Mars",
-          "transmission_kwh": 15523.3,
-          "solaire_kwh": 2879.6,
-          "solde_kwh": -12643.5
-        },
-        {
-          "mois": "Avril",
-          "transmission_kwh": 12123.0,
-          "solaire_kwh": 3712.4,
-          "solde_kwh": -8410.5
-        },
-        {
-          "mois": "Mai",
-          "transmission_kwh": 9744.0,
-          "solaire_kwh": 3504.6,
-          "solde_kwh": -6239.4
-        },
-        {
-          "mois": "Juin",
-          "transmission_kwh": 976.0,
-          "solaire_kwh": 3858.8,
-          "solde_kwh": 2882.9
-        },
-        {
-          "mois": "Juillet",
-          "transmission_kwh": -2508.7,
-          "solaire_kwh": 4431.6,
-          "solde_kwh": 6940.5
-        },
-        {
-          "mois": "Aout",
-          "transmission_kwh": -729.0,
-          "solaire_kwh": 3762.6,
-          "solde_kwh": 4491.8
-        },
-        {
-          "mois": "Septembre",
-          "transmission_kwh": 3530.6,
-          "solaire_kwh": 3038.4,
-          "solde_kwh": -492.4
-        },
-        {
-          "mois": "Octobre",
-          "transmission_kwh": 9150.6,
-          "solaire_kwh": 1701.0,
-          "solde_kwh": -7449.4
-        },
-        {
-          "mois": "Novembre",
-          "transmission_kwh": 16475.8,
-          "solaire_kwh": 1431.9,
-          "solde_kwh": -15044.1
-        },
-        {
-          "mois": "Decembre",
-          "transmission_kwh": 18756.4,
-          "solaire_kwh": 1379.8,
-          "solde_kwh": -17376.6
-        }
-      ],
-      "total_annuel": {
-        "transmission_kwh": 123184.3,
-        "solaire_kwh": 33281.7,
-        "solde_kwh": -89901.6
-      }
-    },
-    {
-      "nom": "double_vitrage_pvc (DPE, 2.6) x g=0.75",
+      "nom": "double_vitrage_pvc (DPE, 2.6), protection solaire existante (etat reel)",
       "u_vitrage": 2.6,
       "u_vitrage_label": "double_vitrage_pvc (DPE, 2.6)",
-      "g": 0.75,
-      "g_label": "0.75 (double vitrage clair, reference catalogue)",
-      "protection_solaire": false,
       "par_mois": [
         {
           "mois": "Janvier",
-          "transmission_kwh": 27510.8,
-          "solaire_kwh": 12678.8,
-          "solde_kwh": -14832.0
+          "transmission_kwh": 46823.5,
+          "solaire_kwh": 6729.1,
+          "solde_kwh": -40094.4
         },
         {
           "mois": "Fevrier",
-          "transmission_kwh": 20501.6,
-          "solaire_kwh": 27110.3,
-          "solde_kwh": 6608.8
+          "transmission_kwh": 34893.8,
+          "solaire_kwh": 14262.4,
+          "solde_kwh": -20631.6
         },
         {
           "mois": "Mars",
-          "transmission_kwh": 18567.0,
-          "solaire_kwh": 31996.4,
-          "solde_kwh": 13429.7
+          "transmission_kwh": 31600.7,
+          "solaire_kwh": 17292.5,
+          "solde_kwh": -14308.4
         },
         {
           "mois": "Avril",
-          "transmission_kwh": 14499.8,
-          "solaire_kwh": 41249.2,
-          "solde_kwh": 26749.4
+          "transmission_kwh": 24679.1,
+          "solaire_kwh": 22709.2,
+          "solde_kwh": -1969.9
         },
         {
           "mois": "Mai",
-          "transmission_kwh": 11654.3,
-          "solaire_kwh": 38938.7,
-          "solde_kwh": 27284.3
+          "transmission_kwh": 19835.7,
+          "solaire_kwh": 9747.8,
+          "solde_kwh": -10088.0
         },
         {
           "mois": "Juin",
-          "transmission_kwh": 1167.5,
-          "solaire_kwh": 42874.7,
-          "solde_kwh": 41707.3
+          "transmission_kwh": 1986.8,
+          "solaire_kwh": 11124.9,
+          "solde_kwh": 9138.0
         },
         {
           "mois": "Juillet",
-          "transmission_kwh": -3000.5,
-          "solaire_kwh": 49241.5,
-          "solde_kwh": 52242.2
+          "transmission_kwh": -5107.0,
+          "solaire_kwh": 12576.0,
+          "solde_kwh": 17683.0
         },
         {
           "mois": "Aout",
-          "transmission_kwh": -872.0,
-          "solaire_kwh": 41808.1,
-          "solde_kwh": 42680.1
+          "transmission_kwh": -1484.1,
+          "solaire_kwh": 9874.6,
+          "solde_kwh": 11358.7
         },
         {
           "mois": "Septembre",
-          "transmission_kwh": 4222.8,
-          "solaire_kwh": 33759.4,
-          "solde_kwh": 29536.6
+          "transmission_kwh": 7187.3,
+          "solaire_kwh": 7134.8,
+          "solde_kwh": -52.4
         },
         {
           "mois": "Octobre",
-          "transmission_kwh": 10944.5,
-          "solaire_kwh": 18899.6,
-          "solde_kwh": 7955.0
+          "transmission_kwh": 18627.9,
+          "solaire_kwh": 10270.8,
+          "solde_kwh": -8357.1
         },
         {
           "mois": "Novembre",
-          "transmission_kwh": 19706.1,
-          "solaire_kwh": 15908.4,
-          "solde_kwh": -3797.7
+          "transmission_kwh": 33540.0,
+          "solaire_kwh": 8401.6,
+          "solde_kwh": -25138.3
         },
         {
           "mois": "Decembre",
-          "transmission_kwh": 22433.8,
-          "solaire_kwh": 15331.6,
-          "solde_kwh": -7102.1
+          "transmission_kwh": 38182.6,
+          "solaire_kwh": 8026.1,
+          "solde_kwh": -30156.4
         }
       ],
-      "total_annuel": {
-        "transmission_kwh": 147335.7,
-        "solaire_kwh": 369796.7,
-        "solde_kwh": 222461.6
-      }
-    },
-    {
-      "nom": "double_vitrage_pvc (DPE, 2.6) x g=0.75 + store exterieur",
-      "u_vitrage": 2.6,
-      "u_vitrage_label": "double_vitrage_pvc (DPE, 2.6)",
-      "g": 0.75,
-      "g_label": "0.75 (double vitrage clair, reference catalogue)",
-      "protection_solaire": true,
-      "par_mois": [
-        {
-          "mois": "Janvier",
-          "transmission_kwh": 27510.8,
-          "solaire_kwh": 1141.1,
-          "solde_kwh": -26369.6
-        },
-        {
-          "mois": "Fevrier",
-          "transmission_kwh": 20501.6,
-          "solaire_kwh": 2439.9,
-          "solde_kwh": -18061.6
-        },
-        {
-          "mois": "Mars",
-          "transmission_kwh": 18567.0,
-          "solaire_kwh": 2879.6,
-          "solde_kwh": -15687.0
-        },
-        {
-          "mois": "Avril",
-          "transmission_kwh": 14499.8,
-          "solaire_kwh": 3712.4,
-          "solde_kwh": -10787.2
-        },
-        {
-          "mois": "Mai",
-          "transmission_kwh": 11654.3,
-          "solaire_kwh": 3504.6,
-          "solde_kwh": -8149.8
-        },
-        {
-          "mois": "Juin",
-          "transmission_kwh": 1167.5,
-          "solaire_kwh": 3858.8,
-          "solde_kwh": 2691.4
-        },
-        {
-          "mois": "Juillet",
-          "transmission_kwh": -3000.5,
-          "solaire_kwh": 4431.6,
-          "solde_kwh": 7432.3
-        },
-        {
-          "mois": "Aout",
-          "transmission_kwh": -872.0,
-          "solaire_kwh": 3762.6,
-          "solde_kwh": 4634.6
-        },
-        {
-          "mois": "Septembre",
-          "transmission_kwh": 4222.8,
-          "solaire_kwh": 3038.4,
-          "solde_kwh": -1184.4
-        },
-        {
-          "mois": "Octobre",
-          "transmission_kwh": 10944.5,
-          "solaire_kwh": 1701.0,
-          "solde_kwh": -9243.7
-        },
-        {
-          "mois": "Novembre",
-          "transmission_kwh": 19706.1,
-          "solaire_kwh": 1431.9,
-          "solde_kwh": -18274.4
-        },
-        {
-          "mois": "Decembre",
-          "transmission_kwh": 22433.8,
-          "solaire_kwh": 1379.8,
-          "solde_kwh": -21053.9
-        }
-      ],
-      "total_annuel": {
-        "transmission_kwh": 147335.7,
-        "solaire_kwh": 33281.7,
-        "solde_kwh": -114053.3
-      }
+      "besoin_chauffage_kwh": 150796.5,
+      "apport_ete_kwh": 33575.5
     }
   ]
 }

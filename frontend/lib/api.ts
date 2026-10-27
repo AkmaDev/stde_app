@@ -83,6 +83,12 @@ export interface FacadeSegment {
   // Même irradiance, corrigée des ombres portées par les bâtiments voisins
   // (PVGIS userhorizon, hauteurs APUR réelles) -- toujours <= irradiance_kwh_m2_an.
   irradiance_corrigee_kwh_m2_an: number | null;
+  // Hauteur réelle de CETTE façade (m), quand elle diffère de la hauteur
+  // générale du bâtiment (ex. "bloc" vs "aile" de hauteurs différentes,
+  // cf. audit Fable Hélène Berr, cotes NGF des planches). null = pas de
+  // hauteur différenciée connue, retombe sur batiment.hauteur_m (cas de la
+  // quasi-totalité des bâtiments, où une seule hauteur a été relevée).
+  hauteur_segment_m: number | null;
 }
 
 export interface Batiment {
@@ -308,7 +314,8 @@ export function apportSolaireFacade(batiment: Batiment, facade: FacadeSegment): 
   ) {
     return null;
   }
-  const surfaceFacade = facade.longueur_m * batiment.hauteur_m;
+  const hauteur = facade.hauteur_segment_m ?? batiment.hauteur_m;
+  const surfaceFacade = facade.longueur_m * hauteur;
   const surfaceVitree = surfaceFacade * (facade.taux_vitrage_estime_pct / 100);
   return Math.round(surfaceVitree * facade.irradiance_corrigee_kwh_m2_an);
 }
@@ -328,13 +335,13 @@ export function apportSolaireTotal(batiment: Batiment): number | null {
 // Urgence = apport solaire réel par m², normalisé entre le bâtiment le moins et le
 // plus exposé parmi les seuls bâtiments où l'apport solaire est intégralement
 // calculable (façades + vitrage + irradiance corrigée des masques). Recalibré le
-// 26/10/2026 sur 5 bâtiments dont la source de vitrage n'est PAS contestée
-// (Hélène Berr, Gutenberg, Jean-Pierre Melville, Oscar Wilde, François Villon) :
-// min Oscar Wilde 25,3 kWh/an/m² (était 17,7, valeur documentée le 03/09 devenue
-// obsolète), max Hélène Berr 196,6 kWh/an/m² (dépasse Jean-Pierre Melville, 137,7,
-// depuis la mise à jour de son vitrage le même jour via relecture Fable 5.1 des
-// élévations réelles -- plusieurs segments étaient surestimés à 90% uniforme, dont
-// un qui s'est révélé être une grille de ventilation opaque).
+// 27/10/2026 (suite audit Fable d'Hélène Berr : hauteurs différenciées par façade,
+// vitrage corrigé sur 4 segments -- voir hauteur_segment_m) sur les 5 mêmes
+// bâtiments dont la source de vitrage n'est PAS contestée (Hélène Berr, Gutenberg,
+// Jean-Pierre Melville, Oscar Wilde, François Villon) :
+// min Oscar Wilde 25,3 kWh/an/m² (inchangé), max Hélène Berr 161,6 kWh/an/m²
+// (était 196,6 avant correction géométrique -- reste le max du parc malgré la
+// baisse, devant Jean-Pierre Melville à 137,7).
 // Buffon (489,3 kWh/an/m² si calculé) est VOLONTAIREMENT EXCLU de cette
 // calibration : sa source de vitrage ("plans Cabinet GEOSAT") s'est révélée fausse
 // le 26/10/2026 (voir 23_NOTES_ERREURS_IA.md n°4 et 21_CHANTIERS_OUVERTS_ET_BLOCAGES.md)
@@ -343,7 +350,7 @@ export function apportSolaireTotal(batiment: Batiment): number | null {
 // bâtiment sans vitrage estimé (7 bâtiments sur 11 actuellement) -- jamais de
 // proxy plus faible mélangé ici.
 const URGENCE_APPORT_MIN_KWH_M2 = 25.3;
-const URGENCE_APPORT_MAX_KWH_M2 = 196.6;
+const URGENCE_APPORT_MAX_KWH_M2 = 161.6;
 
 export function scoreUrgence(batiment: Batiment): number | null {
   const total = apportSolaireTotal(batiment);

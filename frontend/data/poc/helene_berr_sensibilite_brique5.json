@@ -6,33 +6,33 @@
       "nom": "Isolation facade",
       "u_mur_baseline": 0.4,
       "u_mur_variant": 0.202,
-      "source_intervention": "DPE Helene Berr section 3.1.3 : fibre de bois, 12cm, lambda=0.049 W/m.K",
-      "deja_qualifie_leviers_json": "deja_realise (data/levier/4.json) -- cette simulation verifie si le gain physique reste faible",
-      "cout_indicatif": "75 001-200 000 EUR HT selon option, 1.5-1.7% EP declare (estimation DPE, pas un calcul Brique 5)",
+      "cout_iti": "100 001-200 000 EUR HT (cote rue), 1,5% EP declare (estimation DPE 3.1.3)",
+      "cout_ite": "75 001-100 000 EUR HT (cote cour), 1,7% EP declare (estimation DPE 3.1.3)",
+      "note_cout": "2 interventions distinctes au DPE, meme effet physique dans ce modele simplifie -- couts non fusionnes.",
       "confort": "non calculable avec ce modele",
       "scenarios": [
         {
           "scenario": "double_vitrage_pvc (DPE, 2.0)",
-          "besoin_chauffage_baseline_kwh": 14314.4,
-          "besoin_chauffage_variant_kwh": 6585.7,
-          "delta_hiver_kwh": 7728.7,
-          "delta_hiver_pct": 54.0,
-          "classe_hiver": "fort",
-          "apport_ete_baseline_kwh": 133924.3,
-          "apport_ete_variant_kwh": 133924.3,
+          "besoin_chauffage_baseline_kwh": 130247.1,
+          "besoin_chauffage_variant_kwh": 114657.7,
+          "delta_hiver_kwh": 15589.4,
+          "delta_hiver_pct": 12.0,
+          "classe_hiver": "moyen",
+          "apport_ete_baseline_kwh": 33575.5,
+          "apport_ete_variant_kwh": 33575.5,
           "delta_ete_kwh": 0.0,
           "delta_ete_pct": 0.0,
           "classe_ete": "sans effet"
         },
         {
           "scenario": "double_vitrage_pvc (DPE, 2.6)",
-          "besoin_chauffage_baseline_kwh": 25731.8,
-          "besoin_chauffage_variant_kwh": 15744.8,
-          "delta_hiver_kwh": 9987.0,
-          "delta_hiver_pct": 38.8,
-          "classe_hiver": "fort",
-          "apport_ete_baseline_kwh": 133924.3,
-          "apport_ete_variant_kwh": 133924.3,
+          "besoin_chauffage_baseline_kwh": 150796.5,
+          "besoin_chauffage_variant_kwh": 133433.5,
+          "delta_hiver_kwh": 17363.0,
+          "delta_hiver_pct": 11.5,
+          "classe_hiver": "moyen",
+          "apport_ete_baseline_kwh": 33575.5,
+          "apport_ete_variant_kwh": 33575.5,
           "delta_ete_kwh": 0.0,
           "delta_ete_pct": 0.0,
           "classe_ete": "sans effet"
@@ -40,40 +40,74 @@
       ]
     },
     {
-      "nom": "Protection solaire",
-      "g_facteur": 0.09,
-      "source_intervention": "Store exterieur, reference ES-SO/ACTIBAIE (EN14501)",
-      "cout_indicatif": "Non chiffre dans le DPE pour ce batiment -- pas de valeur inventee.",
+      "nom": "Protection solaire (upgrade interieur->exterieur, saisonnier)",
+      "g_ete": 0.1,
+      "mois_actifs": [
+        6,
+        7,
+        8
+      ],
+      "segments_concernes": [
+        0,
+        17,
+        5
+      ],
+      "cout_indicatif": "Non chiffre dans le DPE -- pas de valeur inventee.",
       "confort": "non calculable avec ce modele",
       "scenarios": [
         {
           "scenario": "double_vitrage_pvc (DPE, 2.0)",
-          "besoin_chauffage_baseline_kwh": 14314.4,
-          "besoin_chauffage_variant_kwh": 104216.8,
-          "delta_hiver_kwh": -89902.4,
-          "delta_hiver_pct": -628.1,
-          "classe_hiver": "defavorable",
-          "apport_ete_baseline_kwh": 133924.3,
-          "apport_ete_variant_kwh": 12053.0,
-          "delta_ete_kwh": 121871.3,
-          "delta_ete_pct": 91.0,
+          "besoin_chauffage_baseline_kwh": 130247.1,
+          "besoin_chauffage_variant_kwh": 130247.1,
+          "delta_hiver_kwh": 0.0,
+          "delta_hiver_pct": 0.0,
+          "classe_hiver": "sans effet",
+          "apport_ete_baseline_kwh": 33575.5,
+          "apport_ete_variant_kwh": 16881.1,
+          "delta_ete_kwh": 16694.4,
+          "delta_ete_pct": 49.7,
           "classe_ete": "fort"
         },
         {
           "scenario": "double_vitrage_pvc (DPE, 2.6)",
-          "besoin_chauffage_baseline_kwh": 25731.8,
-          "besoin_chauffage_variant_kwh": 128811.6,
-          "delta_hiver_kwh": -103079.8,
-          "delta_hiver_pct": -400.6,
-          "classe_hiver": "defavorable",
-          "apport_ete_baseline_kwh": 133924.3,
-          "apport_ete_variant_kwh": 12053.0,
-          "delta_ete_kwh": 121871.3,
-          "delta_ete_pct": 91.0,
+          "besoin_chauffage_baseline_kwh": 150796.5,
+          "besoin_chauffage_variant_kwh": 150796.5,
+          "delta_hiver_kwh": 0.0,
+          "delta_hiver_pct": 0.0,
+          "classe_hiver": "sans effet",
+          "apport_ete_baseline_kwh": 33575.5,
+          "apport_ete_variant_kwh": 16881.1,
+          "delta_ete_kwh": 16694.4,
+          "delta_ete_pct": 49.7,
           "classe_ete": "fort"
+        }
+      ]
+    },
+    {
+      "nom": "Remplacement menuiseries",
+      "u_vitrage_variant": 1.8,
+      "cout_indicatif": "100 001-200 000 EUR HT, 2,6% EP declare (estimation DPE 3.2.3)",
+      "source": "DPE section 3.2.3",
+      "confort": "non calculable avec ce modele",
+      "scenarios": [
+        {
+          "scenario": "double_vitrage_pvc (DPE, 2.0)",
+          "besoin_chauffage_baseline_kwh": 130247.1,
+          "besoin_chauffage_variant_kwh": 124071.1,
+          "delta_hiver_kwh": 6176.0,
+          "delta_hiver_pct": 4.7,
+          "classe_hiver": "faible"
+        },
+        {
+          "scenario": "double_vitrage_pvc (DPE, 2.6)",
+          "besoin_chauffage_baseline_kwh": 150796.5,
+          "besoin_chauffage_variant_kwh": 124071.1,
+          "delta_hiver_kwh": 26725.4,
+          "delta_hiver_pct": 17.7,
+          "classe_hiver": "fort"
         }
       ]
     }
   ],
-  "mise_en_garde": "Seuls 2 des 6 leviers du catalogue (frontend/data/leviers.json) sont simules ici -- les 4 autres (GTB, Relamping LED, Ventilation double flux, Changement generateur) agissent sur des flux hors du perimetre de ce modele (ventilation, eclairage, rendement systeme), pas simules faute de modele physique disponible."
+  "mise_en_garde": "apport_ete_kwh est un indicateur de risque de surchauffe / confort, pas une economie d'energie (DPE section 5.3 : aucune climatisation existante, donc rien a economiser electriquement). Modele toujours limite a 2 flux + pertes plancher/toiture/ventilation ajoutees -- pas les apports internes ni le rendement reel du systeme de chauffage."
 }
