@@ -1,0 +1,116 @@
+{
+  "batiment_id": 16,
+  "batiment_nom": "Jean-Pierre Melville",
+  "search_space": {
+    "Isolation facade": {
+      "options": [
+        {
+          "id": "non_isole",
+          "u_mur": 3.13
+        },
+        {
+          "id": "isole",
+          "u_mur": 0.361,
+          "source": "DPE JPM section 3.1.3 (fibre de bois 12cm)"
+        }
+      ]
+    },
+    "Protection solaire": {
+      "options": [
+        {
+          "id": "sans_protection",
+          "facteur_g": 1.0
+        },
+        {
+          "id": "store_exterieur",
+          "facteur_g": 0.09,
+          "source": "ES-SO/ACTIBAIE (EN14501)"
+        }
+      ]
+    },
+    "leviers_exclus": [
+      "Installation GTB",
+      "Relamping LED",
+      "Ventilation double flux",
+      "Changement generateur"
+    ],
+    "note_exclusion": "Hors perimetre de ce modele (enveloppe seule -- transmission + solaire), pas une exclusion physique (Brique 8), une limite de modele."
+  },
+  "next_generation": {
+    "cocktails_generes": [
+      "Isolation facade (isole) + Protection solaire (store exterieur)"
+    ],
+    "choix_humain": "Demande explicite de l'utilisateur, conversation en cours."
+  },
+  "physical_results": [
+    {
+      "scenario": "simple_vitrage_alu (DPE, 5.20) x g=0.85 (simple vitrage clair)",
+      "besoin_chauffage_baseline_kwh": 313747.1,
+      "besoin_chauffage_combine_kwh": 280159.1,
+      "delta_hiver_combine_kwh": 33588.0,
+      "delta_hiver_combine_pct": 10.7,
+      "classe_hiver_combine": "moyen",
+      "delta_hiver_somme_naive_kwh": 125.3,
+      "ecart_hiver_vs_naif_kwh": 33462.7,
+      "apport_ete_baseline_kwh": 149706.2,
+      "apport_ete_combine_kwh": 13473.4,
+      "delta_ete_combine_kwh": 136232.8,
+      "delta_ete_combine_pct": 91.0,
+      "classe_ete_combine": "fort",
+      "delta_ete_somme_naive_kwh": 136232.8,
+      "ecart_ete_vs_naif_kwh": 0.0
+    },
+    {
+      "scenario": "simple_vitrage_alu (DPE, 5.20) x g=0.75 (double vitrage clair)",
+      "besoin_chauffage_baseline_kwh": 331146.8,
+      "besoin_chauffage_combine_kwh": 282475.1,
+      "delta_hiver_combine_kwh": 48671.7,
+      "delta_hiver_combine_pct": 14.7,
+      "classe_hiver_combine": "moyen",
+      "delta_hiver_somme_naive_kwh": 20564.7,
+      "ecart_hiver_vs_naif_kwh": 28107.0,
+      "apport_ete_baseline_kwh": 132093.5,
+      "apport_ete_combine_kwh": 11888.3,
+      "delta_ete_combine_kwh": 120205.2,
+      "delta_ete_combine_pct": 91.0,
+      "classe_ete_combine": "fort",
+      "delta_ete_somme_naive_kwh": 120205.2,
+      "ecart_ete_vs_naif_kwh": 0.0
+    },
+    {
+      "scenario": "double_vitrage_alu (DPE, 2.80) x g=0.85 (simple vitrage clair)",
+      "besoin_chauffage_baseline_kwh": 204332.5,
+      "besoin_chauffage_combine_kwh": 154431.9,
+      "delta_hiver_combine_kwh": 49900.6,
+      "delta_hiver_combine_pct": 24.4,
+      "classe_hiver_combine": "fort",
+      "delta_hiver_somme_naive_kwh": -5659.6,
+      "ecart_hiver_vs_naif_kwh": 55560.2,
+      "apport_ete_baseline_kwh": 149706.2,
+      "apport_ete_combine_kwh": 13473.4,
+      "delta_ete_combine_kwh": 136232.8,
+      "delta_ete_combine_pct": 91.0,
+      "classe_ete_combine": "fort",
+      "delta_ete_somme_naive_kwh": 136232.8,
+      "ecart_ete_vs_naif_kwh": 0.0
+    },
+    {
+      "scenario": "double_vitrage_alu (DPE, 2.80) x g=0.75 (double vitrage clair)",
+      "besoin_chauffage_baseline_kwh": 218092.3,
+      "besoin_chauffage_combine_kwh": 156747.2,
+      "delta_hiver_combine_kwh": 61345.1,
+      "delta_hiver_combine_pct": 28.1,
+      "classe_hiver_combine": "fort",
+      "delta_hiver_somme_naive_kwh": 13054.3,
+      "ecart_hiver_vs_naif_kwh": 48290.8,
+      "apport_ete_baseline_kwh": 132093.5,
+      "apport_ete_combine_kwh": 11888.3,
+      "delta_ete_combine_kwh": 120205.2,
+      "delta_ete_combine_pct": 91.0,
+      "classe_ete_combine": "fort",
+      "delta_ete_somme_naive_kwh": 120205.2,
+      "ecart_ete_vs_naif_kwh": 0.0
+    }
+  ],
+  "mise_en_garde": "Cocktail combine recalcule integralement (pas une addition des gains individuels) -- les ecarts entre gain combine et somme naive sont affiches explicitement, jamais masques."
+}
