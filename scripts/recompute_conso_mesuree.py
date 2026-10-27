@@ -67,6 +67,34 @@ def annees_completes(mensuelles):
     return annees, trous
 
 
+def moyenne_mensuelle_reelle(mensuelles):
+    """Retourne (profil, annees) ou (None, []) si pas assez de donnees.
+
+    profil : dict {1..12: kwh_moyen}, moyenne sur les annees calendaires
+    COMPLETES (annees_completes()) du total toutes energies confondues pour
+    ce mois calendaire, memes regles d'exclusion des 0 kWh suspects que
+    recompute() -- reutilise ici pour un usage different (Brique 3 : test de
+    coherence saisonniere du calcul thermique, pas recalcul de
+    conso_mesuree_kwh_m2)."""
+    if not mensuelles:
+        return None, []
+    annees, _ = annees_completes(mensuelles)
+    if not annees:
+        return None, []
+    profil = {}
+    for mo in range(1, 13):
+        totaux = []
+        for y in annees:
+            mois_str = f"{y}-{mo:02d}"
+            total = sum(
+                m["kwh"] for m in mensuelles
+                if m["mois"] == mois_str and not zero_est_suspect(m["kwh"], m["mois"], m["energie"])
+            )
+            totaux.append(total)
+        profil[mo] = round(sum(totaux) / len(totaux), 1)
+    return profil, annees
+
+
 def recompute(batiment):
     """Retourne (nouvelle_conso, annees_utilisees, trous) ou (None, [], {}) si impossible."""
     mensuelles = batiment.get("consommations_mensuelles") or []

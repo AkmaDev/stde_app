@@ -1,7 +1,7 @@
 {
   "batiment_id": 16,
   "batiment_nom": "Jean-Pierre Melville",
-  "hauteur_m": 19.08,
+  "hauteur_m": 20.3,
   "nb_segments": 8,
   "hypotheses": {
     "u_mur": {
@@ -28,6 +28,64 @@
     },
     "etape_cerema_comparaison": "NON FAITE -- pas d'acces a l'outil, blocage reel"
   },
+  "comparaison_conso_reelle": {
+    "profil_mensuel_kwh": [
+      {
+        "mois": "Janvier",
+        "kwh": 57756.8
+      },
+      {
+        "mois": "Fevrier",
+        "kwh": 49531.9
+      },
+      {
+        "mois": "Mars",
+        "kwh": 43645.3
+      },
+      {
+        "mois": "Avril",
+        "kwh": 34300.5
+      },
+      {
+        "mois": "Mai",
+        "kwh": 31576.0
+      },
+      {
+        "mois": "Juin",
+        "kwh": 32193.2
+      },
+      {
+        "mois": "Juillet",
+        "kwh": 32475.6
+      },
+      {
+        "mois": "Aout",
+        "kwh": 32456.2
+      },
+      {
+        "mois": "Septembre",
+        "kwh": 28738.8
+      },
+      {
+        "mois": "Octobre",
+        "kwh": 28890.9
+      },
+      {
+        "mois": "Novembre",
+        "kwh": 38288.4
+      },
+      {
+        "mois": "Decembre",
+        "kwh": 43329.4
+      }
+    ],
+    "annees_utilisees": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "mise_en_garde": "Comparaison de forme (saisonnalite), pas de magnitude : ce calcul ne couvre que 2 des 5 flux attendus par la Brique 3 (solaire + transmission -- pas ventilation, pas apports internes, pas rendement reel du systeme de chauffage/froid, pas eclairage/equipements). La consommation reelle mesuree couvre TOUS les usages du batiment. On ne peut donc pas dire que ce calcul 'tombe juste' face a la facture reelle -- seule la FORME (pic hiver, creux ete) est comparable, pas la valeur absolue."
+  },
   "scenarios": [
     {
       "nom": "simple_vitrage_alu (DPE, 5.20) x g=0.85 (simple vitrage clair)",
@@ -39,81 +97,81 @@
       "par_mois": [
         {
           "mois": "Janvier",
-          "transmission_kwh": 93190.7,
-          "solaire_kwh": 14155.4,
-          "solde_kwh": -79035.2
+          "transmission_kwh": 93563.0,
+          "solaire_kwh": 10527.0,
+          "solde_kwh": -83036.0
         },
         {
           "mois": "Fevrier",
-          "transmission_kwh": 69447.5,
-          "solaire_kwh": 29271.5,
-          "solde_kwh": -40175.9
+          "transmission_kwh": 69724.9,
+          "solaire_kwh": 20578.1,
+          "solde_kwh": -49146.9
         },
         {
           "mois": "Mars",
-          "transmission_kwh": 62893.5,
-          "solaire_kwh": 37954.5,
-          "solde_kwh": -24939.3
+          "transmission_kwh": 63145.0,
+          "solaire_kwh": 28512.6,
+          "solde_kwh": -34632.3
         },
         {
           "mois": "Avril",
-          "transmission_kwh": 49117.3,
-          "solaire_kwh": 51388.4,
-          "solde_kwh": 2271.2
+          "transmission_kwh": 49313.4,
+          "solaire_kwh": 40172.4,
+          "solde_kwh": -9141.1
         },
         {
           "mois": "Mai",
-          "transmission_kwh": 39478.0,
-          "solaire_kwh": 54220.2,
-          "solde_kwh": 14742.1
+          "transmission_kwh": 39635.8,
+          "solaire_kwh": 44205.0,
+          "solde_kwh": 4569.0
         },
         {
           "mois": "Juin",
-          "transmission_kwh": 3954.5,
-          "solaire_kwh": 61755.1,
-          "solde_kwh": 57800.6
+          "transmission_kwh": 3970.2,
+          "solaire_kwh": 50146.4,
+          "solde_kwh": 46176.1
         },
         {
           "mois": "Juillet",
-          "transmission_kwh": -10164.3,
-          "solaire_kwh": 68997.0,
-          "solde_kwh": 79161.3
+          "transmission_kwh": -10204.8,
+          "solaire_kwh": 55780.5,
+          "solde_kwh": 65985.1
         },
         {
           "mois": "Aout",
-          "transmission_kwh": -2953.7,
-          "solaire_kwh": 55299.8,
-          "solde_kwh": 58253.5
+          "transmission_kwh": -2965.6,
+          "solaire_kwh": 43779.3,
+          "solde_kwh": 46744.8
         },
         {
           "mois": "Septembre",
-          "transmission_kwh": 14304.3,
-          "solaire_kwh": 41925.1,
-          "solde_kwh": 27620.7
+          "transmission_kwh": 14361.4,
+          "solaire_kwh": 31990.0,
+          "solde_kwh": 17628.5
         },
         {
           "mois": "Octobre",
-          "transmission_kwh": 37074.1,
-          "solaire_kwh": 24524.7,
-          "solde_kwh": -12549.5
+          "transmission_kwh": 37222.2,
+          "solaire_kwh": 18690.4,
+          "solde_kwh": -18531.9
         },
         {
           "mois": "Novembre",
-          "transmission_kwh": 66753.0,
-          "solaire_kwh": 17642.5,
-          "solde_kwh": -49110.3
+          "transmission_kwh": 67019.7,
+          "solaire_kwh": 12797.0,
+          "solde_kwh": -54222.7
         },
         {
           "mois": "Decembre",
-          "transmission_kwh": 75992.9,
-          "solaire_kwh": 16121.8,
-          "solde_kwh": -59871.1
+          "transmission_kwh": 76296.4,
+          "solaire_kwh": 11260.3,
+          "solde_kwh": -65036.2
         }
       ],
       "total_annuel": {
-        "transmission_kwh": 499087.8,
-        "solaire_kwh": 473256.0,
-        "solde_kwh": -25831.9
+        "transmission_kwh": 501081.6,
+        "solaire_kwh": 368439.0,
+        "solde_kwh": -132643.6
       }
     },
     {
@@ -126,81 +184,81 @@
       "par_mois": [
         {
           "mois": "Janvier",
-          "transmission_kwh": 93190.7,
-          "solaire_kwh": 1273.9,
-          "solde_kwh": -91916.7
+          "transmission_kwh": 93563.0,
+          "solaire_kwh": 947.3,
+          "solde_kwh": -92615.4
         },
         {
           "mois": "Fevrier",
-          "transmission_kwh": 69447.5,
-          "solaire_kwh": 2634.4,
-          "solde_kwh": -66813.1
+          "transmission_kwh": 69724.9,
+          "solaire_kwh": 1852.1,
+          "solde_kwh": -67872.8
         },
         {
           "mois": "Mars",
-          "transmission_kwh": 62893.5,
-          "solaire_kwh": 3416.0,
-          "solde_kwh": -59477.7
+          "transmission_kwh": 63145.0,
+          "solaire_kwh": 2566.2,
+          "solde_kwh": -60578.7
         },
         {
           "mois": "Avril",
-          "transmission_kwh": 49117.3,
-          "solaire_kwh": 4625.0,
-          "solde_kwh": -44492.2
+          "transmission_kwh": 49313.4,
+          "solaire_kwh": 3615.5,
+          "solde_kwh": -45697.9
         },
         {
           "mois": "Mai",
-          "transmission_kwh": 39478.0,
-          "solaire_kwh": 4879.9,
-          "solde_kwh": -34598.2
+          "transmission_kwh": 39635.8,
+          "solaire_kwh": 3978.4,
+          "solde_kwh": -35657.3
         },
         {
           "mois": "Juin",
-          "transmission_kwh": 3954.5,
-          "solaire_kwh": 5558.0,
-          "solde_kwh": 1603.5
+          "transmission_kwh": 3970.2,
+          "solaire_kwh": 4513.1,
+          "solde_kwh": 543.0
         },
         {
           "mois": "Juillet",
-          "transmission_kwh": -10164.3,
-          "solaire_kwh": 6209.6,
-          "solde_kwh": 16373.9
+          "transmission_kwh": -10204.8,
+          "solaire_kwh": 5020.2,
+          "solde_kwh": 15225.0
         },
         {
           "mois": "Aout",
-          "transmission_kwh": -2953.7,
-          "solaire_kwh": 4977.0,
-          "solde_kwh": 7930.7
+          "transmission_kwh": -2965.6,
+          "solaire_kwh": 3940.1,
+          "solde_kwh": 6905.7
         },
         {
           "mois": "Septembre",
-          "transmission_kwh": 14304.3,
-          "solaire_kwh": 3773.4,
-          "solde_kwh": -10531.1
+          "transmission_kwh": 14361.4,
+          "solaire_kwh": 2879.1,
+          "solde_kwh": -11482.5
         },
         {
           "mois": "Octobre",
-          "transmission_kwh": 37074.1,
-          "solaire_kwh": 2207.2,
-          "solde_kwh": -34866.8
+          "transmission_kwh": 37222.2,
+          "solaire_kwh": 1682.1,
+          "solde_kwh": -35540.0
         },
         {
           "mois": "Novembre",
-          "transmission_kwh": 66753.0,
-          "solaire_kwh": 1587.8,
-          "solde_kwh": -65165.1
+          "transmission_kwh": 67019.7,
+          "solaire_kwh": 1151.8,
+          "solde_kwh": -65867.9
         },
         {
           "mois": "Decembre",
-          "transmission_kwh": 75992.9,
-          "solaire_kwh": 1451.0,
-          "solde_kwh": -74542.0
+          "transmission_kwh": 76296.4,
+          "solaire_kwh": 1013.4,
+          "solde_kwh": -75282.9
         }
       ],
       "total_annuel": {
-        "transmission_kwh": 499087.8,
-        "solaire_kwh": 42593.2,
-        "solde_kwh": -456494.8
+        "transmission_kwh": 501081.6,
+        "solaire_kwh": 33159.3,
+        "solde_kwh": -467921.7
       }
     },
     {
@@ -213,81 +271,81 @@
       "par_mois": [
         {
           "mois": "Janvier",
-          "transmission_kwh": 93190.7,
-          "solaire_kwh": 12490.0,
-          "solde_kwh": -80700.7
+          "transmission_kwh": 93563.0,
+          "solaire_kwh": 9288.5,
+          "solde_kwh": -84274.3
         },
         {
           "mois": "Fevrier",
-          "transmission_kwh": 69447.5,
-          "solaire_kwh": 25827.9,
-          "solde_kwh": -43619.6
+          "transmission_kwh": 69724.9,
+          "solaire_kwh": 18157.3,
+          "solde_kwh": -51567.9
         },
         {
           "mois": "Mars",
-          "transmission_kwh": 62893.5,
-          "solaire_kwh": 33489.2,
-          "solde_kwh": -29404.4
+          "transmission_kwh": 63145.0,
+          "solaire_kwh": 25158.2,
+          "solde_kwh": -37986.6
         },
         {
           "mois": "Avril",
-          "transmission_kwh": 49117.3,
-          "solaire_kwh": 45342.7,
-          "solde_kwh": -3774.6
+          "transmission_kwh": 49313.4,
+          "solaire_kwh": 35446.3,
+          "solde_kwh": -13867.2
         },
         {
           "mois": "Mai",
-          "transmission_kwh": 39478.0,
-          "solaire_kwh": 47841.5,
-          "solde_kwh": 8363.2
+          "transmission_kwh": 39635.8,
+          "solaire_kwh": 39004.3,
+          "solde_kwh": -631.4
         },
         {
           "mois": "Juin",
-          "transmission_kwh": 3954.5,
-          "solaire_kwh": 54489.7,
-          "solde_kwh": 50535.2
+          "transmission_kwh": 3970.2,
+          "solaire_kwh": 44246.7,
+          "solde_kwh": 40276.5
         },
         {
           "mois": "Juillet",
-          "transmission_kwh": -10164.3,
-          "solaire_kwh": 60879.5,
-          "solde_kwh": 71043.8
+          "transmission_kwh": -10204.8,
+          "solaire_kwh": 49218.0,
+          "solde_kwh": 59422.7
         },
         {
           "mois": "Aout",
-          "transmission_kwh": -2953.7,
-          "solaire_kwh": 48794.0,
-          "solde_kwh": 51747.7
+          "transmission_kwh": -2965.6,
+          "solaire_kwh": 38628.8,
+          "solde_kwh": 41594.3
         },
         {
           "mois": "Septembre",
-          "transmission_kwh": 14304.3,
-          "solaire_kwh": 36992.8,
-          "solde_kwh": 22688.2
+          "transmission_kwh": 14361.4,
+          "solaire_kwh": 28226.5,
+          "solde_kwh": 13865.0
         },
         {
           "mois": "Octobre",
-          "transmission_kwh": 37074.1,
-          "solaire_kwh": 21639.3,
-          "solde_kwh": -15434.8
+          "transmission_kwh": 37222.2,
+          "solaire_kwh": 16491.6,
+          "solde_kwh": -20730.5
         },
         {
           "mois": "Novembre",
-          "transmission_kwh": 66753.0,
-          "solaire_kwh": 15567.0,
-          "solde_kwh": -51186.1
+          "transmission_kwh": 67019.7,
+          "solaire_kwh": 11291.6,
+          "solde_kwh": -55728.1
         },
         {
           "mois": "Decembre",
-          "transmission_kwh": 75992.9,
-          "solaire_kwh": 14225.2,
-          "solde_kwh": -61767.8
+          "transmission_kwh": 76296.4,
+          "solaire_kwh": 9935.6,
+          "solde_kwh": -66360.8
         }
       ],
       "total_annuel": {
-        "transmission_kwh": 499087.8,
-        "solaire_kwh": 417578.8,
-        "solde_kwh": -81509.9
+        "transmission_kwh": 501081.6,
+        "solaire_kwh": 325093.4,
+        "solde_kwh": -175988.3
       }
     },
     {
@@ -300,81 +358,81 @@
       "par_mois": [
         {
           "mois": "Janvier",
-          "transmission_kwh": 93190.7,
-          "solaire_kwh": 1124.1,
-          "solde_kwh": -92066.6
+          "transmission_kwh": 93563.0,
+          "solaire_kwh": 835.9,
+          "solde_kwh": -92726.9
         },
         {
           "mois": "Fevrier",
-          "transmission_kwh": 69447.5,
-          "solaire_kwh": 2324.4,
-          "solde_kwh": -67123.2
+          "transmission_kwh": 69724.9,
+          "solaire_kwh": 1634.0,
+          "solde_kwh": -68091.0
         },
         {
           "mois": "Mars",
-          "transmission_kwh": 62893.5,
-          "solaire_kwh": 3014.1,
-          "solde_kwh": -59879.6
+          "transmission_kwh": 63145.0,
+          "solaire_kwh": 2264.3,
+          "solde_kwh": -60880.7
         },
         {
           "mois": "Avril",
-          "transmission_kwh": 49117.3,
-          "solaire_kwh": 4080.9,
-          "solde_kwh": -45036.3
+          "transmission_kwh": 49313.4,
+          "solaire_kwh": 3190.1,
+          "solde_kwh": -46123.3
         },
         {
           "mois": "Mai",
-          "transmission_kwh": 39478.0,
-          "solaire_kwh": 4305.8,
-          "solde_kwh": -35172.3
+          "transmission_kwh": 39635.8,
+          "solaire_kwh": 3510.2,
+          "solde_kwh": -36125.5
         },
         {
           "mois": "Juin",
-          "transmission_kwh": 3954.5,
-          "solaire_kwh": 4904.2,
-          "solde_kwh": 949.7
+          "transmission_kwh": 3970.2,
+          "solaire_kwh": 3982.3,
+          "solde_kwh": 12.1
         },
         {
           "mois": "Juillet",
-          "transmission_kwh": -10164.3,
-          "solaire_kwh": 5479.2,
-          "solde_kwh": 15643.4
+          "transmission_kwh": -10204.8,
+          "solaire_kwh": 4429.5,
+          "solde_kwh": 14634.5
         },
         {
           "mois": "Aout",
-          "transmission_kwh": -2953.7,
-          "solaire_kwh": 4391.4,
-          "solde_kwh": 7345.1
+          "transmission_kwh": -2965.6,
+          "solaire_kwh": 3476.5,
+          "solde_kwh": 6442.2
         },
         {
           "mois": "Septembre",
-          "transmission_kwh": 14304.3,
-          "solaire_kwh": 3329.3,
-          "solde_kwh": -10975.0
+          "transmission_kwh": 14361.4,
+          "solaire_kwh": 2540.3,
+          "solde_kwh": -11821.1
         },
         {
           "mois": "Octobre",
-          "transmission_kwh": 37074.1,
-          "solaire_kwh": 1947.5,
-          "solde_kwh": -35126.5
+          "transmission_kwh": 37222.2,
+          "solaire_kwh": 1484.3,
+          "solde_kwh": -35738.0
         },
         {
           "mois": "Novembre",
-          "transmission_kwh": 66753.0,
-          "solaire_kwh": 1401.1,
-          "solde_kwh": -65352.0
+          "transmission_kwh": 67019.7,
+          "solaire_kwh": 1016.3,
+          "solde_kwh": -66003.5
         },
         {
           "mois": "Decembre",
-          "transmission_kwh": 75992.9,
-          "solaire_kwh": 1280.2,
-          "solde_kwh": -74712.6
+          "transmission_kwh": 76296.4,
+          "solaire_kwh": 894.2,
+          "solde_kwh": -75402.3
         }
       ],
       "total_annuel": {
-        "transmission_kwh": 499087.8,
-        "solaire_kwh": 37582.2,
-        "solde_kwh": -461505.9
+        "transmission_kwh": 501081.6,
+        "solaire_kwh": 29257.9,
+        "solde_kwh": -471823.5
       }
     },
     {
@@ -387,81 +445,81 @@
       "par_mois": [
         {
           "mois": "Janvier",
-          "transmission_kwh": 65435.4,
-          "solaire_kwh": 14155.4,
-          "solde_kwh": -51280.0
+          "transmission_kwh": 70510.0,
+          "solaire_kwh": 10527.0,
+          "solde_kwh": -59983.0
         },
         {
           "mois": "Fevrier",
-          "transmission_kwh": 48763.9,
-          "solaire_kwh": 29271.5,
-          "solde_kwh": -19492.4
+          "transmission_kwh": 52545.6,
+          "solaire_kwh": 20578.1,
+          "solde_kwh": -31967.4
         },
         {
           "mois": "Mars",
-          "transmission_kwh": 44161.9,
-          "solaire_kwh": 37954.5,
-          "solde_kwh": -6207.4
+          "transmission_kwh": 47586.7,
+          "solaire_kwh": 28512.6,
+          "solde_kwh": -19074.1
         },
         {
           "mois": "Avril",
-          "transmission_kwh": 34488.6,
-          "solaire_kwh": 51388.4,
-          "solde_kwh": 16899.8
+          "transmission_kwh": 37163.1,
+          "solaire_kwh": 40172.4,
+          "solde_kwh": 3009.3
         },
         {
           "mois": "Mai",
-          "transmission_kwh": 27720.3,
-          "solaire_kwh": 54220.2,
-          "solde_kwh": 26499.9
+          "transmission_kwh": 29870.0,
+          "solaire_kwh": 44205.0,
+          "solde_kwh": 14334.9
         },
         {
           "mois": "Juin",
-          "transmission_kwh": 2776.6,
-          "solaire_kwh": 61755.1,
-          "solde_kwh": 58978.3
+          "transmission_kwh": 2991.9,
+          "solaire_kwh": 50146.4,
+          "solde_kwh": 47154.4
         },
         {
           "mois": "Juillet",
-          "transmission_kwh": -7137.0,
-          "solaire_kwh": 68997.0,
-          "solde_kwh": 76133.9
+          "transmission_kwh": -7690.4,
+          "solaire_kwh": 55780.5,
+          "solde_kwh": 63470.8
         },
         {
           "mois": "Aout",
-          "transmission_kwh": -2073.9,
-          "solaire_kwh": 55299.8,
-          "solde_kwh": 57373.7
+          "transmission_kwh": -2234.8,
+          "solaire_kwh": 43779.3,
+          "solde_kwh": 46014.2
         },
         {
           "mois": "Septembre",
-          "transmission_kwh": 10044.0,
-          "solaire_kwh": 41925.1,
-          "solde_kwh": 31881.0
+          "transmission_kwh": 10823.1,
+          "solaire_kwh": 31990.0,
+          "solde_kwh": 21167.0
         },
         {
           "mois": "Octobre",
-          "transmission_kwh": 26032.3,
-          "solaire_kwh": 24524.7,
-          "solde_kwh": -1507.3
+          "transmission_kwh": 28051.0,
+          "solaire_kwh": 18690.4,
+          "solde_kwh": -9360.8
         },
         {
           "mois": "Novembre",
-          "transmission_kwh": 46871.9,
-          "solaire_kwh": 17642.5,
-          "solde_kwh": -29229.2
+          "transmission_kwh": 50506.9,
+          "solaire_kwh": 12797.0,
+          "solde_kwh": -37709.8
         },
         {
           "mois": "Decembre",
-          "transmission_kwh": 53359.9,
-          "solaire_kwh": 16121.8,
-          "solde_kwh": -37238.0
+          "transmission_kwh": 57497.8,
+          "solaire_kwh": 11260.3,
+          "solde_kwh": -46237.4
         }
       ],
       "total_annuel": {
-        "transmission_kwh": 350443.9,
-        "solaire_kwh": 473256.0,
-        "solde_kwh": 122812.3
+        "transmission_kwh": 377620.9,
+        "solaire_kwh": 368439.0,
+        "solde_kwh": -9181.9
       }
     },
     {
@@ -474,81 +532,81 @@
       "par_mois": [
         {
           "mois": "Janvier",
-          "transmission_kwh": 65435.4,
-          "solaire_kwh": 1273.9,
-          "solde_kwh": -64161.5
+          "transmission_kwh": 70510.0,
+          "solaire_kwh": 947.3,
+          "solde_kwh": -69562.5
         },
         {
           "mois": "Fevrier",
-          "transmission_kwh": 48763.9,
-          "solaire_kwh": 2634.4,
-          "solde_kwh": -46129.3
+          "transmission_kwh": 52545.6,
+          "solaire_kwh": 1852.1,
+          "solde_kwh": -50693.6
         },
         {
           "mois": "Mars",
-          "transmission_kwh": 44161.9,
-          "solaire_kwh": 3416.0,
-          "solde_kwh": -40745.9
+          "transmission_kwh": 47586.7,
+          "solaire_kwh": 2566.2,
+          "solde_kwh": -45020.7
         },
         {
           "mois": "Avril",
-          "transmission_kwh": 34488.6,
-          "solaire_kwh": 4625.0,
-          "solde_kwh": -29863.6
+          "transmission_kwh": 37163.1,
+          "solaire_kwh": 3615.5,
+          "solde_kwh": -33547.6
         },
         {
           "mois": "Mai",
-          "transmission_kwh": 27720.3,
-          "solaire_kwh": 4879.9,
-          "solde_kwh": -22840.5
+          "transmission_kwh": 29870.0,
+          "solaire_kwh": 3978.4,
+          "solde_kwh": -25891.6
         },
         {
           "mois": "Juin",
-          "transmission_kwh": 2776.6,
-          "solaire_kwh": 5558.0,
-          "solde_kwh": 2781.4
+          "transmission_kwh": 2991.9,
+          "solaire_kwh": 4513.1,
+          "solde_kwh": 1521.3
         },
         {
           "mois": "Juillet",
-          "transmission_kwh": -7137.0,
-          "solaire_kwh": 6209.6,
-          "solde_kwh": 13346.6
+          "transmission_kwh": -7690.4,
+          "solaire_kwh": 5020.2,
+          "solde_kwh": 12710.6
         },
         {
           "mois": "Aout",
-          "transmission_kwh": -2073.9,
-          "solaire_kwh": 4977.0,
-          "solde_kwh": 7051.0
+          "transmission_kwh": -2234.8,
+          "solaire_kwh": 3940.1,
+          "solde_kwh": 6174.9
         },
         {
           "mois": "Septembre",
-          "transmission_kwh": 10044.0,
-          "solaire_kwh": 3773.4,
-          "solde_kwh": -6270.9
+          "transmission_kwh": 10823.1,
+          "solaire_kwh": 2879.1,
+          "solde_kwh": -7944.0
         },
         {
           "mois": "Octobre",
-          "transmission_kwh": 26032.3,
-          "solaire_kwh": 2207.2,
-          "solde_kwh": -23825.0
+          "transmission_kwh": 28051.0,
+          "solaire_kwh": 1682.1,
+          "solde_kwh": -26368.9
         },
         {
           "mois": "Novembre",
-          "transmission_kwh": 46871.9,
-          "solaire_kwh": 1587.8,
-          "solde_kwh": -45284.0
+          "transmission_kwh": 50506.9,
+          "solaire_kwh": 1151.8,
+          "solde_kwh": -49355.0
         },
         {
           "mois": "Decembre",
-          "transmission_kwh": 53359.9,
-          "solaire_kwh": 1451.0,
-          "solde_kwh": -51908.8
+          "transmission_kwh": 57497.8,
+          "solaire_kwh": 1013.4,
+          "solde_kwh": -56484.4
         }
       ],
       "total_annuel": {
-        "transmission_kwh": 350443.9,
-        "solaire_kwh": 42593.2,
-        "solde_kwh": -307850.5
+        "transmission_kwh": 377620.9,
+        "solaire_kwh": 33159.3,
+        "solde_kwh": -344461.5
       }
     },
     {
@@ -561,81 +619,81 @@
       "par_mois": [
         {
           "mois": "Janvier",
-          "transmission_kwh": 65435.4,
-          "solaire_kwh": 12490.0,
-          "solde_kwh": -52945.4
+          "transmission_kwh": 70510.0,
+          "solaire_kwh": 9288.5,
+          "solde_kwh": -61221.5
         },
         {
           "mois": "Fevrier",
-          "transmission_kwh": 48763.9,
-          "solaire_kwh": 25827.9,
-          "solde_kwh": -22936.0
+          "transmission_kwh": 52545.6,
+          "solaire_kwh": 18157.3,
+          "solde_kwh": -34388.3
         },
         {
           "mois": "Mars",
-          "transmission_kwh": 44161.9,
-          "solaire_kwh": 33489.2,
-          "solde_kwh": -10672.7
+          "transmission_kwh": 47586.7,
+          "solaire_kwh": 25158.2,
+          "solde_kwh": -22428.6
         },
         {
           "mois": "Avril",
-          "transmission_kwh": 34488.6,
-          "solaire_kwh": 45342.7,
-          "solde_kwh": 10854.1
+          "transmission_kwh": 37163.1,
+          "solaire_kwh": 35446.3,
+          "solde_kwh": -1716.9
         },
         {
           "mois": "Mai",
-          "transmission_kwh": 27720.3,
-          "solaire_kwh": 47841.5,
-          "solde_kwh": 20121.0
+          "transmission_kwh": 29870.0,
+          "solaire_kwh": 39004.3,
+          "solde_kwh": 9134.3
         },
         {
           "mois": "Juin",
-          "transmission_kwh": 2776.6,
-          "solaire_kwh": 54489.7,
-          "solde_kwh": 51713.1
+          "transmission_kwh": 2991.9,
+          "solaire_kwh": 44246.7,
+          "solde_kwh": 41254.8
         },
         {
           "mois": "Juillet",
-          "transmission_kwh": -7137.0,
-          "solaire_kwh": 60879.5,
-          "solde_kwh": 68016.5
+          "transmission_kwh": -7690.4,
+          "solaire_kwh": 49218.0,
+          "solde_kwh": 56908.5
         },
         {
           "mois": "Aout",
-          "transmission_kwh": -2073.9,
-          "solaire_kwh": 48794.0,
-          "solde_kwh": 50867.8
+          "transmission_kwh": -2234.8,
+          "solaire_kwh": 38628.8,
+          "solde_kwh": 40863.7
         },
         {
           "mois": "Septembre",
-          "transmission_kwh": 10044.0,
-          "solaire_kwh": 36992.8,
-          "solde_kwh": 26948.7
+          "transmission_kwh": 10823.1,
+          "solaire_kwh": 28226.5,
+          "solde_kwh": 17403.4
         },
         {
           "mois": "Octobre",
-          "transmission_kwh": 26032.3,
-          "solaire_kwh": 21639.3,
-          "solde_kwh": -4392.6
+          "transmission_kwh": 28051.0,
+          "solaire_kwh": 16491.6,
+          "solde_kwh": -11559.4
         },
         {
           "mois": "Novembre",
-          "transmission_kwh": 46871.9,
-          "solaire_kwh": 15567.0,
-          "solde_kwh": -31304.9
+          "transmission_kwh": 50506.9,
+          "solaire_kwh": 11291.6,
+          "solde_kwh": -39215.3
         },
         {
           "mois": "Decembre",
-          "transmission_kwh": 53359.9,
-          "solaire_kwh": 14225.2,
-          "solde_kwh": -39134.8
+          "transmission_kwh": 57497.8,
+          "solaire_kwh": 9935.6,
+          "solde_kwh": -47562.3
         }
       ],
       "total_annuel": {
-        "transmission_kwh": 350443.9,
-        "solaire_kwh": 417578.8,
-        "solde_kwh": 67134.8
+        "transmission_kwh": 377620.9,
+        "solaire_kwh": 325093.4,
+        "solde_kwh": -52527.6
       }
     },
     {
@@ -648,81 +706,81 @@
       "par_mois": [
         {
           "mois": "Janvier",
-          "transmission_kwh": 65435.4,
-          "solaire_kwh": 1124.1,
-          "solde_kwh": -64311.4
+          "transmission_kwh": 70510.0,
+          "solaire_kwh": 835.9,
+          "solde_kwh": -69674.1
         },
         {
           "mois": "Fevrier",
-          "transmission_kwh": 48763.9,
-          "solaire_kwh": 2324.4,
-          "solde_kwh": -46439.2
+          "transmission_kwh": 52545.6,
+          "solaire_kwh": 1634.0,
+          "solde_kwh": -50911.4
         },
         {
           "mois": "Mars",
-          "transmission_kwh": 44161.9,
-          "solaire_kwh": 3014.1,
-          "solde_kwh": -41148.0
+          "transmission_kwh": 47586.7,
+          "solaire_kwh": 2264.3,
+          "solde_kwh": -45322.4
         },
         {
           "mois": "Avril",
-          "transmission_kwh": 34488.6,
-          "solaire_kwh": 4080.9,
-          "solde_kwh": -30407.6
+          "transmission_kwh": 37163.1,
+          "solaire_kwh": 3190.1,
+          "solde_kwh": -33973.0
         },
         {
           "mois": "Mai",
-          "transmission_kwh": 27720.3,
-          "solaire_kwh": 4305.8,
-          "solde_kwh": -23414.5
+          "transmission_kwh": 29870.0,
+          "solaire_kwh": 3510.2,
+          "solde_kwh": -26359.7
         },
         {
           "mois": "Juin",
-          "transmission_kwh": 2776.6,
-          "solaire_kwh": 4904.2,
-          "solde_kwh": 2127.6
+          "transmission_kwh": 2991.9,
+          "solaire_kwh": 3982.3,
+          "solde_kwh": 990.2
         },
         {
           "mois": "Juillet",
-          "transmission_kwh": -7137.0,
-          "solaire_kwh": 5479.2,
-          "solde_kwh": 12616.2
+          "transmission_kwh": -7690.4,
+          "solaire_kwh": 4429.5,
+          "solde_kwh": 12120.2
         },
         {
           "mois": "Aout",
-          "transmission_kwh": -2073.9,
-          "solaire_kwh": 4391.4,
-          "solde_kwh": 6465.3
+          "transmission_kwh": -2234.8,
+          "solaire_kwh": 3476.5,
+          "solde_kwh": 5711.5
         },
         {
           "mois": "Septembre",
-          "transmission_kwh": 10044.0,
-          "solaire_kwh": 3329.3,
-          "solde_kwh": -6714.7
+          "transmission_kwh": 10823.1,
+          "solaire_kwh": 2540.3,
+          "solde_kwh": -8282.6
         },
         {
           "mois": "Octobre",
-          "transmission_kwh": 26032.3,
-          "solaire_kwh": 1947.5,
-          "solde_kwh": -24084.7
+          "transmission_kwh": 28051.0,
+          "solaire_kwh": 1484.3,
+          "solde_kwh": -26566.9
         },
         {
           "mois": "Novembre",
-          "transmission_kwh": 46871.9,
-          "solaire_kwh": 1401.1,
-          "solde_kwh": -45470.8
+          "transmission_kwh": 50506.9,
+          "solaire_kwh": 1016.3,
+          "solde_kwh": -49490.6
         },
         {
           "mois": "Decembre",
-          "transmission_kwh": 53359.9,
-          "solaire_kwh": 1280.2,
-          "solde_kwh": -52079.6
+          "transmission_kwh": 57497.8,
+          "solaire_kwh": 894.2,
+          "solde_kwh": -56603.7
         }
       ],
       "total_annuel": {
-        "transmission_kwh": 350443.9,
-        "solaire_kwh": 37582.2,
-        "solde_kwh": -312861.4
+        "transmission_kwh": 377620.9,
+        "solaire_kwh": 29257.9,
+        "solde_kwh": -348362.5
       }
     }
   ]

@@ -33,10 +33,24 @@ Usage : python poc_bilan_horaire.py
 
 import json
 import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from recompute_conso_mesuree import moyenne_mensuelle_reelle
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(SCRIPT_DIR, "..", "frontend", "data", "batiment", "16.json")
 RAW_PVGIS_DIR = os.path.join(SCRIPT_DIR, "raw", "pvgis")
+
+NOTE_COMPARAISON = (
+    "Comparaison de forme (saisonnalite), pas de magnitude : ce calcul ne couvre "
+    "que 2 des 5 flux attendus par la Brique 3 (solaire + transmission -- pas "
+    "ventilation, pas apports internes, pas rendement reel du systeme de "
+    "chauffage/froid, pas eclairage/equipements). La consommation reelle mesuree "
+    "couvre TOUS les usages du batiment. On ne peut donc pas dire que ce calcul "
+    "'tombe juste' face a la facture reelle -- seule la FORME (pic hiver, creux "
+    "ete) est comparable, pas la valeur absolue."
+)
 
 U_MUR = 3.13  # W/m2.K -- DPE JPM section 3.1.1, zone "Bureaux Sud" (seule valeur disponible)
 T_INT = 20.0  # degC -- consigne conventionnelle, non mesuree (hypothese documentee)
@@ -115,7 +129,7 @@ def additionne(agg, mois_dict):
             agg[m][k] = round(agg[m].get(k, 0.0) + mois_dict[m][k], 1)
 
 
-def imprime_tableau(titre, agg):
+def imprime_tableau(titre, agg, profil_reel=None, annees_reel=None):
     print(f"\n--- {titre} ---")
     print(f"{'Mois':<10} {'Transmission':>14} {'Apports solaires':>18} {'Solde':>10}  (kWh)")
     tot = {"transmission_kwh": 0.0, "solaire_kwh": 0.0, "solde_kwh": 0.0}
@@ -125,6 +139,13 @@ def imprime_tableau(titre, agg):
         for k in tot:
             tot[k] += v[k]
     print(f"{'TOTAL':<10} {tot['transmission_kwh']:>14.1f} {tot['solaire_kwh']:>18.1f} {tot['solde_kwh']:>10.1f}")
+
+    if profil_reel is not None:
+        print(f"\n  Conso reelle mesuree (toutes energies, moyenne {', '.join(annees_reel)}) :")
+        for m in range(1, 13):
+            print(f"  {MOIS_LABELS[m-1]:<10} {profil_reel[m]:>10.1f} kWh")
+        print(f"  TOTAL      {round(sum(profil_reel.values()), 1):>10.1f} kWh")
+        print(f"  [!] {NOTE_COMPARAISON}")
 
 
 def tests_coherence(agg_horaire_brut):
@@ -142,7 +163,7 @@ def calcule_scenario(segments, hauteur_m, u_vitrage, g_eff, lat, lon):
     return agg
 
 
-def exporte_json(b, segments, hauteur_m, lat, lon, out_path):
+def exporte_json(b, segments, hauteur_m, lat, lon, out_path, profil_reel, annees_reel):
     """Ecrit les memes resultats que le rapport texte (aucun chiffre different),
     pour alimenter la page prototype /poc/jpm. Toujours les 8 scenarios cote a
     cote -- jamais un seul choisi comme "la" reponse (voir plan
@@ -193,6 +214,14 @@ def exporte_json(b, segments, hauteur_m, lat, lon, out_path):
             "f_protection_store_ext": {"valeur": F_PROTECTION_STORE_EXT, "note": "reference ES-SO/ACTIBAIE (EN14501)"},
             "etape_cerema_comparaison": "NON FAITE -- pas d'acces a l'outil, blocage reel",
         },
+        "comparaison_conso_reelle": {
+            "profil_mensuel_kwh": (
+                [{"mois": MOIS_LABELS[m - 1], "kwh": profil_reel[m]} for m in range(1, 13)]
+                if profil_reel else None
+            ),
+            "annees_utilisees": annees_reel or [],
+            "mise_en_garde": NOTE_COMPARAISON,
+        },
         "scenarios": scenarios,
     }
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
@@ -205,6 +234,7 @@ def main():
     b = json.load(open(DATA_PATH, encoding="utf-8"))["batiment"]
     lat, lon, hauteur_m = b["latitude"], b["longitude"], b["hauteur_m"]
     segments = [s for s in b["facade_segments"] if not s["bruit"] and s.get("taux_vitrage_estime_pct") is not None]
+    profil_reel, annees_reel = moyenne_mensuelle_reelle(b.get("consommations_mensuelles"))
 
     print("=" * 70)
     print(f"POC bilan thermique horaire -- {b['nom']} (id {b['id']})")
@@ -219,7 +249,7 @@ def main():
                 g_eff = g * F_PROTECTION_STORE_EXT if protection else g
                 nom_scenario = f"{label_u} x {label_g}" + (" + store exterieur" if protection else "")
                 agg = calcule_scenario(segments, hauteur_m, u_vitrage, g_eff, lat, lon)
-                imprime_tableau(nom_scenario, agg)
+                imprime_tableau(nom_scenario, agg, profil_reel, annees_reel)
 
     tests_coherence(None)
 
@@ -231,10 +261,14 @@ def main():
     print(f"  - T_int = {T_INT} degC : convention non mesuree")
     print(f"  - F_protection (store ext.) = {F_PROTECTION_STORE_EXT} : reference ES-SO/ACTIBAIE (EN14501)")
     print("  - Etape 11 (comparaison Cerema) : NON FAITE -- pas d'acces a l'outil, blocage reel")
+    if profil_reel:
+        print(f"  - Comparaison conso reelle ({', '.join(annees_reel)}) : {NOTE_COMPARAISON}")
+    else:
+        print("  - Comparaison conso reelle : impossible (pas d'annee calendaire complete dans les factures)")
     print("=" * 70)
 
     out_path = os.path.join(SCRIPT_DIR, "..", "frontend", "data", "poc", "jpm_resultat_brique3.json")
-    exporte_json(b, segments, hauteur_m, lat, lon, out_path)
+    exporte_json(b, segments, hauteur_m, lat, lon, out_path, profil_reel, annees_reel)
 
 
 if __name__ == "__main__":

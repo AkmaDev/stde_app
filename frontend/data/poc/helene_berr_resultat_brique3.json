@@ -28,6 +28,64 @@
     },
     "etape_cerema_comparaison": "NON FAITE -- pas d'acces a l'outil, blocage reel"
   },
+  "comparaison_conso_reelle": {
+    "profil_mensuel_kwh": [
+      {
+        "mois": "Janvier",
+        "kwh": 44310.8
+      },
+      {
+        "mois": "Fevrier",
+        "kwh": 34886.4
+      },
+      {
+        "mois": "Mars",
+        "kwh": 29807.7
+      },
+      {
+        "mois": "Avril",
+        "kwh": 18566.9
+      },
+      {
+        "mois": "Mai",
+        "kwh": 7872.8
+      },
+      {
+        "mois": "Juin",
+        "kwh": 5500.8
+      },
+      {
+        "mois": "Juillet",
+        "kwh": 5329.3
+      },
+      {
+        "mois": "Aout",
+        "kwh": 4890.8
+      },
+      {
+        "mois": "Septembre",
+        "kwh": 4877.6
+      },
+      {
+        "mois": "Octobre",
+        "kwh": 7393.0
+      },
+      {
+        "mois": "Novembre",
+        "kwh": 20017.4
+      },
+      {
+        "mois": "Decembre",
+        "kwh": 28803.8
+      }
+    ],
+    "annees_utilisees": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "mise_en_garde": "Comparaison de forme (saisonnalite), pas de magnitude : ce calcul ne couvre que 2 des 5 flux attendus par la Brique 3 (solaire + transmission -- pas ventilation, pas apports internes, pas rendement reel du systeme de chauffage/froid, pas eclairage/equipements). La consommation reelle mesuree couvre TOUS les usages du batiment. On ne peut donc pas dire que ce calcul 'tombe juste' face a la facture reelle -- seule la FORME (pic hiver, creux ete) est comparable, pas la valeur absolue."
+  },
   "scenarios": [
     {
       "nom": "double_vitrage_pvc (DPE, 2.0) x g=0.75",
