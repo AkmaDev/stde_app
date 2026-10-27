@@ -115,7 +115,7 @@ export default function FicheBatimentTabs({
         {tab === "plan" ? (
           <FicheMapLoader latitude={latitude} longitude={longitude} nom={nom} batiment={batiment} />
         ) : tab === "streetview" ? (
-          <StreetView latitude={latitude} longitude={longitude} />
+          <StreetView latitude={latitude} longitude={longitude} photos={batiment.photos_facade} />
         ) : tab === "volume3d" ? (
           <Batiment3D batiment={batiment} />
         ) : tab === "documents" ? (

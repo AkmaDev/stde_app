@@ -46,6 +46,13 @@ export interface DocumentBatiment {
   url: string;
 }
 
+export interface PhotoFacade {
+  url: string;
+  legende: string;
+  credit_label: string;
+  credit_url: string;
+}
+
 export interface AdresseRNB {
   numero: string | null;
   suffixe: string | null;
@@ -104,6 +111,7 @@ export interface Batiment {
   ouvertures_toiture: string | null;
   adresse: string | null;
   documents: DocumentBatiment[];
+  photos_facade: PhotoFacade[];
   derniere_maj: string | null;
   latitude: number | null;
   longitude: number | null;
