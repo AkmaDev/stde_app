@@ -1,0 +1,352 @@
+{
+ "source": {
+  "producteur": "Meteo-France",
+  "jeu_de_donnees": "Donnees climatologiques de base - quotidiennes",
+  "page": "https://www.data.gouv.fr/fr/datasets/donnees-climatologiques-de-base-quotidiennes/",
+  "fichiers": [
+   "https://object.files.data.gouv.fr/meteofrance/data/synchro_ftp/BASE/QUOT/Q_75_previous-1950-2024_RR-T-Vent.csv.gz",
+   "https://object.files.data.gouv.fr/meteofrance/data/synchro_ftp/BASE/QUOT/Q_75_latest-2025-2026_RR-T-Vent.csv.gz"
+  ],
+  "station": "PARIS-MONTSOURIS (75114001)",
+  "date_extraction": "2026-11-17",
+  "methode": "Tm = TNTXM ((TN+TX)/2). DJU = somme max(0, 18 - Tm) ; DJC = somme max(0, Tm - 18). Jours manquants non combles."
+ },
+ "mois": [
+  {
+   "mois": "2023-01",
+   "tm": 6.51,
+   "dju18": 356.1,
+   "djc18": 0.0,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2023-02",
+   "tm": 7.51,
+   "dju18": 293.7,
+   "djc18": 0.0,
+   "jours_mesures": 28,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2023-03",
+   "tm": 10.0,
+   "dju18": 248.1,
+   "djc18": 0.0,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2023-04",
+   "tm": 11.55,
+   "dju18": 194.4,
+   "djc18": 1.0,
+   "jours_mesures": 30,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2023-05",
+   "tm": 16.1,
+   "dju18": 65.9,
+   "djc18": 6.9,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2023-06",
+   "tm": 22.4,
+   "dju18": 1.6,
+   "djc18": 133.7,
+   "jours_mesures": 30,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2023-07",
+   "tm": 21.21,
+   "dju18": 2.0,
+   "djc18": 101.4,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2023-08",
+   "tm": 20.87,
+   "dju18": 7.6,
+   "djc18": 96.5,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2023-09",
+   "tm": 21.39,
+   "dju18": 13.5,
+   "djc18": 115.1,
+   "jours_mesures": 30,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2023-10",
+   "tm": 15.6,
+   "dju18": 94.6,
+   "djc18": 20.2,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2023-11",
+   "tm": 9.86,
+   "dju18": 244.1,
+   "djc18": 0.0,
+   "jours_mesures": 30,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2023-12",
+   "tm": 8.16,
+   "dju18": 305.1,
+   "djc18": 0.0,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2024-01",
+   "tm": 5.29,
+   "dju18": 394.0,
+   "djc18": 0.0,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2024-02",
+   "tm": 9.7,
+   "dju18": 240.8,
+   "djc18": 0.0,
+   "jours_mesures": 29,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2024-03",
+   "tm": 10.77,
+   "dju18": 224.0,
+   "djc18": 0.0,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2024-04",
+   "tm": 12.76,
+   "dju18": 159.4,
+   "djc18": 2.3,
+   "jours_mesures": 30,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2024-05",
+   "tm": 16.25,
+   "dju18": 64.3,
+   "djc18": 9.9,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2024-06",
+   "tm": 18.43,
+   "dju18": 31.6,
+   "djc18": 44.4,
+   "jours_mesures": 30,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2024-07",
+   "tm": 21.01,
+   "dju18": 2.8,
+   "djc18": 96.1,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2024-08",
+   "tm": 21.81,
+   "dju18": 1.4,
+   "djc18": 119.4,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2024-09",
+   "tm": 16.88,
+   "dju18": 57.0,
+   "djc18": 23.5,
+   "jours_mesures": 30,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2024-10",
+   "tm": 14.48,
+   "dju18": 111.6,
+   "djc18": 2.6,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2024-11",
+   "tm": 8.92,
+   "dju18": 272.3,
+   "djc18": 0.0,
+   "jours_mesures": 30,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2024-12",
+   "tm": 6.54,
+   "dju18": 355.3,
+   "djc18": 0.0,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2025-01",
+   "tm": 5.02,
+   "dju18": 402.5,
+   "djc18": 0.0,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2025-02",
+   "tm": 5.92,
+   "dju18": 338.1,
+   "djc18": 0.0,
+   "jours_mesures": 28,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2025-03",
+   "tm": 10.23,
+   "dju18": 241.0,
+   "djc18": 0.0,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2025-04",
+   "tm": 14.66,
+   "dju18": 106.7,
+   "djc18": 6.6,
+   "jours_mesures": 30,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2025-05",
+   "tm": 16.81,
+   "dju18": 62.3,
+   "djc18": 25.5,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2025-06",
+   "tm": 22.19,
+   "dju18": 5.2,
+   "djc18": 130.8,
+   "jours_mesures": 30,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2025-07",
+   "tm": 21.78,
+   "dju18": 1.3,
+   "djc18": 118.6,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2025-08",
+   "tm": 21.73,
+   "dju18": 0.8,
+   "djc18": 116.3,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2025-09",
+   "tm": 16.88,
+   "dju18": 55.2,
+   "djc18": 21.5,
+   "jours_mesures": 30,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2025-10",
+   "tm": 13.54,
+   "dju18": 138.2,
+   "djc18": 0.0,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2025-11",
+   "tm": 9.46,
+   "dju18": 256.1,
+   "djc18": 0.0,
+   "jours_mesures": 30,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2025-12",
+   "tm": 7.55,
+   "dju18": 323.9,
+   "djc18": 0.0,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2026-01",
+   "tm": 6.03,
+   "dju18": 371.0,
+   "djc18": 0.0,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2026-02",
+   "tm": 9.83,
+   "dju18": 228.8,
+   "djc18": 0.0,
+   "jours_mesures": 28,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2026-03",
+   "tm": 11.1,
+   "dju18": 213.8,
+   "djc18": 0.0,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2026-04",
+   "tm": 14.42,
+   "dju18": 110.7,
+   "djc18": 3.3,
+   "jours_mesures": 30,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2026-05",
+   "tm": 17.87,
+   "dju18": 79.8,
+   "djc18": 75.7,
+   "jours_mesures": 31,
+   "jours_manquants": 0
+  },
+  {
+   "mois": "2026-06",
+   "tm": 21.33,
+   "dju18": 13.5,
+   "djc18": 86.8,
+   "jours_mesures": 22,
+   "jours_manquants": 8
+  }
+ ]
+}

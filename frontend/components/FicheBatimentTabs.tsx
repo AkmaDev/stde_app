@@ -12,6 +12,7 @@ import DocumentsList from "./DocumentsList";
 import ConsommationMensuelleChart from "./ConsommationMensuelleChart";
 import Batiment3D from "./Batiment3D";
 import CaracteristiquesTab from "./CaracteristiquesTab";
+import TrajectoireTab from "./TrajectoireTab";
 
 // Couleurs des tags d'état des leviers -- mêmes valeurs que ORIGINE_CLASS/TAG
 // du redesign (doc=bleu, obs=vert, hyp=ambre), étendues à l'état "Exclusion".
@@ -43,7 +44,7 @@ export default function FicheBatimentTabs({
   // liste, comparateur...), Jean attend le zoom cadastral immédiat, pas la
   // liste de caractéristiques.
   const [tab, setTab] = useState<
-    "caracteristiques" | "leviers" | "plan" | "streetview" | "documents" | "consommations_mensuelles" | "volume3d"
+    "caracteristiques" | "leviers" | "plan" | "streetview" | "documents" | "consommations_mensuelles" | "trajectoire" | "volume3d"
   >("plan");
 
   // Volume 3D : reconstruit depuis les façades RNB/APUR, disponible seulement
@@ -76,6 +77,7 @@ export default function FicheBatimentTabs({
   const TABS: { key: typeof tab; label: string }[] = [
     { key: "caracteristiques", label: "Caractéristiques" },
     { key: "consommations_mensuelles", label: "Consommation mensuelle" },
+    { key: "trajectoire", label: "Trajectoire" },
     { key: "documents", label: "Documents" },
     { key: "plan", label: "Plan cadastral" },
     { key: "streetview", label: "Vue de rue" },
@@ -122,6 +124,8 @@ export default function FicheBatimentTabs({
           <DocumentsList documents={documents} />
         ) : tab === "consommations_mensuelles" ? (
           <ConsommationMensuelleChart batiment={batiment} />
+        ) : tab === "trajectoire" ? (
+          <TrajectoireTab batiment={batiment} leviers={leviers} />
         ) : tab === "caracteristiques" ? (
           <CaracteristiquesTab
             batimentId={batiment.id}

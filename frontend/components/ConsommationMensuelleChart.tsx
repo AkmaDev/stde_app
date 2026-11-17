@@ -2,6 +2,7 @@
 
 import { CartesianGrid, Line, LineChart, ReferenceArea, ResponsiveContainer, Tooltip, XAxis } from "recharts";
 import { Batiment, climatisationDetectee, zeroEstSuspect } from "@/lib/api";
+import { derniereAnneeComplete } from "@/lib/trajectoire";
 
 const MOIS_LABEL: Record<number, string> = {
   1: "Janv", 2: "Fév", 3: "Mars", 4: "Avr", 5: "Mai", 6: "Juin",
@@ -74,10 +75,7 @@ export default function ConsommationMensuelleChart({ batiment }: { batiment: Bat
 
   // Dernière année calendaire complète (12 mois) présente dans les données --
   // pas "2025" en dur, variable selon le bâtiment.
-  const anneesCompletes = Array.from(new Set(moisTries.map((m) => m.split("-")[0]))).filter(
-    (y) => moisTries.filter((m) => m.startsWith(y)).length === 12
-  );
-  const derniereAnnee = anneesCompletes.sort().slice(-1)[0] ?? null;
+  const derniereAnnee = derniereAnneeComplete(mensuelles);
   const mwhAnnee = (energie: string) => {
     if (!derniereAnnee) return "—";
     const total = mensuelles
